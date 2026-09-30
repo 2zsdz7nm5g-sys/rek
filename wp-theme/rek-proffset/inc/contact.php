@@ -48,11 +48,27 @@ function rek_whatsapp_digits() {
 	return preg_replace( '/\D+/', '', rek_get( 'rek_whatsapp' ) );
 }
 
+/**
+ * Current Polylang language slug. Falls back to the language of the queried
+ * post, which is what previews and early template hooks need.
+ */
+function rek_lang() {
+	if ( ! function_exists( 'pll_current_language' ) ) {
+		return '';
+	}
+	$lang = pll_current_language();
+	if ( ! $lang && is_singular() ) {
+		$lang = pll_get_post_language( get_queried_object_id() );
+	}
+	return $lang ? $lang : '';
+}
+
 function rek_contact_page_url() {
 	$page = get_page_by_path( 'contact' );
 	// With Polylang, point to the contact page in the visitor's language.
 	if ( $page && function_exists( 'pll_get_post' ) ) {
-		$translated = pll_get_post( $page->ID );
+		$lang       = rek_lang();
+		$translated = $lang ? pll_get_post( $page->ID, $lang ) : 0;
 		$page       = $translated ? get_post( $translated ) : $page;
 	}
 	return $page ? get_permalink( $page ) : home_url( '/' );

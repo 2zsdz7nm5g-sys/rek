@@ -82,3 +82,17 @@ add_action( 'wp_head', function () {
 
 	echo '<script type="application/ld+json">' . wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
 }, 3 );
+
+/*
+ * Image alt text per language: attachments keep their Arabic alt text, and
+ * an English version lives in the `_rek_alt_en` attachment meta.
+ */
+add_filter( 'wp_get_attachment_image_attributes', function ( $attr, $attachment ) {
+	if ( 'en' === rek_lang() ) {
+		$alt = get_post_meta( $attachment->ID, '_rek_alt_en', true );
+		if ( $alt ) {
+			$attr['alt'] = $alt;
+		}
+	}
+	return $attr;
+}, 10, 2 );
