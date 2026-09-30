@@ -85,14 +85,17 @@ add_action( 'wp_head', function () {
 
 /*
  * Image alt text per language: attachments keep their Arabic alt text, and
- * an English version lives in the `_rek_alt_en` attachment meta.
+ * an English version lives in the `_rek_alt_en` attachment meta. Elementor
+ * reads the alt meta directly, so the swap happens at the meta level
+ * (front end only, so the media library always shows the stored value).
  */
-add_filter( 'wp_get_attachment_image_attributes', function ( $attr, $attachment ) {
-	if ( 'en' === rek_lang() ) {
-		$alt = get_post_meta( $attachment->ID, '_rek_alt_en', true );
-		if ( $alt ) {
-			$attr['alt'] = $alt;
-		}
+add_filter( 'get_post_metadata', function ( $value, $object_id, $meta_key, $single ) {
+	if ( '_wp_attachment_image_alt' !== $meta_key || is_admin() || 'en' !== rek_lang() ) {
+		return $value;
 	}
-	return $attr;
-}, 10, 2 );
+	$alt = get_post_meta( $object_id, '_rek_alt_en', true );
+	if ( '' === $alt ) {
+		return $value;
+	}
+	return $single ? $alt : [ $alt ];
+}, 10, 4 );
