@@ -191,6 +191,13 @@ body {
 }
 @keyframes rek-sheen { 0%, 55% { inset-inline-start: -40%; } 100% { inset-inline-start: 120%; } }
 
+/* ---------- FlexiShield partnership: the second-language lines keep their own direction ---------- */
+[dir="rtl"] .rk-partner-en, [dir="rtl"] .rk-partner-en-text { direction: ltr; text-align: right; }
+html:not([dir="rtl"]) .rk-partner-en, html:not([dir="rtl"]) .rk-partner-en-text { direction: rtl; text-align: left; }
+/* Arabic letters must stay joined: no tracking or uppercase transform on the Arabic line. */
+html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-size: 15px; letter-spacing: 0; text-transform: none; }
+.rk-partner-logo { width: auto !important; }
+
 /* ---------- Section anchors (ids are assigned in rek.js) ---------- */
 [class*="rek-id-"], #appointment { scroll-margin-top: calc(var(--rek-header-h) + 24px); }
 
