@@ -190,6 +190,10 @@ body {
 }
 @keyframes rek-sheen { 0%, 55% { inset-inline-start: -40%; } 100% { inset-inline-start: 120%; } }
 
+/* ---------- Service tiles ---------- */
+.rek-tile-img { transition: transform 1.2s var(--rek-ease); }
+.rek-tile:hover .rek-tile-img, .rek-tile:focus-visible .rek-tile-img { transform: scale(1.04); }
+
 /* ---------- Before / after slider ---------- */
 .rek-ba { --pos: 50%; direction: ltr; touch-action: pan-y; cursor: ew-resize; user-select: none; -webkit-user-select: none; }
 .rek-ba-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
