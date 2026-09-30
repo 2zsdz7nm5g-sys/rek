@@ -138,7 +138,7 @@ add_shortcode( 'rek_location', function () {
 						<span><?php echo esc_html( rek_t( 'احصل على الاتجاهات', 'Get directions' ) ); ?></span>
 					</a>
 				<?php elseif ( current_user_can( 'edit_theme_options' ) ) : ?>
-					<p class="rek-loc-info__admin"><?php echo esc_html( 'Admins only: enter the Google Maps URL in Appearance > Customize > REK PROFFSET contact to show the map link and the "Get directions" button.' ); ?></p>
+					<p class="rek-loc-info__admin" dir="ltr"><?php echo esc_html( 'Admins only: enter the Google Maps URL in Appearance > Customize > REK PROFFSET contact to show the map link and the "Get directions" button.' ); ?></p>
 				<?php endif; ?>
 			</aside>
 		</div>
