@@ -20,6 +20,49 @@
 		if (anchor) { window.requestAnimationFrame(function () { anchor.scrollIntoView({ block: 'start' }); }); }
 	}
 
+	/*
+	 * Homepage hero video: the landscape or portrait file for the current
+	 * screen, loaded after the page itself so it never delays the hero image,
+	 * faded in once playing, paused while the hero is off screen, and swapped
+	 * if the screen changes shape (rotation, resize). If playback is refused
+	 * (Low Power Mode, data saver) the hero image simply stays.
+	 */
+	var heroVideo = document.querySelector('[data-rek-hero-video]');
+	var saveData = navigator.connection && navigator.connection.saveData;
+	if (heroVideo && (reduceMotion || saveData || !window.matchMedia)) {
+		heroVideo.parentNode.removeChild(heroVideo);
+	} else if (heroVideo) {
+		var portrait = window.matchMedia(heroVideo.getAttribute('data-portrait'));
+		var heroOnScreen = true;
+		heroVideo.muted = true;
+		var playHero = function () {
+			if (!heroOnScreen || !heroVideo.getAttribute('src')) { return; }
+			var p = heroVideo.play();
+			if (p && p.catch) { p.catch(function () {}); }
+		};
+		var pickHero = function () {
+			var src = heroVideo.getAttribute(portrait.matches ? 'data-src-mobile' : 'data-src-desktop');
+			if (heroVideo.getAttribute('src') === src) { return; }
+			heroVideo.classList.remove('is-playing');
+			heroVideo.preload = 'auto';
+			heroVideo.setAttribute('src', src);
+			heroVideo.load();
+			playHero();
+		};
+		heroVideo.addEventListener('playing', function () { heroVideo.classList.add('is-playing'); });
+		if ('IntersectionObserver' in window) {
+			new IntersectionObserver(function (entries) {
+				heroOnScreen = entries[0].isIntersecting;
+				if (heroOnScreen) { playHero(); } else { heroVideo.pause(); }
+			}).observe(heroVideo.parentNode);
+		}
+		var startHero = function () {
+			pickHero();
+			if (portrait.addEventListener) { portrait.addEventListener('change', pickHero); } else { portrait.addListener(pickHero); }
+		};
+		if (document.readyState === 'complete') { startHero(); } else { window.addEventListener('load', startHero, { once: true }); }
+	}
+
 	/* Booking result notice: move focus to it so screen readers announce it. */
 	var notice = document.querySelector('[data-rek-notice]');
 	if (notice) { window.requestAnimationFrame(function () { notice.focus({ preventScroll: true }); }); }

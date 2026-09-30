@@ -310,6 +310,10 @@ body {
 .rek-kenburns { animation: rek-kenburns 16s var(--rek-ease) both; transform-origin: 50% 60%; }
 @keyframes rek-kenburns { from { transform: scale(1.1); } to { transform: scale(1); } }
 
+/* Homepage hero video (inc/hero-video.php): sits over the hero image and fades in once it is playing. */
+.rek-hero-video { opacity: 0; transition: opacity 1.2s var(--rek-ease); object-position: 50% 50%; pointer-events: none; }
+.rek-hero-video.is-playing { opacity: 1; }
+
 .rek-sheen { position: relative; overflow: hidden; }
 .rek-sheen::after {
 	content: ""; position: absolute; inset: -20% auto -20% -40%; width: 35%; pointer-events: none;
@@ -516,4 +520,5 @@ html:not([dir="rtl"]) .rek-field select { background-position: right 18px center
 	.rek-sheen::after { display: none; }
 	.rek-wa::after { animation: none; }
 	.rek-loc-map__pulse { animation: none; }
+	.rek-hero-video { display: none; }
 }
