@@ -146,6 +146,20 @@
 		show(buttons[0]);
 	});
 
+	/* WhatsApp bubble: on small screens it steps aside while the booking form is on screen, so it never covers the fields or the submit button. */
+	var bubble = document.querySelector('[data-rek-wa]');
+	var booking = document.querySelector('.rek-booking');
+	if (bubble && booking && 'IntersectionObserver' in window) {
+		var small = window.matchMedia('(max-width: 767px)');
+		var bookingVisible = false;
+		var sync = function () { bubble.classList.toggle('is-tucked', small.matches && bookingVisible); };
+		new IntersectionObserver(function (entries) {
+			bookingVisible = entries[0].isIntersecting;
+			sync();
+		}).observe(booking);
+		small.addEventListener('change', sync);
+	}
+
 	/* Colour configurator: swatches are Elementor buttons whose own background colour is the paint colour. */
 	document.querySelectorAll('.rek-cfg').forEach(function (cfg) {
 		var paint = cfg.querySelector('.rek-cfg-paint');

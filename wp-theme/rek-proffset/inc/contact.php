@@ -75,17 +75,43 @@ function rek_contact_page_url() {
 }
 
 /**
- * One stable URL for every WhatsApp call to action in the page content:
- * /?rek=whatsapp opens the chat when a number is set, otherwise the contact page.
+ * Pre-filled WhatsApp messages, one per topic. `general` is used by the
+ * floating bubble; the others serve service-specific buttons.
  */
-function rek_whatsapp_url() {
-	$digits = rek_whatsapp_digits();
-	return $digits ? 'https://wa.me/' . $digits : rek_contact_page_url();
+function rek_whatsapp_message( $topic = 'general' ) {
+	$messages = [
+		'general'     => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن خدماتكم.', 'Hello REK PROFFSET, I would like to ask about your services.' ),
+		'ppf'         => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن خدمة PPF.', 'Hello REK PROFFSET, I would like to ask about your PPF service.' ),
+		'flexishield' => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن FlexiShield PPF.', 'Hello REK PROFFSET, I would like to ask about FlexiShield PPF.' ),
+		'ceramic'     => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن النانو سيراميك.', 'Hello REK PROFFSET, I would like to ask about nano ceramic coating.' ),
+		'polishing'   => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن البوليش وتصحيح الطلاء.', 'Hello REK PROFFSET, I would like to ask about polishing and paint correction.' ),
+		'interior'    => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن خدمة الحمام الداخلي.', 'Hello REK PROFFSET, I would like to ask about interior detailing.' ),
+		'pdr'         => rek_t( 'مرحباً REK PROFFSET، أريد الاستفسار عن خدمة PDR.', 'Hello REK PROFFSET, I would like to ask about paintless dent repair (PDR).' ),
+	];
+	return isset( $messages[ $topic ] ) ? $messages[ $topic ] : $messages['general'];
 }
 
+/**
+ * WhatsApp click-to-chat link built from the one number in the Customizer.
+ * Until that number is entered, links fall back to the contact page.
+ */
+function rek_whatsapp_url( $topic = 'general' ) {
+	$digits = rek_whatsapp_digits();
+	if ( ! $digits ) {
+		return rek_contact_page_url();
+	}
+	return 'https://wa.me/' . $digits . '?text=' . rawurlencode( rek_whatsapp_message( $topic ) );
+}
+
+/*
+ * One stable URL for WhatsApp calls to action in page content:
+ * /?rek=whatsapp opens the chat, and &topic=ppf (flexishield, ceramic,
+ * polishing, interior, pdr) pre-fills a service-specific message.
+ */
 add_action( 'template_redirect', function () {
 	if ( isset( $_GET['rek'] ) && 'whatsapp' === $_GET['rek'] ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		wp_redirect( rek_whatsapp_url(), 302 ); // phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect
+		$topic = isset( $_GET['topic'] ) ? sanitize_key( $_GET['topic'] ) : 'general'; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		wp_redirect( rek_whatsapp_url( $topic ), 302 ); // phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect
 		exit;
 	}
 } );
