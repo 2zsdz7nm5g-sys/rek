@@ -50,6 +50,11 @@ function rek_whatsapp_digits() {
 
 function rek_contact_page_url() {
 	$page = get_page_by_path( 'contact' );
+	// With Polylang, point to the contact page in the visitor's language.
+	if ( $page && function_exists( 'pll_get_post' ) ) {
+		$translated = pll_get_post( $page->ID );
+		$page       = $translated ? get_post( $translated ) : $page;
+	}
 	return $page ? get_permalink( $page ) : home_url( '/' );
 }
 
