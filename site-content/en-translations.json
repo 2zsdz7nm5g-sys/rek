@@ -253,5 +253,36 @@
    "cta": "Discover FlexiShield →"
   },
   "logo": "Placeholder attachment 'flexishield-logo-placeholder.png' until the official logo is supplied."
+ },
+ "flexishield_ppf_section": {
+  "_note": "Services page, directly after the PPF service row (anchor #flexishield; specs anchor #flexishield-specs). Feature lines use only facts from the original REK PROFFSET design content (flexBody, flexPoints, the PPF service text and 'our technology'). Deliberately excluded: hydrophobic (not in project content) and the 'official warranty' point (no terms confirmed).",
+  "ar": {
+   "headline": "PPF من FlexiShield الأمريكية",
+   "sub": "الحماية التي تجمع بين التقنية والدقة.",
+   "intro": "حماية متقدمة لطلاء سيارتك من خلال PPF من FlexiShield الأمريكية، مقدمة وتركيب احترافي عبر REK PROFFSET.",
+   "credibility": "REK PROFFSET هي الوكيل الحصري في العراق لعلامة FlexiShield الأمريكية.",
+   "specs": {
+    "SELF-HEALING": "طبقة علوية ذاتية الالتئام تستعيد مظهرها من الخدوش الدقيقة بالحرارة",
+    "TPU FILM": "فلم من البولي يوريثان الحراري (TPU)",
+    "OPTICAL CLARITY": "شفافية ولمعان عاليان يحافظان على مظهر الطلاء الأصلي",
+    "ANTI-YELLOWING": "مقاوم للاصفرار",
+    "PAINT PROTECTION": "حماية من الحجارة والخدوش والأشعة فوق البنفسجية",
+    "PRECISION CUT": "قص رقمي وفق قالب كل موديل وتشطيب يدوي للحواف، بتغطية جزئية أو كاملة"
+   }
+  },
+  "en": {
+   "headline": "FlexiShield USA PPF",
+   "sub": "Protection that brings technology and precision together.",
+   "intro": "Advanced protection for your car's paint with FlexiShield USA PPF, supplied and professionally installed by REK PROFFSET.",
+   "credibility": "REK PROFFSET is the exclusive agent in Iraq for FlexiShield USA.",
+   "specs": {
+    "SELF-HEALING": "A self-healing top coat that recovers from fine scratches with heat",
+    "TPU FILM": "Thermoplastic polyurethane (TPU) film",
+    "OPTICAL CLARITY": "High clarity and gloss that keep the original paint's look",
+    "ANTI-YELLOWING": "Resists yellowing",
+    "PAINT PROTECTION": "Protection from stone chips, scratches and UV",
+    "PRECISION CUT": "Digitally cut from model templates with hand-finished edges, for partial or full coverage"
+   }
+  }
  }
 }
