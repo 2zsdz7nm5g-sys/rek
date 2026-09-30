@@ -23,6 +23,15 @@ add_shortcode( 'rek_fs3d', function () {
 			data-textures="<?php echo esc_url( $base ); ?>">
 			<img class="rek-fs3d__still" src="<?php echo esc_url( $base . 'still.webp' ); ?>" width="434" height="1200" loading="lazy" decoding="async"
 				alt="<?php echo esc_attr( rek_t( 'عبوة فلم حماية الطلاء FlexiShield', 'FlexiShield paint protection film packaging' ) ); ?>">
+			<div class="rek-fs3d__words" aria-hidden="true">
+				<?php
+				// Revealed one at a time, in this order, as the product turns (see rek-fs3d.js).
+				$words = [ rek_t( 'حماية', 'Protection' ), rek_t( 'أمان', 'Safety' ), rek_t( 'لمعان', 'Gloss' ), rek_t( 'ثقة', 'Trust' ) ];
+				foreach ( $words as $i => $word ) :
+					?>
+					<span class="rek-bubble rek-bubble--<?php echo (int) $i + 1; ?>"><span class="rek-bubble__word"><?php echo esc_html( $word ); ?></span></span>
+				<?php endforeach; ?>
+			</div>
 			<div class="rek-fs3d__canvas"></div>
 			<div class="rek-fs3d__copy">
 				<p class="rek-fs3d__label" dir="ltr">FLEXISHIELD<sup>&reg;</sup> PPF</p>

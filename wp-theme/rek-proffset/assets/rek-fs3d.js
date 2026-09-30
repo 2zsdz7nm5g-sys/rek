@@ -4,8 +4,9 @@
  * A real closed box (square section, 1 : 8.13, the proportions of the actual
  * packaging) with the four photographed sides as textures, lit by a small
  * studio environment. Its position and rotation are driven by scroll:
- * it rises from below the hero, turns about 200 degrees while it reaches the
- * centre, then keeps turning slowly while the stage is pinned. Scrolling up
+ * it rises from below the hero, turns about 100 degrees while it reaches the
+ * centre, then keeps turning slowly (170 degrees more) while the stage is pinned,
+ * revealing four benefit words in turn. Scrolling up
  * plays everything backwards because every value is derived from the scroll
  * position, never from time.
  *
@@ -58,6 +59,30 @@
 			heroContent.style.translate = h ? '0 ' + (-48 * h).toFixed(1) + 'px' : '';
 		}
 		copy.classList.toggle('is-visible', target.enter > 0.98 && target.pin > 0.04);
+	};
+
+	/*
+	 * Benefit bubbles: one word per stretch of rotation, derived from the same
+	 * damped angle as the product, so they stay in lockstep and reverse with it.
+	 * Windows are in degrees of the product's rotation; F softens each edge.
+	 */
+	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el) {
+		return { el: el, word: el.querySelector('.rek-bubble__word') };
+	});
+	var WINDOWS = [[15, 70], [70, 125], [125, 180], [180, Infinity]];
+	var FEATHER = 16;
+	var updateBubbles = function (deg) {
+		bubbles.forEach(function (b, i) {
+			var w = WINDOWS[i];
+			var v = clamp((deg - w[0]) / FEATHER + 0.5, 0, 1) * (w[1] === Infinity ? 1 : clamp((w[1] - deg) / FEATHER + 0.5, 0, 1));
+			v = v * v * (3 - 2 * v); // smoothstep
+			// A gentle drift that is also a function of rotation: it moves only when the product does.
+			var fy = Math.sin(deg * 0.035 + i * 1.7) * 6;
+			var fx = Math.cos(deg * 0.028 + i * 2.3) * 3;
+			b.el.style.opacity = v.toFixed(3);
+			b.el.style.transform = 'translate3d(' + fx.toFixed(1) + 'px,' + (fy + (1 - v) * 14).toFixed(1) + 'px,0) scale(' + (0.82 + 0.18 * v).toFixed(3) + ')';
+			b.word.style.filter = v < 0.999 ? 'blur(' + ((1 - v) * 6).toFixed(2) + 'px)' : '';
+		});
 	};
 
 	var THREE, renderer, scene, camera, box, shadow, running = false, ready = false, visible = true;
@@ -227,8 +252,11 @@
 		var group = box.userData.group;
 		// Rises from below while the stage scrolls in, then rests at the centre.
 		group.position.y = -BOX_H * 0.62 * (1 - e) + BOX_H * 0.03 * cur.pin;
-		// About 200 degrees on the way in, then a slow further 70 degrees while pinned.
-		group.rotation.y = THREE.MathUtils.degToRad(-35 + 200 * e + 70 * cur.pin);
+		// About 100 degrees on the way in, then a slow further 170 degrees while pinned (270 in all),
+		// so each benefit word gets a similar share of the scroll.
+		var deg = -35 + 100 * e + 170 * cur.pin;
+		group.rotation.y = THREE.MathUtils.degToRad(deg);
+		updateBubbles(deg);
 		group.rotation.x = 0.1 * (1 - e) + 0.03;
 		group.rotation.z = 0.04 * (1 - e);
 		shadow.position.set(0, group.position.y - BOX_H / 2 - 0.35, 0);
