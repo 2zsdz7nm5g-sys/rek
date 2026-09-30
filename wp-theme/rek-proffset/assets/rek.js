@@ -49,7 +49,10 @@
 			heroVideo.load();
 			playHero();
 		};
-		heroVideo.addEventListener('playing', function () { heroVideo.classList.add('is-playing'); });
+		heroVideo.addEventListener('playing', function () {
+			heroVideo.classList.add('is-playing');
+			heroVideo.parentNode.classList.add('has-video');
+		});
 		if ('IntersectionObserver' in window) {
 			new IntersectionObserver(function (entries) {
 				heroOnScreen = entries[0].isIntersecting;

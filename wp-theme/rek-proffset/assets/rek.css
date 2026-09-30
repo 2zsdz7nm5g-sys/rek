@@ -313,6 +313,17 @@ body {
 /* Homepage hero video (inc/hero-video.php): sits over the hero image and fades in once it is playing. */
 .rek-hero-video { opacity: 0; transition: opacity 1.2s var(--rek-ease); object-position: 50% 50%; pointer-events: none; }
 .rek-hero-video.is-playing { opacity: 1; }
+/* The video is brighter than the photo it replaces, so while it plays the text side gets a light extra scrim. */
+.rk-hero .rk-hero-shade::before {
+	content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity 1.2s var(--rek-ease);
+	background: linear-gradient(to right, rgba(5, 11, 18, .7) 0%, rgba(5, 11, 18, .42) 40%, rgba(5, 11, 18, .1) 75%);
+}
+[dir="rtl"] .rk-hero .rk-hero-shade::before { background: linear-gradient(to left, rgba(5, 11, 18, .7) 0%, rgba(5, 11, 18, .42) 40%, rgba(5, 11, 18, .1) 75%); }
+.rk-hero.has-video .rk-hero-shade::before { opacity: 1; }
+/* Portrait screens (same query as REK_HERO_VIDEO_PORTRAIT_QUERY): the text spans the width, so the scrim runs top to bottom. */
+@media (max-width: 767px), (max-aspect-ratio: 1/1) {
+	.rk-hero .rk-hero-shade::before, [dir="rtl"] .rk-hero .rk-hero-shade::before { background: linear-gradient(180deg, rgba(5, 11, 18, .12) 0%, rgba(5, 11, 18, .5) 38%, rgba(5, 11, 18, .66) 72%, rgba(5, 11, 18, .4) 100%); }
+}
 
 .rek-sheen { position: relative; overflow: hidden; }
 .rek-sheen::after {
