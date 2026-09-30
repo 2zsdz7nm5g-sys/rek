@@ -199,7 +199,7 @@ body {
 
 /* ---------- Appointment form ([rek_booking_form]) ---------- */
 .rek-booking { width: 100%; }
-.rek-form__trap { position: absolute; inset-inline-start: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.rek-form__trap { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .rek-form__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .rek-field { display: flex; flex-direction: column; gap: 8px; margin: 0; }
 .rek-field--wide { grid-column: 1 / -1; }
@@ -214,10 +214,10 @@ body {
 }
 .rek-field select {
 	padding-inline-end: 44px;
-	background-image: linear-gradient(45deg, transparent 50%, var(--rek-muted) 50%), linear-gradient(135deg, var(--rek-muted) 50%, transparent 50%);
-	background-position: left 22px center, left 16px center; background-size: 6px 6px; background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%238B98A8' stroke-width='1.5'/%3E%3C/svg%3E");
+	background-repeat: no-repeat; background-size: 12px 8px; background-position: left 18px center;
 }
-[dir="ltr"] .rek-field select, html:not([dir="rtl"]) .rek-field select { background-position: right 16px center, right 22px center; }
+html:not([dir="rtl"]) .rek-field select { background-position: right 18px center; }
 .rek-field textarea { min-height: 132px; resize: vertical; line-height: 1.7; }
 .rek-field input::placeholder, .rek-field textarea::placeholder { color: var(--rek-muted); opacity: 1; }
 .rek-field input:hover, .rek-field select:hover, .rek-field textarea:hover { border-color: rgba(245, 247, 250, .28); }
