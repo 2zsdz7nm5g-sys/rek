@@ -75,6 +75,8 @@
 		frame.setAttribute('aria-label', label);
 		frame.setAttribute('aria-valuemin', '0');
 		frame.setAttribute('aria-valuemax', '100');
+		frame.querySelectorAll('img').forEach(function (img) { img.setAttribute('draggable', 'false'); });
+		frame.addEventListener('dragstart', function (e) { e.preventDefault(); });
 		var set = function (value) {
 			pos = Math.max(0, Math.min(100, value));
 			frame.style.setProperty('--pos', pos + '%');

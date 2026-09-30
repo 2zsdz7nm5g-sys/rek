@@ -196,6 +196,7 @@ body {
 
 /* ---------- Before / after slider ---------- */
 .rek-ba { --pos: 50%; direction: ltr; touch-action: pan-y; cursor: ew-resize; user-select: none; -webkit-user-select: none; }
+.rek-ba img { pointer-events: none; -webkit-user-drag: none; }
 .rek-ba-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
 .rek-ba-handle { left: var(--pos) !important; right: auto !important; }
 .rek-ba:focus-visible { outline: 2px solid var(--rek-accent-light); outline-offset: 4px; }
