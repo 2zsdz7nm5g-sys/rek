@@ -150,11 +150,12 @@ body {
 .rek-menu-open { overflow: hidden; }
 
 /* ---------- Footer ---------- */
-.rek-footer { background: #03080D; border-block-start: 1px solid var(--rek-hairline); }
+.rek-footer { background: var(--rek-bg); border-block-start: 1px solid var(--rek-hairline); }
 .rek-footer__inner {
 	display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px;
 	max-width: 1520px; margin-inline: auto; padding: 88px clamp(20px, 4vw, 64px) 56px;
 }
+.rek-footer__brand .rek-logo-img { margin-inline-end: 12px; vertical-align: middle; }
 .rek-footer__brand p { max-width: 34ch; margin: 20px 0 0; color: var(--rek-muted); font-size: 15px; line-height: 1.8; }
 .rek-footer__list, .rek-footer__contact ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
 .rek-footer a { color: rgba(245, 247, 250, .82); text-decoration: none; transition: color .2s; }
