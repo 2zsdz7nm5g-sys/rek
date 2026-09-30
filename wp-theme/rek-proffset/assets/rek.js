@@ -20,6 +20,10 @@
 		if (anchor) { window.requestAnimationFrame(function () { anchor.scrollIntoView({ block: 'start' }); }); }
 	}
 
+	/* Booking result notice: move focus to it so screen readers announce it. */
+	var notice = document.querySelector('[data-rek-notice]');
+	if (notice) { window.requestAnimationFrame(function () { notice.focus({ preventScroll: true }); }); }
+
 	/* Header: transparent over the hero, solid once the page scrolls. */
 	var header = document.querySelector('[data-rek-header]');
 	if (header) {
@@ -118,6 +122,28 @@
 			if (e.key === 'Home') { e.preventDefault(); set(0); }
 			if (e.key === 'End') { e.preventDefault(); set(100); }
 		});
+	});
+
+	/* Project filters: a rek-f-{cat} button shows the cards tagged rek-c-{cat}; rek-f-all shows every card. */
+	var tagOf = function (el, prefix) {
+		var m = el.className.match(new RegExp('(?:^|\\s)' + prefix + '([a-z0-9-]+)'));
+		return m ? m[1] : '';
+	};
+	document.querySelectorAll('.rek-filter').forEach(function (bar) {
+		var buttons = bar.querySelectorAll('[class*="rek-f-"]');
+		var cards = (bar.closest('section') || document).querySelectorAll('[class*="rek-c-"]');
+		if (!buttons.length) { return; }
+		var show = function (btn) {
+			var cat = tagOf(btn, 'rek-f-');
+			buttons.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+			cards.forEach(function (card) { card.hidden = !(cat === 'all' || tagOf(card, 'rek-c-') === cat); });
+		};
+		bar.setAttribute('role', 'group');
+		buttons.forEach(function (b) {
+			b.setAttribute('type', 'button');
+			b.addEventListener('click', function (e) { e.preventDefault(); show(b); });
+		});
+		show(buttons[0]);
 	});
 
 	/* Colour configurator: swatches are Elementor buttons whose own background colour is the paint colour. */

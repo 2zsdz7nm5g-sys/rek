@@ -7,13 +7,14 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'REK_VERSION', '1.0.2' );
+define( 'REK_VERSION', '1.1.0' );
 define( 'REK_DIR', get_stylesheet_directory() );
 define( 'REK_URI', get_stylesheet_directory_uri() );
 
 require REK_DIR . '/inc/contact.php';
 require REK_DIR . '/inc/chrome.php';
 require REK_DIR . '/inc/seo.php';
+require REK_DIR . '/inc/booking.php';
 
 add_action( 'after_setup_theme', function () {
 	register_nav_menus( [

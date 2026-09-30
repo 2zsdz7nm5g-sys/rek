@@ -193,6 +193,59 @@ body {
 /* ---------- Section anchors (ids are assigned in rek.js) ---------- */
 [class*="rek-id-"], #appointment { scroll-margin-top: calc(var(--rek-header-h) + 24px); }
 
+/* ---------- Project filters ---------- */
+[class*="rek-c-"][hidden] { display: none !important; }
+.rk-chip[aria-pressed="true"] { background-color: var(--rek-ink); border-color: var(--rek-ink); color: var(--rek-bg); }
+
+/* ---------- Appointment form ([rek_booking_form]) ---------- */
+.rek-booking { width: 100%; }
+.rek-form__trap { position: absolute; inset-inline-start: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.rek-form__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.rek-field { display: flex; flex-direction: column; gap: 8px; margin: 0; }
+.rek-field--wide { grid-column: 1 / -1; }
+.rek-field label { font-size: 14px; font-weight: 500; color: var(--rek-ink); }
+.rek-field label span { color: var(--rek-accent-light); }
+.rek-field input, .rek-field select, .rek-field textarea {
+	width: 100%; min-height: 54px; padding: 14px 16px; margin: 0;
+	font: inherit; font-size: 16px; color: var(--rek-ink);
+	background: var(--rek-surface); border: 1px solid rgba(245, 247, 250, .14); border-radius: 2px;
+	transition: border-color .25s var(--rek-ease), background-color .25s var(--rek-ease);
+	box-shadow: none; appearance: none; -webkit-appearance: none;
+}
+.rek-field select {
+	padding-inline-end: 44px;
+	background-image: linear-gradient(45deg, transparent 50%, var(--rek-muted) 50%), linear-gradient(135deg, var(--rek-muted) 50%, transparent 50%);
+	background-position: left 22px center, left 16px center; background-size: 6px 6px; background-repeat: no-repeat;
+}
+[dir="ltr"] .rek-field select, html:not([dir="rtl"]) .rek-field select { background-position: right 16px center, right 22px center; }
+.rek-field textarea { min-height: 132px; resize: vertical; line-height: 1.7; }
+.rek-field input::placeholder, .rek-field textarea::placeholder { color: var(--rek-muted); opacity: 1; }
+.rek-field input:hover, .rek-field select:hover, .rek-field textarea:hover { border-color: rgba(245, 247, 250, .28); }
+.rek-field input:focus, .rek-field select:focus, .rek-field textarea:focus { outline: none; border-color: var(--rek-accent-light); background-color: var(--rek-navy); }
+.rek-field input[type="date"] { color-scheme: dark; }
+.rek-form__foot { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin-block-start: 28px; }
+.rek-form__submit { min-height: 56px; padding-inline: 36px; font-size: 16px; border: 0; cursor: pointer; }
+.rek-form__hint { margin: 0; font-size: 13px; line-height: 1.7; color: var(--rek-muted); flex: 1 1 260px; }
+.rek-booking__notice { margin-block-end: 24px; padding: 18px 20px; border: 1px solid var(--rek-hairline); border-inline-start: 3px solid var(--rek-accent); background: var(--rek-surface); color: var(--rek-ink); line-height: 1.7; }
+.rek-booking__notice.is-error { border-inline-start-color: #E0661A; }
+.rek-booking__notice:focus { outline: none; }
+
+/* ---------- Contact details ([rek_contact]) ---------- */
+.rek-contact { margin: 0; border-block-start: 1px solid var(--rek-hairline); }
+.rek-contact__row { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 16px; padding-block: 18px; border-block-end: 1px solid var(--rek-hairline); }
+.rek-contact dt { font-family: var(--rek-font-mono); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--rek-accent-light); padding-block-start: 4px; }
+.rek-contact dd { margin: 0; font-size: 17px; line-height: 1.6; color: var(--rek-ink); }
+.rek-contact a { color: var(--rek-ink); text-decoration: underline; text-decoration-color: var(--rek-hairline); text-underline-offset: 5px; }
+.rek-contact a:hover { color: var(--rek-accent-light); }
+.rek-contact__map-link { display: inline-block; margin-inline-start: 10px; font-size: 14px; }
+.rek-map { margin-block-start: 28px; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid var(--rek-hairline); border-radius: 2px; }
+.rek-map iframe { width: 100%; height: 100%; border: 0; filter: grayscale(1) invert(.92) contrast(.9); }
+@media (max-width: 767px) {
+	.rek-form__grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+	.rek-form__submit { width: 100%; }
+	.rek-contact__row { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+
 /* ---------- Service tiles ---------- */
 .rek-tile-img { transition: transform 1.2s var(--rek-ease); }
 .rek-tile:hover .rek-tile-img, .rek-tile:focus-visible .rek-tile-img { transform: scale(1.04); }
