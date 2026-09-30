@@ -325,6 +325,45 @@ html:not([dir="rtl"]) .rk-partner-en, html:not([dir="rtl"]) .rk-partner-en-text 
 html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-size: 15px; letter-spacing: 0; text-transform: none; }
 .rk-partner-logo { width: auto !important; }
 
+/* ---------- FlexiShield 3D stage ([rek_fs3d], directly under the hero) ----------
+ * Default (no JS, reduced motion, no WebGL): a static still with the copy.
+ * .is-live (set by rek-fs3d.js): a tall section whose sticky stage pins for
+ * the scroll-driven 3D product.
+ */
+.rk-fs3d-host > .elementor-widget, .rk-fs3d-host .elementor-shortcode { width: 100%; }
+.rek-fs3d { position: relative; width: 100%; }
+.rek-fs3d__stage {
+	position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px;
+	min-height: 90vh; padding: 96px 20px; overflow: hidden;
+}
+/* A restrained pool of light behind the product. */
+.rek-fs3d__stage::before {
+	content: ""; position: absolute; inset: 0; pointer-events: none;
+	background: radial-gradient(34% 46% at 50% 48%, rgba(18, 63, 105, .42), rgba(5, 11, 18, 0) 70%);
+}
+.rek-fs3d__still { position: relative; display: block; height: min(60vh, 620px); width: auto; filter: drop-shadow(0 40px 50px rgba(0, 0, 0, .6)); }
+.rek-fs3d__canvas { display: none; }
+.rek-fs3d__copy { position: relative; text-align: center; padding-inline: 20px; }
+.rek-fs3d__label { margin: 0 0 12px; font-family: var(--rek-font-mono); font-size: 12px; letter-spacing: .3em; color: var(--rek-accent-light); }
+.rek-fs3d__label sup { font-size: .7em; }
+.rek-fs3d__title { margin: 0; font-family: var(--rek-font-display); font-weight: 600; font-size: clamp(24px, 3vw, 40px); line-height: 1.25; color: var(--rek-ink); }
+
+.rek-fs3d.is-live { height: 240vh; }
+.rek-fs3d.is-live .rek-fs3d__stage { position: sticky; top: 0; height: 100vh; height: 100svh; min-height: 0; padding: 0; display: block; }
+.rek-fs3d.is-live .rek-fs3d__canvas { display: block; position: absolute; inset: 0; }
+.rek-fs3d.is-live .rek-fs3d__canvas canvas { display: block; width: 100%; height: 100%; }
+.rek-fs3d.is-live .rek-fs3d__still { display: none; }
+.rek-fs3d.is-live .rek-fs3d__copy {
+	position: absolute; inset-inline: 0; bottom: 5vh; z-index: 1;
+	opacity: 0; transform: translateY(18px); transition: opacity .8s var(--rek-ease), transform .8s var(--rek-ease);
+}
+.rek-fs3d .rek-fs3d__copy.is-visible { opacity: 1; transform: none; }
+@media (max-width: 767px) {
+	.rek-fs3d.is-live { height: 210vh; }
+	.rek-fs3d.is-live .rek-fs3d__copy { bottom: 8vh; }
+	.rek-fs3d__still { height: min(52vh, 460px); }
+}
+
 /* ---------- Section anchors (ids are assigned in rek.js) ---------- */
 [class*="rek-id-"], #appointment { scroll-margin-top: calc(var(--rek-header-h) + 24px); }
 

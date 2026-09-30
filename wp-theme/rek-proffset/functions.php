@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'REK_VERSION', '1.5.1' );
+define( 'REK_VERSION', '1.6.0' );
 define( 'REK_DIR', get_stylesheet_directory() );
 define( 'REK_URI', get_stylesheet_directory_uri() );
 
@@ -16,6 +16,7 @@ require REK_DIR . '/inc/chrome.php';
 require REK_DIR . '/inc/seo.php';
 require REK_DIR . '/inc/booking.php';
 require REK_DIR . '/inc/location.php';
+require REK_DIR . '/inc/fs3d.php';
 
 add_action( 'after_setup_theme', function () {
 	register_nav_menus( [
