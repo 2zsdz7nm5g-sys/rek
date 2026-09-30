@@ -234,5 +234,24 @@
   "32": "Hands applying protection film to a car hood",
   "33": "Car lights glowing in the dark",
   "34": "Mercedes S-Class next to a FlexiShield pillar in Baghdad"
+ },
+ "flexishield_section": {
+  "_note": "Homepage partnership section (position 3, after the brand statement). Arabic page shows Arabic primary with English secondary lines; the English page mirrors this.",
+  "ar": {
+   "lockup": "REK PROFFSET  ×  FLEXISHIELD USA",
+   "headline": "الوكيل الحصري في العراق",
+   "secondary": "FlexiShield الأمريكية",
+   "english_line": "Exclusive Agent in Iraq for FlexiShield USA",
+   "text": "تفخر REK PROFFSET بكونها الوكيل الحصري في العراق لعلامة FlexiShield الأمريكية المتخصصة في حلول حماية السيارات.",
+   "english_text": "REK PROFFSET is the exclusive agent in Iraq for FlexiShield USA, bringing advanced automotive protection solutions to the Iraqi market.",
+   "cta": "اكتشف FlexiShield ←"
+  },
+  "en": {
+   "headline": "Exclusive Agent in Iraq",
+   "secondary": "FlexiShield USA",
+   "arabic_line": "الوكيل الحصري في العراق لشركة FlexiShield الأمريكية",
+   "cta": "Discover FlexiShield →"
+  },
+  "logo": "Placeholder attachment 'flexishield-logo-placeholder.png' until the official logo is supplied."
  }
 }
