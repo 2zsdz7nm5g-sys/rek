@@ -146,13 +146,15 @@
 		show(buttons[0]);
 	});
 
-	/* WhatsApp bubble: on small screens it steps aside while the booking form is on screen, so it never covers the fields or the submit button. */
-	var bubble = document.querySelector('[data-rek-wa]');
+	/* Floating bubbles (location + WhatsApp): on small screens they step aside while the booking form is on screen, so it never covers the fields or the submit button. */
+	var bubbles = document.querySelectorAll('[data-rek-wa], [data-rek-loc]');
 	var booking = document.querySelector('.rek-booking');
-	if (bubble && booking && 'IntersectionObserver' in window) {
+	if (bubbles.length && booking && 'IntersectionObserver' in window) {
 		var small = window.matchMedia('(max-width: 767px)');
 		var bookingVisible = false;
-		var sync = function () { bubble.classList.toggle('is-tucked', small.matches && bookingVisible); };
+		var sync = function () {
+			bubbles.forEach(function (b) { b.classList.toggle('is-tucked', small.matches && bookingVisible); });
+		};
 		new IntersectionObserver(function (entries) {
 			bookingVisible = entries[0].isIntersecting;
 			sync();

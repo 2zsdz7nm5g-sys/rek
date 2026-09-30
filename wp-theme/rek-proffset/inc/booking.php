@@ -219,7 +219,6 @@ add_shortcode( 'rek_contact', function () {
 	$instagram = ltrim( rek_get( 'rek_instagram' ), '@' );
 	$address   = rek_get( 'rek_address' );
 	$hours     = rek_get( 'rek_hours' );
-	$maps      = rek_get( 'rek_maps_url' );
 	$rows      = [];
 
 	if ( $phone ) {
@@ -232,7 +231,8 @@ add_shortcode( 'rek_contact', function () {
 		$rows[] = [ 'Instagram', sprintf( '<a href="%s" target="_blank" rel="noopener" dir="ltr">@%s</a>', esc_url( 'https://instagram.com/' . $instagram ), esc_html( $instagram ) ) ];
 	}
 	$place  = $address ? $address : rek_t( 'بغداد، العراق', 'Baghdad, Iraq' );
-	$rows[] = [ rek_t( 'الموقع', 'Location' ), esc_html( $place ) . ( $maps ? sprintf( ' <a class="rek-contact__map-link" href="%s" target="_blank" rel="noopener">%s</a>', esc_url( $maps ), esc_html( rek_t( 'افتح في الخرائط', 'Open in Maps' ) ) ) : '' ) ];
+	// The map itself lives in the [rek_location] section at the end of this page.
+	$rows[] = [ rek_t( 'الموقع', 'Location' ), esc_html( $place ) . sprintf( ' <a class="rek-contact__map-link" href="#location">%s</a>', esc_html( rek_t( 'عرض الموقع', 'View location' ) ) ) ];
 	if ( $hours ) {
 		$rows[] = [ rek_t( 'ساعات العمل', 'Opening hours' ), esc_html( $hours ) ];
 	}
@@ -242,14 +242,5 @@ add_shortcode( 'rek_contact', function () {
 		$out .= '<div class="rek-contact__row"><dt>' . esc_html( $row[0] ) . '</dt><dd>' . $row[1] . '</dd></div>';
 	}
 	$out .= '</dl>';
-
-	// A map is embedded only once a real street address has been entered.
-	if ( $address ) {
-		$out .= sprintf(
-			'<div class="rek-map"><iframe title="%s" src="%s" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>',
-			esc_attr( rek_t( 'خريطة موقع REK PROFFSET', 'REK PROFFSET location map' ) ),
-			esc_url( 'https://www.google.com/maps?output=embed&q=' . rawurlencode( $address . ', Baghdad' ) )
-		);
-	}
 	return $out;
 } );

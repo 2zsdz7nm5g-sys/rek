@@ -17,7 +17,8 @@ function rek_contact_fields() {
 		'rek_instagram' => [ 'label' => 'Instagram username (without @)', 'type' => 'text' ],
 		'rek_address'   => [ 'label' => 'Address (Arabic)', 'type' => 'text' ],
 		'rek_hours'     => [ 'label' => 'Working hours (Arabic)', 'type' => 'text' ],
-		'rek_maps_url'  => [ 'label' => 'Google Maps link', 'type' => 'url' ],
+		'rek_maps_url'   => [ 'label' => 'Google Maps URL (GOOGLE_MAPS_URL): the one link used by every location button', 'type' => 'url' ],
+		'rek_maps_embed' => [ 'label' => 'Google Maps embed URL (optional): Share > Embed a map, the src="..." value', 'type' => 'url' ],
 	];
 }
 

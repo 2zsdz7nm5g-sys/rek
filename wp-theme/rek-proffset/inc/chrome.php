@@ -186,6 +186,7 @@ function rek_render_footer() {
 	</footer>
 
 	<?php
+	rek_render_location_bubble();
 	rek_render_whatsapp_bubble();
 }
 
