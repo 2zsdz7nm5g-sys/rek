@@ -195,7 +195,7 @@ body {
 
 /* ---------- Project filters ---------- */
 [class*="rek-c-"][hidden] { display: none !important; }
-.rk-chip[aria-pressed="true"] { background-color: var(--rek-ink); border-color: var(--rek-ink); color: var(--rek-bg); }
+.rek-filter .rk-chip[aria-pressed="true"], .rek-filter .rk-chip[aria-pressed="true"]:hover { background-color: var(--rek-ink); border-color: var(--rek-ink); color: var(--rek-bg); }
 
 /* ---------- Appointment form ([rek_booking_form]) ---------- */
 .rek-booking { width: 100%; }
