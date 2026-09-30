@@ -7,6 +7,19 @@
 
 	var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+	/*
+	 * Section anchors. Elementor atomic containers have no id setting, so a
+	 * rek-id-{name} class becomes the element id (services#ppf, contact#appointment).
+	 */
+	document.querySelectorAll('[class*="rek-id-"]').forEach(function (el) {
+		var m = el.className.match(/(?:^|\s)rek-id-([a-z0-9-]+)/);
+		if (m && !document.getElementById(m[1])) { el.id = m[1]; }
+	});
+	if (window.location.hash.length > 1) {
+		var anchor = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+		if (anchor) { window.requestAnimationFrame(function () { anchor.scrollIntoView({ block: 'start' }); }); }
+	}
+
 	/* Header: transparent over the hero, solid once the page scrolls. */
 	var header = document.querySelector('[data-rek-header]');
 	if (header) {
