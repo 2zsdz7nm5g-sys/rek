@@ -27,7 +27,13 @@
 [dir="rtl"] .rek-wg__label { text-align: right; }
 .rek-wg__svc-title { margin: 0; font: 600 clamp(28px, 3.2vw, 40px)/1.2 var(--rek-font-display); color: var(--rek-ink); }
 .rek-wg__meta { margin: 0; font-size: 14px; color: var(--rek-muted); }
-.rek-wg__family { margin-block-start: 40px; }
+/* Vehicle groups flow side by side: a group spans as many columns as it has projects. */
+.rek-wg__families { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px 36px; margin-block-start: 40px; }
+.rek-wg__family { min-width: 0; }
+.rek-wg__family--n2 { grid-column: span 2; }
+.rek-wg__family--n3 { grid-column: span 3; }
+.rek-wg__family--n2 .rek-wg__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.rek-wg__family--n1 .rek-wg__grid { grid-template-columns: minmax(0, 1fr); }
 .rek-wg__family-title { display: flex; align-items: baseline; gap: 12px; margin: 0 0 20px; font: 600 20px/1.35 var(--rek-font-display); color: var(--rek-ink); }
 .rek-wg__family-n { font: 400 13px/1 var(--rek-font-body); color: var(--rek-muted); }
 .rek-wg__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
@@ -100,7 +106,10 @@
 html.rek-wg-lock, html.rek-wg-lock body { overflow: hidden; }
 
 @media (max-width: 1024px) {
-	.rek-wg__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+	.rek-wg__families { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px 24px; }
+	.rek-wg__family--n3 { grid-column: span 2; }
+	.rek-wg__grid, .rek-wg__family--n3 .rek-wg__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+	.rek-wg__family--n1 .rek-wg__grid { grid-template-columns: minmax(0, 1fr); }
 	.rek-wg__svc { margin-block-start: 56px; }
 }
 @media (max-width: 767px) {
@@ -108,8 +117,9 @@ html.rek-wg-lock, html.rek-wg-lock body { overflow: hidden; }
 	.rek-wg__chips { gap: 8px; }
 	.rek-wg__chip { padding: 10px 14px; font-size: 13px; }
 	.rek-wg__svc { margin-block-start: 48px; }
-	.rek-wg__family { margin-block-start: 32px; }
-	.rek-wg__grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+	.rek-wg__families { grid-template-columns: minmax(0, 1fr); gap: 40px; margin-block-start: 32px; }
+	.rek-wg__family--n2, .rek-wg__family--n3 { grid-column: auto; }
+	.rek-wg__grid, .rek-wg__family--n2 .rek-wg__grid, .rek-wg__family--n3 .rek-wg__grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
 	.rek-wg__cover { aspect-ratio: 4 / 3; }
 	.rek-wg__title { font-size: 19px; }
 	.rek-wg-lb__nav { display: none; }

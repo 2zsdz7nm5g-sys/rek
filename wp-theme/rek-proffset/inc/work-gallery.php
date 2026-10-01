@@ -107,8 +107,9 @@ add_shortcode( 'rek_work_gallery', function () {
 					<h3 class="rek-wg__svc-title" id="rek-wg-<?php echo esc_attr( $s['key'] ); ?>"><?php echo esc_html( $s[ $lang ] ); ?></h3>
 					<p class="rek-wg__meta"><?php echo esc_html( rek_wg_projects_label( count( $by_svc[ $s['key'] ] ) ) . ' · ' . rek_wg_photos_label( $photo_n ) ); ?></p>
 				</header>
+				<div class="rek-wg__families">
 				<?php foreach ( $families as $fam => $items ) : ?>
-					<div class="rek-wg__family">
+					<div class="rek-wg__family rek-wg__family--n<?php echo (int) min( 3, count( $items ) ); ?>">
 						<h4 class="rek-wg__family-title"><?php echo esc_html( $data['families'][ $fam ][ $lang ] ); ?> <span class="rek-wg__family-n"><?php echo esc_html( rek_wg_projects_label( count( $items ) ) ); ?></span></h4>
 						<div class="rek-wg__grid">
 							<?php
@@ -156,6 +157,7 @@ add_shortcode( 'rek_work_gallery', function () {
 						</div>
 					</div>
 				<?php endforeach; ?>
+				</div>
 			</section>
 		<?php endforeach; ?>
 	</div>
