@@ -586,3 +586,6 @@ a.rek-cc:focus-visible { outline: 2px solid var(--rek-accent-light); outline-off
 	.rek-loc-map__pulse { animation: none; }
 	.rek-hero-video { display: none; }
 }
+
+/* A text link sharing a button row with a full button (FlexiShield section): centre it on the button's line. */
+.elementor .rk-btn-row > .rk-link:not(:only-child) { align-self: center; }
