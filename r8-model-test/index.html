@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>R8 model test · REK PPF Color Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>html,body{margin:0;background:#050B12}</style>
+<style>/* REK PPF Color Studio (preview). Tokens mirror the site's design system. */
+.rek-ppf {
+	--ppf-bg: #050B12; --ppf-surface: #081522; --ppf-premium: #123F69; --ppf-accent: #1689D8; --ppf-accent-light: #5BB8F2;
+	--ppf-ink: #F5F7FA; --ppf-muted: #8B98A8; --ppf-hairline: rgba(91, 184, 242, .16); --ppf-ease: cubic-bezier(.2, .7, .2, 1);
+	position: relative; color: var(--ppf-ink); font-family: "IBM Plex Sans Arabic", "Alexandria", sans-serif;
+	padding: clamp(48px, 7vw, 96px) clamp(16px, 4vw, 64px); background: var(--ppf-bg); overflow: hidden;
+}
+.rek-ppf__head { max-width: 1520px; margin: 0 auto clamp(20px, 3vw, 36px); }
+.rek-ppf__label { margin: 0 0 14px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: .24em; color: var(--ppf-accent-light); }
+.rek-ppf__title { margin: 0; font-family: "Alexandria", "IBM Plex Sans Arabic", sans-serif; font-weight: 600; font-size: clamp(30px, 4.6vw, 56px); line-height: 1.15; }
+.rek-ppf__lead { margin: 14px 0 0; max-width: 620px; font-size: clamp(15px, 1.4vw, 17px); line-height: 1.8; color: rgba(245, 247, 250, .72); }
+
+.rek-ppf__frame { position: relative; max-width: 1520px; margin: 0 auto; }
+/* Stage: a soft studio spotlight behind the car. */
+.rek-ppf__stage {
+	position: relative; height: clamp(520px, 74vh, 780px); border-radius: 2px; overflow: hidden; outline: none;
+	/* Dark photo studio: overhead softbox spill, a soft cyclorama horizon, vignette. The 3D floor fades into it. */
+	background:
+		radial-gradient(46% 30% at 50% 0%, rgba(190, 205, 225, .11), rgba(190, 205, 225, 0) 100%),
+		radial-gradient(70% 22% at 50% 58%, rgba(120, 140, 165, .07), rgba(120, 140, 165, 0) 100%),
+		radial-gradient(140% 95% at 50% 40%, rgba(5, 8, 11, 0) 45%, rgba(2, 3, 5, .85) 100%),
+		linear-gradient(180deg, #0b0f14 0%, #090c10 52%, #06080b 100%);
+	border: 1px solid var(--ppf-hairline);
+}
+.rek-ppf__stage:focus-visible { outline: 2px solid var(--ppf-accent-light); outline-offset: 3px; }
+.rek-ppf__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; opacity: 0; transition: opacity .8s var(--ppf-ease); }
+.rek-ppf__canvas:active { cursor: grabbing; }
+.rek-ppf.is-ready .rek-ppf__canvas { opacity: 1; }
+.rek-ppf__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: 50% 55%; pointer-events: none; transition: opacity .8s var(--ppf-ease); }
+.rek-ppf.is-ready .rek-ppf__poster { opacity: 0; }
+
+.rek-ppf__loader { position: absolute; inset-inline: 0; inset-block-end: 28px; z-index: 1; display: grid; justify-items: center; gap: 10px; transition: opacity .5s; }
+.rek-ppf.is-ready .rek-ppf__loader { opacity: 0; pointer-events: none; }
+.rek-ppf__status { font-size: 13px; color: var(--ppf-muted); }
+.rek-ppf__track { width: 160px; height: 2px; background: rgba(245, 247, 250, .1); overflow: hidden; }
+.rek-ppf__bar { display: block; height: 100%; background: var(--ppf-accent-light); transform: scaleX(0); transform-origin: right; transition: transform .2s; }
+.rek-ppf.is-fallback .rek-ppf__track { display: none; }
+
+.rek-ppf__hint { position: absolute; inset-block-start: 18px; inset-inline-end: 20px; margin: 0; font-size: 12px; color: var(--ppf-muted); opacity: 0; transition: opacity .6s .4s; pointer-events: none; }
+.rek-ppf.is-ready .rek-ppf__hint { opacity: 1; }
+.rek-ppf__hint--touch { display: none; }
+@media (hover: none), (pointer: coarse) { .rek-ppf__hint--mouse { display: none; } .rek-ppf__hint--touch { display: inline; } }
+
+/* Glass control panel: a sidebar on the reading side of the stage on wide screens. */
+.rek-ppf__panel {
+	position: absolute; inset-block: 24px; inset-inline-start: 24px; width: 320px; z-index: 2;
+	display: flex; flex-direction: column; gap: 22px;
+	padding: 24px; border-radius: 2px;
+	background: linear-gradient(150deg, rgba(18, 63, 105, .38), rgba(5, 11, 18, .72));
+	-webkit-backdrop-filter: blur(16px) saturate(140%); backdrop-filter: blur(16px) saturate(140%);
+	border: 1px solid rgba(245, 247, 250, .12);
+	box-shadow: 0 24px 50px -24px rgba(0, 0, 0, .8), inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+.rek-ppf__readout { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.rek-ppf__dot { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(245, 247, 250, .3); box-shadow: inset 0 2px 6px rgba(255, 255, 255, .25), inset 0 -6px 10px rgba(0, 0, 0, .35); transition: background .45s var(--ppf-ease); }
+.rek-ppf__meta { display: grid; gap: 2px; }
+.rek-ppf__meta small { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .18em; color: var(--ppf-accent-light); }
+.rek-ppf__name { font-family: "Alexandria", sans-serif; font-weight: 600; font-size: 17px; }
+.rek-ppf__finish { font-size: 13px; color: var(--ppf-muted); }
+
+.rek-ppf__group { display: grid; gap: 12px; }
+.rek-ppf__group-label { margin: 0; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11px; letter-spacing: .18em; color: var(--ppf-muted); }
+.rek-ppf__swatches { display: grid; grid-template-columns: repeat(auto-fill, 44px); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.rek-ppf__readout { padding-block-end: 20px; border-block-end: 1px solid var(--ppf-hairline); }
+.rek-ppf__actions { margin-block-start: auto; display: grid; gap: 10px; }
+.rek-ppf__sw {
+	position: relative; width: 44px; height: 44px; border-radius: 50%; padding: 0; cursor: pointer;
+	background: var(--sw); border: 1px solid rgba(245, 247, 250, .28);
+	box-shadow: inset 0 3px 8px rgba(255, 255, 255, .28), inset 0 -8px 12px rgba(0, 0, 0, .35);
+	transition: transform .3s var(--ppf-ease), box-shadow .3s var(--ppf-ease);
+}
+.rek-ppf__sw[data-ppf-finish-key="matte"] { box-shadow: inset 0 -6px 10px rgba(0, 0, 0, .25); }
+.rek-ppf__sw[data-ppf-finish-key="metallic"] { background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0) 45%), var(--sw); }
+.rek-ppf__sw[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--ppf-bg), 0 0 0 4px var(--ppf-accent-light); }
+.rek-ppf__sw:disabled { opacity: .35; cursor: default; }
+.rek-ppf__sw:focus-visible { outline: 2px solid var(--ppf-accent-light); outline-offset: 4px; }
+@media (hover: hover) and (pointer: fine) { .rek-ppf__sw:not(:disabled):hover { transform: translateY(-2px) scale(1.06); } }
+.rek-ppf__sw--original { background: conic-gradient(from 210deg, var(--sw) 0 50%, #0a0d12 50% 100%); }
+
+.rek-ppf__btn {
+	min-height: 44px; padding: 0 18px; border-radius: 2px; cursor: pointer; font: 500 14px "IBM Plex Sans Arabic", sans-serif; color: var(--ppf-ink);
+	background: transparent; border: 1px solid rgba(245, 247, 250, .28); transition: border-color .3s, color .3s;
+}
+.rek-ppf__btn:hover { border-color: var(--ppf-accent-light); color: var(--ppf-accent-light); }
+
+/* No WebGL or the model failed: keep the still image and say why. */
+.rek-ppf.is-fallback .rek-ppf__panel { display: none; }
+
+/* Tablet and phone: the panel sits under the stage, swatches stay large enough to tap. */
+@media (max-width: 1023px) {
+	.rek-ppf__stage { height: clamp(360px, 58vh, 560px); }
+	.rek-ppf__panel { position: relative; inset: auto; width: auto; margin-top: 12px; gap: 18px; padding: 18px; }
+	.rek-ppf__readout { padding-block-end: 16px; }
+}
+@media (max-width: 600px) {
+	.rek-ppf__stage { height: auto; aspect-ratio: 1 / 1.05; }
+	.rek-ppf__swatches { grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); justify-items: center; }
+	.rek-ppf__btn { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.rek-ppf *, .rek-ppf *::before { transition-duration: .01ms !important; }
+}
+
+.rek-ppf__finishes{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.rek-ppf__chip{min-height:36px;padding:0 12px;border-radius:2px;cursor:pointer;font:500 13px "IBM Plex Sans Arabic",sans-serif;color:var(--ppf-ink);background:rgba(5,11,18,.4);border:1px solid rgba(245,247,250,.2)}
+.rek-ppf__chip[aria-pressed="true"]{border-color:var(--ppf-accent-light);color:var(--ppf-accent-light)}
+.rek-ppf__chip:disabled{opacity:.4;cursor:default}
+.r8-diag{max-width:1520px;margin:14px auto 0;padding:12px 16px;font:500 12px "IBM Plex Mono",monospace;color:#8B98A8;border:1px dashed rgba(91,184,242,.25);display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.r8-diag b{color:#F5F7FA;font-weight:500}
+.r8-diag button{font:inherit;color:#F5F7FA;background:transparent;border:1px solid rgba(245,247,250,.25);padding:6px 10px;cursor:pointer}
+</style>
+</head><body>
+<section class="rek-ppf" data-rek-ppf data-model="../models/r8-rek-studio.glb" data-draco="draco/" aria-labelledby="rek-ppf-title">
+	<header class="rek-ppf__head">
+		<p class="rek-ppf__label" dir="ltr">REK PPF COLOR STUDIO · R8 MODEL TEST</p>
+		<h2 class="rek-ppf__title" id="rek-ppf-title">اختبار نموذج Audi R8</h2>
+		<p class="rek-ppf__lead">صفحة اختبار مؤقتة: تدوير 360°، تقريب، جودة المواد، وتغيير لون الطلاء فقط.</p>
+	</header>
+	<div class="rek-ppf__frame">
+		<div class="rek-ppf__stage" data-ppf-stage tabindex="0" role="img" aria-label="نموذج ثلاثي الأبعاد لسيارة Audi R8. استخدم الأسهم للتدوير و + و - للتقريب.">
+			<img class="rek-ppf__poster" src="poster.webp" alt="" width="1600" height="900">
+			<p class="rek-ppf__hint"><span class="rek-ppf__hint--mouse">اسحب للتدوير · عجلة الفأرة للتقريب</span><span class="rek-ppf__hint--touch">اسحب للتدوير · قرّب بإصبعين</span></p>
+			<div class="rek-ppf__loader" aria-live="polite">
+				<span class="rek-ppf__status" data-ppf-status data-nowebgl="العرض ثلاثي الأبعاد غير مدعوم على هذا الجهاز." data-error="تعذّر تحميل النموذج ثلاثي الأبعاد.">جاري تحميل النموذج ثلاثي الأبعاد</span>
+				<i class="rek-ppf__track"><b class="rek-ppf__bar" data-ppf-bar></b></i>
+			</div>
+		</div>
+		<div class="rek-ppf__panel">
+			<div class="rek-ppf__readout" aria-live="polite">
+				<span class="rek-ppf__dot" data-ppf-dot style="background:#c80b2c"></span>
+				<span class="rek-ppf__meta"><small dir="ltr">SELECTED</small><span class="rek-ppf__name" data-ppf-name>اللون الأصلي</span><span class="rek-ppf__finish" data-ppf-finish>لامع · Gloss</span></span>
+			</div>
+			<div class="rek-ppf__group">
+				<p class="rek-ppf__group-label">ألوان الاختبار</p>
+				<ul class="rek-ppf__swatches" aria-label="ألوان الاختبار">
+					<li><button type="button" class="rek-ppf__sw rek-ppf__sw--original" style="--sw:#c80b2c" data-ppf-color="original" data-ppf-finish-key="original" data-ppf-label="اللون الأصلي" data-ppf-finish-label="لامع · Gloss" aria-label="اللون الأصلي" aria-pressed="true" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#0b0c0f" data-ppf-color="#0b0c0f" data-ppf-finish-key="gloss" data-ppf-label="أسود لامع · Gloss Black" data-ppf-finish-label="لامع · Gloss" aria-label="Gloss Black" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#ecebe6" data-ppf-color="#ecebe6" data-ppf-finish-key="gloss" data-ppf-label="أبيض لؤلؤي · Pearl White" data-ppf-finish-label="لامع · Gloss" aria-label="Pearl White" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#b3121f" data-ppf-color="#b3121f" data-ppf-finish-key="gloss" data-ppf-label="أحمر سباق · Racing Red" data-ppf-finish-label="لامع · Gloss" aria-label="Racing Red" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#14316e" data-ppf-color="#14316e" data-ppf-finish-key="metallic" data-ppf-label="أزرق داكن · Deep Blue" data-ppf-finish-label="معدني · Metallic" aria-label="Deep Blue" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#6e7378" data-ppf-color="#6e7378" data-ppf-finish-key="satin" data-ppf-label="رمادي ساتان · Satin Grey" data-ppf-finish-label="ساتان · Satin" aria-label="Satin Grey" aria-pressed="false" disabled></button></li>
+				</ul>
+			</div>
+			<div class="rek-ppf__group">
+				<p class="rek-ppf__group-label">نوع الفلم · Finish</p>
+				<ul class="rek-ppf__finishes">
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="gloss" data-ppf-finish-label="لامع · Gloss" aria-pressed="false" disabled>Gloss</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="matte" data-ppf-finish-label="مطفي · Matte" aria-pressed="false" disabled>Matte</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="satin" data-ppf-finish-label="ساتان · Satin" aria-pressed="false" disabled>Satin</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="metallic" data-ppf-finish-label="معدني · Metallic" aria-pressed="false" disabled>Metallic</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="special" data-ppf-finish-label="خاص · Special" aria-pressed="false" disabled>Special</button></li>
+				</ul>
+			</div>
+			<div class="rek-ppf__actions"><button type="button" class="rek-ppf__btn" data-ppf-reset>الأصلي / إعادة الضبط</button></div>
+		</div>
+	</div>
+	<div class="r8-diag" dir="ltr" data-diag>
+		<span>tier <b data-d="tier">…</b></span><span>DPR <b data-d="dpr">…</b></span><span>triangles <b data-d="tris">…</b></span>
+		<span>draw calls <b data-d="calls">…</b></span><span>FPS <b data-d="fps">…</b></span><span>model load <b data-d="load">…</b></span>
+		<button type="button" data-turntable>Rotation test 0°→360° (45° steps)</button><span data-d="angle"></span>
+	</div>
+</section>
+<script src="ppf-studio.min.js"></script>
+<script>
+/* Test-only diagnostics: live render stats and a 45-degree rotation tour. */
+(function () {
+	var root = document.querySelector('[data-rek-ppf]'), d = function (k) { return root.querySelector('[data-d="' + k + '"]'); };
+	var wait = setInterval(function () {
+		var s = root.__ppf; if (!s || !root.classList.contains('is-ready')) { return; } clearInterval(wait);
+		d('tier').textContent = s.tier; d('dpr').textContent = s.renderer.getPixelRatio().toFixed(2);
+		d('load').textContent = Math.round(s.loadMs) + ' ms';
+		var frames = 0, t0 = performance.now();
+		(function tick(now) { frames++; if (now - t0 > 1000) { d('fps').textContent = Math.round(frames * 1000 / (now - t0)); frames = 0; t0 = now;
+			d('tris').textContent = s.renderer.info.render.triangles.toLocaleString(); d('calls').textContent = s.renderer.info.render.calls; } requestAnimationFrame(tick); })(t0);
+		root.querySelector('[data-turntable]').addEventListener('click', function () {
+			var step = 0, c = s.controls, cam = s.camera, r = Math.hypot(cam.position.x - c.target.x, cam.position.z - c.target.z), y = cam.position.y;
+			s.userActive();
+			(function next() { if (step > 8) { s.userIdle(); return; } var a = step * Math.PI / 4;
+				cam.position.set(c.target.x + Math.sin(a) * r, y, c.target.z + Math.cos(a) * r); c.update(); s.dirty = true;
+				d('angle').textContent = (step * 45) + '°'; step++; setTimeout(next, 900); })();
+		});
+	}, 200);
+})();
+</script>
+</body></html>
