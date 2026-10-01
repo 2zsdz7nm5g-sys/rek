@@ -1,0 +1,2464 @@
+{
+ "post_id": 138,
+ "exported": "2026-10-01T14:38:41+00:00",
+ "post_modified": "2026-09-30 16:12:04",
+ "meta": {
+  "_elementor_data": "[{\"id\":\"4658f561\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-060fe5c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"513f0054\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-29543c7\",\"g-48b4671\",\"g-80b3e66\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":16}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Hero Photo\"},\"version\":\"0.0\"},{\"id\":\"38448df7\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5090591\"]}},\"elements\":[{\"id\":\"1d523140\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e107c20\"]}},\"elements\":[{\"id\":\"1eddefff\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7a95ef5\"]}},\"elements\":[{\"id\":\"5df4dc6a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Hero Label PPF\"},\"version\":\"0.0\"},{\"id\":\"2ad4e729\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"CERAMIC\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Hero Label Ceramic\"},\"version\":\"0.0\"},{\"id\":\"201ea808\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"DETAILING\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Hero Label Detailing\"},\"version\":\"0.0\"},{\"id\":\"2564a209\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PRECISION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Hero Label Precision\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"hero-labels\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"load\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Hero Labels\"},\"version\":\"0.0\"},{\"id\":\"33dbbdf4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f11ef7f\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h1\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u062a\\u0644\\u064a\\u0642 \\u0628\\u0633\\u064a\\u0627\\u0631\\u062a\\u0643\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"hero-title\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"load\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":300,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Hero Title\"},\"version\":\"0.0\"},{\"id\":\"14865199\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u062d\\u0627\\u0641\\u0638 \\u0639\\u0644\\u0649 \\u062c\\u0645\\u0627\\u0644 \\u0633\\u064a\\u0627\\u0631\\u062a\\u0643 \\u0648\\u0646\\u0631\\u062a\\u0642\\u064a \\u0628\\u062a\\u0641\\u0627\\u0635\\u064a\\u0644\\u0647\\u0627 \\u0645\\u0646 \\u062e\\u0644\\u0627\\u0644 \\u062d\\u0644\\u0648\\u0644 \\u0645\\u062a\\u0642\\u062f\\u0645\\u0629 \\u0644\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0648\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"hero-text\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"load\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":500,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Hero Text\"},\"version\":\"0.0\"},{\"id\":\"7a43c867\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"4ff295fc\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0645\\u0648\\u0639\\u062f\\u0643\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"Hero Book Button\"},\"version\":\"0.0\"},{\"id\":\"5998e280\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2b792c0\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u062e\\u062f\\u0645\\u0627\\u062a\\u0646\\u0627\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"query\",\"value\":{\"id\":{\"$$type\":\"number\",\"value\":139}}},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"Hero Services Button\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"hero-buttons\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"load\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":700,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Hero Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Hero Content\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Hero Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Hero\"},\"version\":\"0.0\"},{\"id\":\"818cbfc\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-24aeac9\"]}},\"elements\":[{\"id\":\"18e2b6b\",\"elType\":\"widget\",\"settings\":{\"shortcode\":\"[rek_fs3d]\"},\"elements\":[],\"widgetType\":\"shortcode\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FS3D Host\"},\"version\":\"0.0\"},{\"id\":\"9bf3fce\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"50ebabfd\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"2c14f168\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d5bef8e\"]}},\"elements\":[{\"id\":\"5258af04\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8d46c3b\"]}},\"elements\":[{\"id\":\"522a796c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":17}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Statement Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"statement-media\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Statement Media\"},\"version\":\"0.0\"},{\"id\":\"7a714e5c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"d4eac06\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-134bc52\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062a\\u0641\\u0627\\u0635\\u064a\\u0644 \\u062a\\u0635\\u0646\\u0639 \\u0627\\u0644\\u0641\\u0631\\u0642.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Statement Title\"},\"version\":\"0.0\"},{\"id\":\"4fa1d0e7\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u064a REK PROFFSET\\u060c \\u0644\\u0627 \\u0646\\u062a\\u0639\\u0627\\u0645\\u0644 \\u0645\\u0639 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629 \\u0643\\u0648\\u0633\\u064a\\u0644\\u0629 \\u0646\\u0642\\u0644 \\u0641\\u0642\\u0637\\u060c \\u0628\\u0644 \\u0643\\u062a\\u0635\\u0645\\u064a\\u0645 \\u064a\\u0633\\u062a\\u062d\\u0642 \\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0648\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0628\\u0623\\u0639\\u0644\\u0649 \\u0645\\u0633\\u062a\\u0648\\u0649 \\u0645\\u0646 \\u0627\\u0644\\u062f\\u0642\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Statement Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"statement-text\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Statement Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Statement Grid\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Statement Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Statement Section\"},\"version\":\"0.0\"},{\"id\":\"4a9c8980\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a2a0583\",\"g-1fbde86\",\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"1a07316b\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"232da286\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-74a5552\"]}},\"elements\":[{\"id\":\"391616e0\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"65a68cac\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"REK PROFFSET  \\u00d7  FLEXISHIELD USA\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-lock\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Lockup\"},\"version\":\"0.0\"},{\"id\":\"35d71c58\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9eda8de\",\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0648\\u0643\\u064a\\u0644 \\u0627\\u0644\\u062d\\u0635\\u0631\\u064a \\u0641\\u064a \\u0627\\u0644\\u0639\\u0631\\u0627\\u0642\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-title\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":80,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Title\"},\"version\":\"0.0\"},{\"id\":\"13f09938\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-069c14d\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"FlexiShield \\u0627\\u0644\\u0623\\u0645\\u0631\\u064a\\u0643\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-sub\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":160,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Sub\"},\"version\":\"0.0\"},{\"id\":\"3d6a8e4e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-3dd4106\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"Exclusive Agent in Iraq for FlexiShield USA\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-en\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS En\"},\"version\":\"0.0\"},{\"id\":\"435b5b45\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0641\\u062e\\u0631 REK PROFFSET \\u0628\\u0643\\u0648\\u0646\\u0647\\u0627 \\u0627\\u0644\\u0648\\u0643\\u064a\\u0644 \\u0627\\u0644\\u062d\\u0635\\u0631\\u064a \\u0641\\u064a \\u0627\\u0644\\u0639\\u0631\\u0627\\u0642 \\u0644\\u0639\\u0644\\u0627\\u0645\\u0629 FlexiShield \\u0627\\u0644\\u0623\\u0645\\u0631\\u064a\\u0643\\u064a\\u0629 \\u0627\\u0644\\u0645\\u062a\\u062e\\u0635\\u0635\\u0629 \\u0641\\u064a \\u062d\\u0644\\u0648\\u0644 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0627\\u062a.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-lead\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":320,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Lead\"},\"version\":\"0.0\"},{\"id\":\"591ed050\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-da8a138\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"REK PROFFSET is the exclusive agent in Iraq for FlexiShield USA, bringing advanced automotive protection solutions to the Iraqi market.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-entext\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":380,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS En Text\"},\"version\":\"0.0\"},{\"id\":\"20abbd3a\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"b17b233\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d4f0a38\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 FlexiShield \\u2190\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#flexishield\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"FS Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-cta\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":440,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FS Copy\"},\"version\":\"0.0\"},{\"id\":\"8de6872\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-bfa4ce6\",\"g-a2ff8a7\"]}},\"elements\":[{\"id\":\"1f1f7bd3\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-80b3e66\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":32}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"FS Photo\"},\"version\":\"0.0\"},{\"id\":\"171cdf90\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9ef5cc2\"]}},\"elements\":[{\"id\":\"5b856d02\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-624974f\"]}},\"elements\":[{\"id\":\"2925e11f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41bb480\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":262}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"FS Logo\"},\"version\":\"0.0\"},{\"id\":\"71b707cc\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"EXCLUSIVE AGENT \\u00b7 IRAQ\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FS Caption\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-plate\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":450,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Plate\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FS Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fs-media\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1200,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FS Media\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FS Grid\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FS Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FS Section\"},\"version\":\"0.0\"},{\"id\":\"4fb5cda9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"3f70f768\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"21b9db25\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-6c671f0\"]}},\"elements\":[{\"id\":\"1d312f0e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062e\\u062f\\u0645\\u0627\\u062a \\u0645\\u0635\\u0645\\u0645\\u0629 \\u0644\\u0643\\u0644 \\u062a\\u0641\\u0635\\u064a\\u0644 \\u0641\\u064a \\u0633\\u064a\\u0627\\u0631\\u062a\\u0643.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Services Title\"},\"version\":\"0.0\"},{\"id\":\"11ef5181\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d4f0a38\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062c\\u0645\\u064a\\u0639 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0627\\u062a \\u2190\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"query\",\"value\":{\"id\":{\"$$type\":\"number\",\"value\":139}}},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"Services All Link\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"svc-head\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Services Head\"},\"version\":\"0.0\"},{\"id\":\"1d8817a3\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2c85d21\"]}},\"elements\":[{\"id\":\"ce1b0e9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0aa6d94\",\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#ppf\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"5931d731\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":18}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 01 PPF Photo\"},\"version\":\"0.0\"},{\"id\":\"6fda2594\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"261575bb\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"66fd409e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 01 PPF Label\"},\"version\":\"0.0\"},{\"id\":\"54fa00ef\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"01\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 01 PPF Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 01 PPF Meta\"},\"version\":\"0.0\"},{\"id\":\"2b65028e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c580a0c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 01 PPF Title\"},\"version\":\"0.0\"},{\"id\":\"195d494a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0634\\u0641\\u0627\\u0641\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u0628\\u0648\\u0644\\u064a \\u064a\\u0648\\u0631\\u064a\\u062b\\u0627\\u0646 \\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u064a \\u062a\\u062d\\u0645\\u064a \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u0645\\u0646 \\u0627\\u0644\\u062d\\u062c\\u0627\\u0631\\u0629 \\u0648\\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0627\\u0644\\u064a\\u0648\\u0645\\u064a\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 01 PPF Text\"},\"version\":\"0.0\"},{\"id\":\"14c36d1c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 01 PPF Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 01 PPF Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-ppf\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 01 PPF\"},\"version\":\"0.0\"},{\"id\":\"2c4daac4\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-cf900a0\",\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#ceramic\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"2e7f1f14\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":21}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Photo\"},\"version\":\"0.0\"},{\"id\":\"27818bc9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"44f6fcb0\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"50e35a22\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"NANO CERAMIC\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Label\"},\"version\":\"0.0\"},{\"id\":\"4df19708\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"02\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Meta\"},\"version\":\"0.0\"},{\"id\":\"55b638b9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0627\\u0646\\u0648 \\u0633\\u064a\\u0631\\u0627\\u0645\\u064a\\u0643\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Title\"},\"version\":\"0.0\"},{\"id\":\"67947869\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0635\\u0644\\u0628\\u0629 \\u0637\\u0627\\u0631\\u062f\\u0629 \\u0644\\u0644\\u0645\\u0627\\u0621 \\u062a\\u0645\\u0646\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0644\\u0645\\u0639\\u0627\\u0646\\u064b\\u0627 \\u0639\\u0645\\u064a\\u0642\\u064b\\u0627 \\u0648\\u062a\\u0633\\u0647\\u0651\\u0644 \\u062a\\u0646\\u0638\\u064a\\u0641\\u0647.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Text\"},\"version\":\"0.0\"},{\"id\":\"35364266\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-ceramic\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 02 NANO CERAMIC\"},\"version\":\"0.0\"},{\"id\":\"7d44a47c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#correction\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"82fa3bd\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":22}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Photo\"},\"version\":\"0.0\"},{\"id\":\"af8ffc8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"5d790419\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"3cd55eed\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"CORRECTION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Label\"},\"version\":\"0.0\"},{\"id\":\"23332e54\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"03\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Meta\"},\"version\":\"0.0\"},{\"id\":\"3fa72e19\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0635\\u062d\\u064a\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0648\\u0627\\u0644\\u0628\\u0648\\u0644\\u064a\\u0634\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Title\"},\"version\":\"0.0\"},{\"id\":\"7eeac8e3\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0632\\u0627\\u0644\\u0629 \\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0627\\u0644\\u062f\\u0627\\u0626\\u0631\\u064a\\u0629 \\u0648\\u0627\\u0644\\u0628\\u0647\\u062a\\u0627\\u0646 \\u0639\\u0628\\u0631 \\u0645\\u0631\\u0627\\u062d\\u0644 \\u062a\\u0644\\u0645\\u064a\\u0639 \\u0645\\u062a\\u062f\\u0631\\u062c\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Text\"},\"version\":\"0.0\"},{\"id\":\"178a1f9d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 03 CORRECTION Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-correction\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 03 CORRECTION\"},\"version\":\"0.0\"},{\"id\":\"5da7745b\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#interior\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"56a006e5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":24}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Photo\"},\"version\":\"0.0\"},{\"id\":\"a9e1d4c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"22f6b7ef\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"748b2be2\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"INTERIOR\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Label\"},\"version\":\"0.0\"},{\"id\":\"2cac41ce\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"04\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Meta\"},\"version\":\"0.0\"},{\"id\":\"7e76cca9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0627\\u0644\\u062f\\u0627\\u062e\\u0644\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Title\"},\"version\":\"0.0\"},{\"id\":\"4ad253b0\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0646\\u0638\\u064a\\u0641 \\u0639\\u0645\\u064a\\u0642 \\u0644\\u0644\\u0645\\u0642\\u0635\\u0648\\u0631\\u0629 \\u0648\\u0627\\u0644\\u062c\\u0644\\u062f \\u0648\\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u0628\\u0645\\u0648\\u0627\\u062f \\u0622\\u0645\\u0646\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Text\"},\"version\":\"0.0\"},{\"id\":\"afd0c5c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 04 INTERIOR Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-interior\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 04 INTERIOR\"},\"version\":\"0.0\"},{\"id\":\"7859538e\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#pdr\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"77bd123a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":26}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 05 PDR Photo\"},\"version\":\"0.0\"},{\"id\":\"21b32fac\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"95b88d8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"50ab350f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PDR\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 05 PDR Label\"},\"version\":\"0.0\"},{\"id\":\"2475b6df\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"05\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 05 PDR Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 05 PDR Meta\"},\"version\":\"0.0\"},{\"id\":\"1311a25f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0635\\u0644\\u0627\\u062d \\u0627\\u0644\\u0635\\u062f\\u0645\\u0627\\u062a \\u0628\\u062f\\u0648\\u0646 \\u0635\\u0628\\u063a\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 05 PDR Title\"},\"version\":\"0.0\"},{\"id\":\"55e9d411\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0639\\u0627\\u062f\\u0629 \\u062a\\u0634\\u0643\\u064a\\u0644 \\u0627\\u0644\\u0627\\u0646\\u0628\\u0639\\u0627\\u062c\\u0627\\u062a \\u0645\\u0639 \\u0627\\u0644\\u062d\\u0641\\u0627\\u0638 \\u0639\\u0644\\u0649 \\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0645\\u0635\\u0646\\u0639.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 05 PDR Text\"},\"version\":\"0.0\"},{\"id\":\"1a2b400c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 05 PDR Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 05 PDR Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-pdr\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 05 PDR\"},\"version\":\"0.0\"},{\"id\":\"4ece6a5e\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#windshield\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"4a127153\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":27}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Photo\"},\"version\":\"0.0\"},{\"id\":\"6e469e19\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"656605d\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"22d7acd9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"WINDSHIELD\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Label\"},\"version\":\"0.0\"},{\"id\":\"6055d316\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"06\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Meta\"},\"version\":\"0.0\"},{\"id\":\"78951fd9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0632\\u062c\\u0627\\u062c \\u0627\\u0644\\u0623\\u0645\\u0627\\u0645\\u064a\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Title\"},\"version\":\"0.0\"},{\"id\":\"57d0905d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u0634\\u0641\\u0627\\u0641 \\u064a\\u062d\\u0645\\u064a \\u0627\\u0644\\u0632\\u062c\\u0627\\u062c \\u0645\\u0646 \\u0627\\u0644\\u062d\\u0635\\u0649 \\u062f\\u0648\\u0646 \\u0627\\u0644\\u062a\\u0623\\u062b\\u064a\\u0631 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0631\\u0624\\u064a\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Text\"},\"version\":\"0.0\"},{\"id\":\"39a1eb44\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-windshield\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 06 WINDSHIELD\"},\"version\":\"0.0\"},{\"id\":\"3d20317b\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#tint\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"1d052825\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":28}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Photo\"},\"version\":\"0.0\"},{\"id\":\"68d2a5b\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"58574658\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"1f5ab778\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"WINDOW TINT\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Label\"},\"version\":\"0.0\"},{\"id\":\"2058b5a5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"07\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Meta\"},\"version\":\"0.0\"},{\"id\":\"4f195cf\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0638\\u0644\\u064a\\u0644 \\u0627\\u0644\\u0646\\u0648\\u0627\\u0641\\u0630\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Title\"},\"version\":\"0.0\"},{\"id\":\"7323b8af\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0623\\u0641\\u0644\\u0627\\u0645 \\u062a\\u0638\\u0644\\u064a\\u0644 \\u062a\\u0645\\u0646\\u062d \\u0627\\u0644\\u062e\\u0635\\u0648\\u0635\\u064a\\u0629 \\u0648\\u062a\\u0642\\u0644\\u0644 \\u0627\\u0644\\u0648\\u0647\\u062c \\u062f\\u0627\\u062e\\u0644 \\u0627\\u0644\\u0645\\u0642\\u0635\\u0648\\u0631\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Text\"},\"version\":\"0.0\"},{\"id\":\"6a9f36f3\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-tint\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 07 WINDOW TINT\"},\"version\":\"0.0\"},{\"id\":\"5731353\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-4a03f3c\",\"g-9195e62\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#color-ppf\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[{\"id\":\"586e91c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":29}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Photo\"},\"version\":\"0.0\"},{\"id\":\"6117ccf6\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0363259\"]}},\"elements\":[{\"id\":\"523cd5d0\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e8b5b11\"]}},\"elements\":[{\"id\":\"2cf5f731\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"COLOR PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Label\"},\"version\":\"0.0\"},{\"id\":\"be7af19\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"08\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Number\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Meta\"},\"version\":\"0.0\"},{\"id\":\"33d323e9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-90f7454\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"PPF \\u0627\\u0644\\u0645\\u0644\\u0648\\u0651\\u0646 \\u0648\\u062a\\u063a\\u064a\\u064a\\u0631 \\u0627\\u0644\\u0644\\u0648\\u0646\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Title\"},\"version\":\"0.0\"},{\"id\":\"6f9599e8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b543a21\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0644\\u0648\\u0646 \\u0623\\u0648 \\u062a\\u0634\\u0637\\u064a\\u0628 \\u062c\\u062f\\u064a\\u062f\\u060c \\u0644\\u0627\\u0645\\u0639 \\u0623\\u0648 \\u0633\\u0627\\u062a\\u0627\\u0646 \\u0623\\u0648 \\u0645\\u0637\\u0641\\u064a\\u060c \\u0645\\u0639 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u062a\\u062d\\u062a\\u0647.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Text\"},\"version\":\"0.0\"},{\"id\":\"76b52ab\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dca7afe\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u2190\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"tile-color-ppf\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Tile 08 COLOR PPF\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Services Bento\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Services Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Services Section\"},\"version\":\"0.0\"},{\"id\":\"c98d358\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-1ccfebc\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"36d24324\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d5485c8\",\"g-29543c7\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":18}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"PPF Backdrop\"},\"version\":\"0.0\"},{\"id\":\"47500ae1\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a7d6c8f\"]}},\"elements\":[{\"id\":\"30963b37\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b623bbe\"]}},\"elements\":[{\"id\":\"3a95ad18\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"5b665766\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PAINT PROTECTION FILM\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"PPF Label\"},\"version\":\"0.0\"},{\"id\":\"51c97697\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u062a\\u0628\\u062f\\u0623 \\u0645\\u0646 \\u0627\\u0644\\u062a\\u0641\\u0627\\u0635\\u064a\\u0644.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"PPF Title\"},\"version\":\"0.0\"},{\"id\":\"7453e788\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0637\\u0628\\u0642\\u0629 \\u0634\\u0641\\u0627\\u0641\\u0629 \\u062a\\u064f\\u0631\\u0643\\u0651\\u0628 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u0627\\u0644\\u0623\\u0643\\u062b\\u0631 \\u062a\\u0639\\u0631\\u0636\\u064b\\u0627\\u060c \\u0641\\u062a\\u062d\\u0645\\u064a \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u0645\\u0646 \\u0622\\u062b\\u0627\\u0631 \\u0627\\u0644\\u0637\\u0631\\u064a\\u0642 \\u0648\\u062a\\u062d\\u0627\\u0641\\u0638 \\u0639\\u0644\\u0649 \\u0645\\u0638\\u0647\\u0631\\u0647 \\u0643\\u0645\\u0627 \\u0647\\u0648.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"PPF Lead\"},\"version\":\"0.0\"},{\"id\":\"26f92de4\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-3cda081\"]}},\"elements\":[{\"id\":\"4b442fba\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a3f5a07\"]}},\"elements\":[{\"id\":\"648be6be\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"TPU\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 1 Key\"},\"version\":\"0.0\"},{\"id\":\"7e1b4ee3\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0628\\u0648\\u0644\\u064a \\u064a\\u0648\\u0631\\u064a\\u062b\\u0627\\u0646 \\u062d\\u0631\\u0627\\u0631\\u064a \\u0645\\u0631\\u0646\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 1 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Spec 1\"},\"version\":\"0.0\"},{\"id\":\"48ae7646\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a3f5a07\"]}},\"elements\":[{\"id\":\"40d8784d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"SELF-HEALING\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 2 Key\"},\"version\":\"0.0\"},{\"id\":\"4721965e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0639\\u0644\\u0648\\u064a\\u0629 \\u062a\\u0644\\u062a\\u0626\\u0645 \\u062e\\u062f\\u0648\\u0634\\u0647\\u0627 \\u0627\\u0644\\u062f\\u0642\\u064a\\u0642\\u0629 \\u0628\\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 2 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Spec 2\"},\"version\":\"0.0\"},{\"id\":\"e399306\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a3f5a07\"]}},\"elements\":[{\"id\":\"488649ca\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"ANTI-YELLOWING\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 3 Key\"},\"version\":\"0.0\"},{\"id\":\"a3ece89\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0642\\u0627\\u0648\\u0645 \\u0644\\u0644\\u0627\\u0635\\u0641\\u0631\\u0627\\u0631\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 3 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Spec 3\"},\"version\":\"0.0\"},{\"id\":\"21fd7d60\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a3f5a07\"]}},\"elements\":[{\"id\":\"40b55953\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"CLARITY\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 4 Key\"},\"version\":\"0.0\"},{\"id\":\"584f4b7c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0634\\u0641\\u0627\\u0641\\u064a\\u0629 \\u0648\\u0644\\u0645\\u0639\\u0627\\u0646 \\u0639\\u0627\\u0644\\u064a\\u0627\\u0646\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 4 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Spec 4\"},\"version\":\"0.0\"},{\"id\":\"72ab464d\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a3f5a07\"]}},\"elements\":[{\"id\":\"5aed24f7\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PRECISION CUT\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 5 Key\"},\"version\":\"0.0\"},{\"id\":\"c137cb7\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0642\\u0635 \\u0631\\u0642\\u0645\\u064a \\u062f\\u0642\\u064a\\u0642 \\u0644\\u0643\\u0644 \\u0645\\u0648\\u062f\\u064a\\u0644\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 5 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Spec 5\"},\"version\":\"0.0\"},{\"id\":\"3152c83a\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a3f5a07\"]}},\"elements\":[{\"id\":\"2f05d99f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PROTECTION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 6 Key\"},\"version\":\"0.0\"},{\"id\":\"20caee5e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u062d\\u062c\\u0627\\u0631\\u0629 \\u0648\\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0648\\u0627\\u0644\\u0623\\u0634\\u0639\\u0629 \\u0641\\u0648\\u0642 \\u0627\\u0644\\u0628\\u0646\\u0641\\u0633\\u062c\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Spec 6 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Spec 6\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"PPF Specs\"},\"version\":\"0.0\"},{\"id\":\"a2544cb\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d4f0a38\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 \\u062a\\u0642\\u0646\\u064a\\u0629 PPF \\u2190\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/services\\/#ppf\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"PPF Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"ppf-copy\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"PPF Copy\"},\"version\":\"0.0\"},{\"id\":\"68cb2515\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-257056e\"]}},\"elements\":[{\"id\":\"1afc19cb\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":19}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"PPF Inset Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"ppf-inset\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"PPF Inset\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"PPF Inner\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"PPF Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"PPF Section\"},\"version\":\"0.0\"},{\"id\":\"63f44f22\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-1fbde86\",\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"2de8a0f9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"576f5fcf\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-6c671f0\"]}},\"elements\":[{\"id\":\"1d22e68c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"487dc01b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PAINT CORRECTION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Label\"},\"version\":\"0.0\"},{\"id\":\"a4ff6e8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0641\\u0631\\u0642 \\u064a\\u0638\\u0647\\u0631 \\u0641\\u064a \\u0627\\u0644\\u0627\\u0646\\u0639\\u0643\\u0627\\u0633.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"BA Title\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Head Copy\"},\"version\":\"0.0\"},{\"id\":\"3831201\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0633\\u062d\\u0628 \\u0627\\u0644\\u0645\\u0624\\u0634\\u0631 \\u0644\\u0645\\u0642\\u0627\\u0631\\u0646\\u0629 \\u0633\\u0637\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0642\\u0628\\u0644 \\u0627\\u0644\\u062a\\u0635\\u062d\\u064a\\u062d \\u0648\\u0628\\u0639\\u062f\\u0647.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Lead\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"ba-head\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"BA Head\"},\"version\":\"0.0\"},{\"id\":\"1521dc4c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-384fd43\"]}},\"elements\":[{\"id\":\"21512f77\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-eaaf30e\",\"g-29543c7\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":23}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"BA After\"},\"version\":\"0.0\"},{\"id\":\"32dc517d\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-fac4853\"]}},\"elements\":[{\"id\":\"2031ee33\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-127df9c\",\"g-29543c7\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":23}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"BA Before Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Before\"},\"version\":\"0.0\"},{\"id\":\"fb28221\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-12a2369\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0642\\u0628\\u0644\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Tag Before\"},\"version\":\"0.0\"},{\"id\":\"4287a05b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-fcc67e1\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0628\\u0639\\u062f\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Tag After\"},\"version\":\"0.0\"},{\"id\":\"35df4947\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dde2c67\"]}},\"elements\":[{\"id\":\"2b52fd23\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-55bb4b9\"]}},\"elements\":[{\"id\":\"22a7a2a6\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8970c51\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u27f7\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Knob Icon\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Knob\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Handle\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"ba-frame\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"BA Frame\"},\"version\":\"0.0\"},{\"id\":\"4e296bac\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d2fc23a\"]}},\"elements\":[{\"id\":\"26147076\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-035780b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0642\\u0628\\u0644: \\u062e\\u062f\\u0648\\u0634 \\u062f\\u0627\\u0626\\u0631\\u064a\\u0629\\u060c \\u0628\\u0647\\u062a\\u0627\\u0646\\u060c \\u0639\\u0644\\u0627\\u0645\\u0627\\u062a \\u0633\\u0637\\u062d\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Point Before\"},\"version\":\"0.0\"},{\"id\":\"3d989a1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-035780b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0628\\u0639\\u062f: \\u0644\\u0645\\u0639\\u0627\\u0646 \\u0639\\u0645\\u064a\\u0642\\u060c \\u0627\\u0646\\u0639\\u0643\\u0627\\u0633\\u0627\\u062a \\u0648\\u0627\\u0636\\u062d\\u0629\\u060c \\u062a\\u0634\\u0637\\u064a\\u0628 \\u0646\\u0638\\u064a\\u0641\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Point After\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Points\"},\"version\":\"0.0\"},{\"id\":\"3ab2c4a5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-6520a5a\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u062b\\u0627\\u0644 \\u062a\\u0648\\u0636\\u064a\\u062d\\u064a \\u0644\\u062a\\u0635\\u062d\\u064a\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621\\u060c \\u0648\\u0644\\u064a\\u0633 \\u0645\\u0646 \\u0623\\u0639\\u0645\\u0627\\u0644 \\u0641\\u0639\\u0644\\u064a\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"BA Note\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"BA Section\"},\"version\":\"0.0\"},{\"id\":\"7dfcddf7\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"5d154313\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"38e57791\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-94505b3\"]}},\"elements\":[{\"id\":\"147082ae\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-3947dde\"]}},\"elements\":[{\"id\":\"2a00ae05\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":31}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Why Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-media\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Media\"},\"version\":\"0.0\"},{\"id\":\"5eca29ac\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"4aeda864\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"WHY REK PROFFSET\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Label\"},\"version\":\"0.0\"},{\"id\":\"1edad84e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0644\\u0645\\u0627\\u0630\\u0627 REK PROFFSET\\u061f\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Title\"},\"version\":\"0.0\"},{\"id\":\"243b8dba\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0631\\u064a\\u0642\\u0629 \\u0639\\u0645\\u0644 \\u0648\\u0627\\u062d\\u062f\\u0629 \\u0644\\u0643\\u0644 \\u0633\\u064a\\u0627\\u0631\\u0629: \\u0641\\u062d\\u0635 \\u0623\\u0648\\u0644\\u064b\\u0627\\u060c \\u062b\\u0645 \\u062a\\u0646\\u0641\\u064a\\u0630 \\u0647\\u0627\\u062f\\u0626 \\u0648\\u062f\\u0642\\u064a\\u0642\\u060c \\u062b\\u0645 \\u0645\\u0631\\u0627\\u062c\\u0639\\u0629 \\u0642\\u0628\\u0644 \\u0627\\u0644\\u062a\\u0633\\u0644\\u064a\\u0645.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Lead\"},\"version\":\"0.0\"},{\"id\":\"795a2ac4\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8463623\"]}},\"elements\":[{\"id\":\"52079118\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"8ee1076\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0631\\u0643\\u064a\\u0628 \\u062f\\u0642\\u064a\\u0642\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 1 Title\"},\"version\":\"0.0\"},{\"id\":\"65dc8fb5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0642\\u064a\\u0633 \\u0648\\u0646\\u0642\\u0635 \\u0648\\u0646\\u0631\\u0643\\u0651\\u0628 \\u0628\\u0639\\u0646\\u0627\\u064a\\u0629\\u060c \\u0645\\u0639 \\u0627\\u0647\\u062a\\u0645\\u0627\\u0645 \\u062e\\u0627\\u0635 \\u0628\\u0627\\u0644\\u062d\\u0648\\u0627\\u0641 \\u0648\\u0627\\u0644\\u0632\\u0648\\u0627\\u064a\\u0627.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 1 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-1\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 1\"},\"version\":\"0.0\"},{\"id\":\"4cb32259\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"6a152fe9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0648\\u0627\\u062f \\u0645\\u062e\\u062a\\u0627\\u0631\\u0629 \\u0628\\u0639\\u0646\\u0627\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 2 Title\"},\"version\":\"0.0\"},{\"id\":\"1627cff0\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u062e\\u062a\\u0627\\u0631 \\u0627\\u0644\\u0623\\u0641\\u0644\\u0627\\u0645 \\u0648\\u0645\\u0648\\u0627\\u062f \\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0648\\u0641\\u0642 \\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629 \\u0648\\u0627\\u0633\\u062a\\u062e\\u062f\\u0627\\u0645\\u0647\\u0627.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 2 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-2\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 2\"},\"version\":\"0.0\"},{\"id\":\"73fe67b2\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"2de17c74\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0639\\u062f\\u0627\\u062a \\u0645\\u062a\\u0642\\u062f\\u0645\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 3 Title\"},\"version\":\"0.0\"},{\"id\":\"33e3cd3\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0623\\u062f\\u0648\\u0627\\u062a \\u0642\\u0635 \\u0648\\u062a\\u0644\\u0645\\u064a\\u0639 \\u0648\\u0625\\u0636\\u0627\\u0621\\u0629 \\u0641\\u062d\\u0635 \\u062a\\u062e\\u062f\\u0645 \\u0627\\u0644\\u062f\\u0642\\u0629 \\u0641\\u064a \\u0643\\u0644 \\u062e\\u0637\\u0648\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 3 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-3\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 3\"},\"version\":\"0.0\"},{\"id\":\"72af24e1\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"2e4f9f98\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0627\\u0647\\u062a\\u0645\\u0627\\u0645 \\u0628\\u0627\\u0644\\u062a\\u0641\\u0627\\u0635\\u064a\\u0644\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 4 Title\"},\"version\":\"0.0\"},{\"id\":\"b28f174\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062d\\u0648\\u0627\\u0641 \\u0648\\u0627\\u0644\\u0641\\u062a\\u062d\\u0627\\u062a \\u0648\\u0627\\u0644\\u0634\\u0639\\u0627\\u0631\\u0627\\u062a \\u062a\\u062d\\u0638\\u0649 \\u0628\\u0646\\u0641\\u0633 \\u0627\\u0644\\u0627\\u0647\\u062a\\u0645\\u0627\\u0645 \\u0627\\u0644\\u0630\\u064a \\u062a\\u062d\\u0638\\u0649 \\u0628\\u0647 \\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u0627\\u0644\\u0643\\u0628\\u064a\\u0631\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 4 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-4\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 4\"},\"version\":\"0.0\"},{\"id\":\"2b7f0607\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"1949206f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u062d\\u0635 \\u0627\\u0644\\u062c\\u0648\\u062f\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 5 Title\"},\"version\":\"0.0\"},{\"id\":\"32e210ee\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0631\\u0627\\u062c\\u0639 \\u0627\\u0644\\u0639\\u0645\\u0644 \\u062a\\u062d\\u062a \\u0625\\u0636\\u0627\\u0621\\u0629 \\u0627\\u0644\\u0641\\u062d\\u0635 \\u0642\\u0628\\u0644 \\u0623\\u0646 \\u0646\\u0639\\u062a\\u0628\\u0631\\u0647 \\u0645\\u0646\\u062a\\u0647\\u064a\\u064b\\u0627.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 5 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-5\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 5\"},\"version\":\"0.0\"},{\"id\":\"5082d695\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"2a553efe\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0634\\u0637\\u064a\\u0628 \\u0627\\u062d\\u062a\\u0631\\u0627\\u0641\\u064a\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 6 Title\"},\"version\":\"0.0\"},{\"id\":\"42c8ef65\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0633\\u0644\\u0651\\u0645 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629 \\u0646\\u0638\\u064a\\u0641\\u0629 \\u0648\\u062c\\u0627\\u0647\\u0632\\u0629\\u060c \\u0628\\u062a\\u0634\\u0637\\u064a\\u0628 \\u064a\\u0644\\u064a\\u0642 \\u0628\\u0647\\u0627.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 6 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-6\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 6\"},\"version\":\"0.0\"},{\"id\":\"3e316fb9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15bceb0\"]}},\"elements\":[{\"id\":\"23ddc150\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5f2caa0\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0628\\u0627\\u0644\\u0639\\u0645\\u064a\\u0644\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Why Item 7 Title\"},\"version\":\"0.0\"},{\"id\":\"4f8f1d04\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5e49b26\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0634\\u0631\\u062d \\u0644\\u0643 \\u0645\\u0627 \\u062a\\u0645 \\u0648\\u0643\\u064a\\u0641 \\u062a\\u0639\\u062a\\u0646\\u064a \\u0628\\u0633\\u064a\\u0627\\u0631\\u062a\\u0643 \\u0628\\u0639\\u062f \\u0627\\u0644\\u0627\\u0633\\u062a\\u0644\\u0627\\u0645.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Why Item 7 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"why-7\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":60,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Why Item 7\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Why List\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Why Copy\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Why Grid\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Why Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Why Section\"},\"version\":\"0.0\"},{\"id\":\"5448c23c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-1fbde86\",\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"9a9e464\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"7b0fcf63\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-6c671f0\"]}},\"elements\":[{\"id\":\"637f9e77\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"27924e75\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PROCESS\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Process Label\"},\"version\":\"0.0\"},{\"id\":\"45ec2803\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0646 \\u0627\\u0644\\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u0629 \\u0625\\u0644\\u0649 \\u0627\\u0644\\u062a\\u0633\\u0644\\u064a\\u0645\\u060c \\u0633\\u062a \\u062e\\u0637\\u0648\\u0627\\u062a \\u0648\\u0627\\u0636\\u062d\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Process Title\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Process Head Copy\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"proc-head\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Process Head\"},\"version\":\"0.0\"},{\"id\":\"7020d948\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-201d403\"]}},\"elements\":[{\"id\":\"40beabc\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-28b5a8e\"]}},\"elements\":[{\"id\":\"5468984b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7e89664\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"editor_settings\":{\"title\":\"Step 1 Dot\"},\"version\":\"0.0\"},{\"id\":\"450d3828\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41f14c0\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"01\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 1 Num\"},\"version\":\"0.0\"},{\"id\":\"571c5208\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c2c4899\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Step 1 Title\"},\"version\":\"0.0\"},{\"id\":\"747afa79\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c1451ec\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0633\\u062a\\u0645\\u0639 \\u0644\\u0645\\u0627 \\u062a\\u0631\\u064a\\u062f\\u0647 \\u0644\\u0633\\u064a\\u0627\\u0631\\u062a\\u0643 \\u0648\\u0646\\u0648\\u0636\\u062d \\u0627\\u0644\\u062e\\u064a\\u0627\\u0631\\u0627\\u062a \\u0627\\u0644\\u0645\\u0646\\u0627\\u0633\\u0628\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 1 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"step-1\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Step 1\"},\"version\":\"0.0\"},{\"id\":\"43d10db8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-28b5a8e\"]}},\"elements\":[{\"id\":\"89b6776\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7e89664\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"editor_settings\":{\"title\":\"Step 2 Dot\"},\"version\":\"0.0\"},{\"id\":\"5547b281\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41f14c0\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"02\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 2 Num\"},\"version\":\"0.0\"},{\"id\":\"22d87ea1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c2c4899\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u062d\\u0635 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Step 2 Title\"},\"version\":\"0.0\"},{\"id\":\"387e9ebb\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c1451ec\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0641\\u062d\\u0635 \\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0648\\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u062a\\u062d\\u062a \\u0625\\u0636\\u0627\\u0621\\u0629 \\u0645\\u062e\\u0635\\u0635\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 2 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"step-2\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":110,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Step 2\"},\"version\":\"0.0\"},{\"id\":\"22aa2ec3\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-28b5a8e\"]}},\"elements\":[{\"id\":\"3e18d4ff\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7e89664\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"editor_settings\":{\"title\":\"Step 3 Dot\"},\"version\":\"0.0\"},{\"id\":\"2247952b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41f14c0\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"03\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 3 Num\"},\"version\":\"0.0\"},{\"id\":\"1ad4e5c9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c2c4899\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062a\\u062d\\u0636\\u064a\\u0631\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Step 3 Title\"},\"version\":\"0.0\"},{\"id\":\"4b2bcdf1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c1451ec\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u063a\\u0633\\u064a\\u0644 \\u0648\\u062a\\u0646\\u0638\\u064a\\u0641 \\u0648\\u062a\\u062c\\u0647\\u064a\\u0632 \\u0627\\u0644\\u0633\\u0637\\u062d \\u0642\\u0628\\u0644 \\u0623\\u064a \\u0645\\u0639\\u0627\\u0644\\u062c\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 3 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"step-3\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":220,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Step 3\"},\"version\":\"0.0\"},{\"id\":\"4bb54c4f\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-28b5a8e\"]}},\"elements\":[{\"id\":\"24ce8f63\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7e89664\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"editor_settings\":{\"title\":\"Step 4 Dot\"},\"version\":\"0.0\"},{\"id\":\"53fa309d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41f14c0\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"04\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 4 Num\"},\"version\":\"0.0\"},{\"id\":\"667668be\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c2c4899\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062a\\u0631\\u0643\\u064a\\u0628 \\u0623\\u0648 \\u0627\\u0644\\u0645\\u0639\\u0627\\u0644\\u062c\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Step 4 Title\"},\"version\":\"0.0\"},{\"id\":\"2c95d0ca\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c1451ec\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0646\\u0641\\u064a\\u0630 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u0628\\u0647\\u062f\\u0648\\u0621 \\u0648\\u062f\\u0642\\u0629 \\u0641\\u064a \\u0628\\u064a\\u0626\\u0629 \\u0645\\u0646\\u0627\\u0633\\u0628\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 4 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"step-4\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":330,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Step 4\"},\"version\":\"0.0\"},{\"id\":\"28abe8d5\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-28b5a8e\"]}},\"elements\":[{\"id\":\"51470684\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7e89664\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"editor_settings\":{\"title\":\"Step 5 Dot\"},\"version\":\"0.0\"},{\"id\":\"3eb96f3f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41f14c0\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"05\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 5 Num\"},\"version\":\"0.0\"},{\"id\":\"5f38b198\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c2c4899\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u062d\\u0635 \\u0627\\u0644\\u062c\\u0648\\u062f\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Step 5 Title\"},\"version\":\"0.0\"},{\"id\":\"4daaef9b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c1451ec\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0631\\u0627\\u062c\\u0639\\u0629 \\u0627\\u0644\\u062d\\u0648\\u0627\\u0641 \\u0648\\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u0648\\u0627\\u0644\\u062a\\u0634\\u0637\\u064a\\u0628 \\u0642\\u0628\\u0644 \\u0627\\u0644\\u062a\\u0633\\u0644\\u064a\\u0645.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 5 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"step-5\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":440,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Step 5\"},\"version\":\"0.0\"},{\"id\":\"2cd109c8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-28b5a8e\"]}},\"elements\":[{\"id\":\"3e699a2f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7e89664\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"editor_settings\":{\"title\":\"Step 6 Dot\"},\"version\":\"0.0\"},{\"id\":\"3b495210\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41f14c0\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"06\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 6 Num\"},\"version\":\"0.0\"},{\"id\":\"4e9e95dc\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c2c4899\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062a\\u0633\\u0644\\u064a\\u0645\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Step 6 Title\"},\"version\":\"0.0\"},{\"id\":\"cbccac4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c1451ec\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0633\\u0644\\u0651\\u0645\\u0643 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629 \\u0645\\u0639 \\u0625\\u0631\\u0634\\u0627\\u062f\\u0627\\u062a \\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0644\\u0627\\u062d\\u0642\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Step 6 Text\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"step-6\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":550,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Step 6\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Process Steps\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Process Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Process Section\"},\"version\":\"0.0\"},{\"id\":\"370ec9d9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"2ebc757c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"4e25a395\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-12073cd\"]}},\"elements\":[{\"id\":\"38ce0a07\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d2f6a68\"]}},\"elements\":[{\"id\":\"695483ba\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":34}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Work Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"work-media\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Work Media\"},\"version\":\"0.0\"},{\"id\":\"636c2521\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"5306ddf5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"OUR WORK\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Work Label\"},\"version\":\"0.0\"},{\"id\":\"d217339\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0646 \\u0623\\u0639\\u0645\\u0627\\u0644\\u0646\\u0627 \\u0641\\u064a \\u0628\\u063a\\u062f\\u0627\\u062f.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Work Title\"},\"version\":\"0.0\"},{\"id\":\"66db6aeb\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0643\\u0644 \\u0633\\u064a\\u0627\\u0631\\u0629 \\u062a\\u062f\\u062e\\u0644 \\u0627\\u0644\\u0627\\u0633\\u062a\\u0648\\u062f\\u064a\\u0648 \\u062a\\u062e\\u0631\\u062c \\u0628\\u0642\\u0635\\u0629 \\u062a\\u0641\\u0627\\u0635\\u064a\\u0644. \\u062a\\u0635\\u0641\\u062d \\u0645\\u0634\\u0627\\u0631\\u064a\\u0639 \\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0648\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u062d\\u0633\\u0628 \\u0646\\u0648\\u0639 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Work Lead\"},\"version\":\"0.0\"},{\"id\":\"4b9b182a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2b792c0\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0634\\u0627\\u0647\\u062f \\u0623\\u0639\\u0645\\u0627\\u0644\\u0646\\u0627 \\u2190\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"query\",\"value\":{\"id\":{\"$$type\":\"number\",\"value\":140}}},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"Work Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"work-copy\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Work Copy\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Work Grid\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Work Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Work Section\"},\"version\":\"0.0\"},{\"id\":\"2f9adb78\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"2c6fbb87\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-99d4a25\",\"g-b3355a9\"]}},\"elements\":[{\"id\":\"355b943\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8629327\"]}},\"elements\":[{\"id\":\"4d52c318\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"54133d46\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"OUR LOCATION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"LOC Label\"},\"version\":\"0.0\"},{\"id\":\"42be3b8e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9eda8de\",\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0648\\u0642\\u0639\\u0646\\u0627\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"LOC Title\"},\"version\":\"0.0\"},{\"id\":\"6da9bdcf\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u062d\\u0646 \\u0628\\u0627\\u0646\\u062a\\u0638\\u0627\\u0631\\u0643\\u0645 \\u0641\\u064a REK PROFFSET.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"LOC Lead\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"loc-copy\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"LOC Copy\"},\"version\":\"0.0\"},{\"id\":\"30c71708\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2b792c0\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0641\\u062a\\u062d \\u0627\\u0644\\u0645\\u0648\\u0642\\u0639 \\u0639\\u0644\\u0649 \\u062e\\u0631\\u0627\\u0626\\u0637 Google\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/?rek=maps\"},\"isTargetBlank\":{\"$$type\":\"boolean\",\"value\":true},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"loc-cta\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"LOC Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"LOC Band\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"LOC Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"LOC Section\"},\"version\":\"0.0\"},{\"id\":\"409799b\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0dd97fd\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"143d9d84\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15ef223\",\"g-29543c7\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":33}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"Final Photo\"},\"version\":\"0.0\"},{\"id\":\"6530dc98\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-76abc61\"]}},\"elements\":[{\"id\":\"62b2b248\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ca8ad4e\"]}},\"elements\":[{\"id\":\"64634194\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"REK PROFFSET\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Final Label\"},\"version\":\"0.0\"},{\"id\":\"3ce82369\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-58be460\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0633\\u064a\\u0627\\u0631\\u062a\\u0643 \\u062a\\u0633\\u062a\\u062d\\u0642 \\u0639\\u0646\\u0627\\u064a\\u0629 \\u0628\\u0645\\u0633\\u062a\\u0648\\u0649 \\u0623\\u0639\\u0644\\u0649.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"Final Title\"},\"version\":\"0.0\"},{\"id\":\"546f9aae\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5fdf75d\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0645\\u0648\\u0639\\u062f\\u064b\\u0627 \\u0644\\u0644\\u0641\\u062d\\u0635 \\u0648\\u0627\\u0644\\u0627\\u0633\\u062a\\u0634\\u0627\\u0631\\u0629\\u060c \\u0648\\u0633\\u0646\\u0642\\u062a\\u0631\\u062d \\u0639\\u0644\\u064a\\u0643 \\u0627\\u0644\\u062d\\u0644 \\u0627\\u0644\\u0623\\u0646\\u0633\\u0628 \\u0644\\u0633\\u064a\\u0627\\u0631\\u062a\\u0643.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"Final Lead\"},\"version\":\"0.0\"},{\"id\":\"1e600236\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-60474c4\"]}},\"elements\":[{\"id\":\"32176b3\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0645\\u0648\\u0639\\u062f\\u0643\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"Final Book\"},\"version\":\"0.0\"},{\"id\":\"3b7f8043\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2b792c0\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0648\\u0627\\u0635\\u0644 \\u0639\\u0628\\u0631 \\u0648\\u0627\\u062a\\u0633\\u0627\\u0628\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/?rek=whatsapp\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"Final WhatsApp\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Final Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"final-content\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"Final Content\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Final Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Final Section\"},\"version\":\"0.0\"}]",
+  "_elementor_page_settings": {
+   "hide_title": "yes",
+   "background_background": "classic",
+   "background_color": "#050B12"
+  },
+  "elementor-interactions-cache": {
+   "1eddefff": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "hero-labels"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "load"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "33dbbdf4": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "hero-title"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "load"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 300,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "14865199": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "hero-text"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "load"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 500,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7a43c867": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "hero-buttons"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "load"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 700,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5258af04": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "statement-media"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": ""
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7a714e5c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "statement-text"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "65a68cac": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-lock"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "35d71c58": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-title"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 80,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "13f09938": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-sub"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 160,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "3d6a8e4e": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-en"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "435b5b45": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-lead"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 320,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "591ed050": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-entext"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 380,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "20abbd3a": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-cta"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 440,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "8de6872": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-media"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1200,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5b856d02": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fs-plate"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 450,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "21b9db25": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "svc-head"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "ce1b0e9": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-ppf"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "2c4daac4": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-ceramic"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7d44a47c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-correction"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5da7745b": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-interior"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7859538e": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-pdr"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4ece6a5e": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-windshield"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "3d20317b": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-tint"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5731353": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "tile-color-ppf"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "3a95ad18": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "ppf-copy"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "68cb2515": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "ppf-inset"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "576f5fcf": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "ba-head"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "1521dc4c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "ba-frame"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "147082ae": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-media"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "52079118": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-1"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4cb32259": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-2"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "73fe67b2": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-3"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "72af24e1": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-4"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "2b7f0607": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-5"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5082d695": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-6"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "3e316fb9": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "why-7"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 60,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7b0fcf63": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "proc-head"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "40beabc": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "step-1"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "43d10db8": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "step-2"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 110,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "22aa2ec3": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "step-3"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 220,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4bb54c4f": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "step-4"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 330,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "28abe8d5": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "step-5"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 440,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "2cd109c8": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "step-6"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 550,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "38ce0a07": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "work-media"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "636c2521": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "work-copy"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4d52c318": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "loc-copy"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "30c71708": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "loc-cta"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "62b2b248": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "final-content"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  "_elementor_used_global_class": "g-29543c7"
+ }
+}
