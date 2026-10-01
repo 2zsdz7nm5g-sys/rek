@@ -2,6 +2,10 @@
  * REK PPF Color Studio ([rek_ppf_studio]). Loaded only on pages with the studio.
  * Uses the site's design tokens from rek.css.
  */
+/* The Elementor flexbox that holds the shortcode is a padded row by default; let the studio span it. */
+.e-con:has(> .elementor-widget-shortcode .rek-ppf) { flex-direction: column; padding: 0; }
+.elementor-widget-shortcode:has(.rek-ppf) { width: 100%; max-width: 100%; }
+.rek-ppf { width: 100%; box-sizing: border-box; }
 .rek-ppf {
 	--ppf-ease: var(--rek-ease, cubic-bezier(.2, .7, .2, 1));
 	position: relative; color: var(--rek-ink); background: var(--rek-bg);
@@ -9,7 +13,7 @@
 }
 .rek-ppf__head { max-width: 1600px; margin: 0 auto clamp(18px, 2.4vw, 30px); }
 .rek-ppf__label { margin: 0 0 12px; font-family: var(--rek-font-mono); font-size: 12px; letter-spacing: .24em; color: var(--rek-accent-light); }
-.rek-ppf__title { margin: 0; font-family: var(--rek-font-display); font-weight: 600; font-size: clamp(30px, 4.4vw, 58px); line-height: 1.12; }
+.rek-ppf__title { margin: 0; color: var(--rek-ink); font-family: var(--rek-font-display); font-weight: 600; font-size: clamp(30px, 4.4vw, 58px); line-height: 1.12; }
 .rek-ppf__lead { margin: 12px 0 0; max-width: 640px; font-size: clamp(15px, 1.3vw, 17px); line-height: 1.8; color: rgba(245, 247, 250, .72); }
 
 .rek-ppf__frame { position: relative; max-width: 1600px; margin: 0 auto; }
