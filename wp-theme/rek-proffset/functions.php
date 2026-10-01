@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'REK_VERSION', '1.8.5' );
+define( 'REK_VERSION', '1.8.6' );
 define( 'REK_DIR', get_stylesheet_directory() );
 define( 'REK_URI', get_stylesheet_directory_uri() );
 
@@ -18,6 +18,7 @@ require REK_DIR . '/inc/booking.php';
 require REK_DIR . '/inc/location.php';
 require REK_DIR . '/inc/fs3d.php';
 require REK_DIR . '/inc/hero-video.php';
+require REK_DIR . '/inc/ppf-studio.php';
 
 add_action( 'after_setup_theme', function () {
 	register_nav_menus( [
