@@ -123,3 +123,13 @@ add_action( 'wp_enqueue_scripts', function () {
 		wp_enqueue_script( 'rek-ppf-studio', rek_ppf_studio_base() . 'ppf-studio.min.js', [], REK_VERSION, [ 'strategy' => 'defer', 'in_footer' => true ] );
 	}
 }, 30 );
+
+/* The studio's menu link (class rek-nav-studio) belongs in the header and mobile menu only; the footer link list stays as it was. */
+add_filter( 'wp_nav_menu_objects', function ( $items, $args ) {
+	if ( isset( $args->menu_class ) && 'rek-footer__list' === $args->menu_class ) {
+		$items = array_filter( $items, function ( $item ) {
+			return ! in_array( 'rek-nav-studio', (array) $item->classes, true );
+		} );
+	}
+	return $items;
+}, 10, 2 );
