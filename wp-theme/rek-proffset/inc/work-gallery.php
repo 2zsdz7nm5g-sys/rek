@@ -124,7 +124,7 @@ add_shortcode( 'rek_work_gallery', function () {
 								}, $p['photos'] );
 								?>
 								<article class="rek-wg__proj" data-wg-project="<?php echo esc_attr( $p['id'] ); ?>" data-wg-photos="<?php echo esc_attr( wp_json_encode( $photos ) ); ?>" data-wg-caption="<?php echo esc_attr( $caption ); ?>">
-									<a class="rek-wg__cover" href="<?php echo esc_url( rek_wg_photo_url( $cover['f'], 1600 ) ); ?>" data-wg-open="0" aria-label="<?php echo esc_attr( $caption . ' · ' . rek_wg_photos_label( $n ) ); ?>">
+									<a class="rek-wg__cover" data-elementor-open-lightbox="no" href="<?php echo esc_url( rek_wg_photo_url( $cover['f'], 1600 ) ); ?>" data-wg-open="0" aria-label="<?php echo esc_attr( $caption . ' · ' . rek_wg_photos_label( $n ) ); ?>">
 										<img src="<?php echo esc_url( rek_wg_photo_url( $cover['f'], 960 ) ); ?>" srcset="<?php echo rek_wg_srcset( $cover ); // phpcs:ignore WordPress.Security.EscapeOutput -- escaped in rek_wg_srcset ?>" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1024px) 45vw, 30vw" width="<?php echo (int) $cover['w']; ?>" height="<?php echo (int) $cover['h']; ?>" alt="<?php echo esc_attr( $caption ); ?>" loading="lazy" decoding="async">
 										<span class="rek-wg__badge"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4 7h12v12H4zM8 4h12v12"/></svg><?php echo esc_html( rek_wg_photos_label( $n ) ); ?></span>
 									</a>
@@ -136,7 +136,7 @@ add_shortcode( 'rek_work_gallery', function () {
 												$ph   = $p['photos'][ $t ];
 												$more = ( $t === $shown && $n - 1 > $shown ) ? $n - 1 - $shown : 0;
 												?>
-												<a class="rek-wg__thumb" href="<?php echo esc_url( rek_wg_photo_url( $ph['f'], 1600 ) ); ?>" data-wg-open="<?php echo (int) $t; ?>" aria-label="<?php echo esc_attr( $caption . ' · ' . ( $t + 1 ) . ' / ' . $n ); ?>">
+												<a class="rek-wg__thumb" data-elementor-open-lightbox="no" href="<?php echo esc_url( rek_wg_photo_url( $ph['f'], 1600 ) ); ?>" data-wg-open="<?php echo (int) $t; ?>" aria-label="<?php echo esc_attr( $caption . ' · ' . ( $t + 1 ) . ' / ' . $n ); ?>">
 													<img src="<?php echo esc_url( rek_wg_photo_url( $ph['f'], 480 ) ); ?>" width="<?php echo (int) $ph['s'][0]; ?>" height="<?php echo (int) round( $ph['h'] * $ph['s'][0] / $ph['w'] ); ?>" alt="" loading="lazy" decoding="async">
 													<?php if ( $more ) : ?><span class="rek-wg__more" dir="ltr">+<?php echo (int) $more; ?></span><?php endif; ?>
 												</a>
