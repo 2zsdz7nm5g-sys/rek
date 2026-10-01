@@ -483,7 +483,7 @@ html:not([dir="rtl"]) .rek-field select { background-position: right 18px center
 .rek-booking__notice:focus { outline: none; }
 
 /* ---------- Contact cards ([rek_contact]) ---------- */
-.rek-cc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 12px; }
+.rek-cc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; }
 .rek-cc {
 	position: relative; display: flex; align-items: center; gap: 16px; min-height: 84px; padding: 16px 18px;
 	color: var(--rek-ink); text-decoration: none; border-radius: 2px; overflow: hidden; isolation: isolate;
