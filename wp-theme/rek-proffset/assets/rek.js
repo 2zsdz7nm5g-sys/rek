@@ -220,7 +220,7 @@
 	if (bubbles.length) {
 		var small = window.matchMedia('(max-width: 767px)');
 		var booking = document.querySelector('.rek-booking');
-		var buttons = document.querySelectorAll('.rk-btn, .rk-btn-ghost, .rek-btn');
+		var buttons = document.querySelectorAll('.rk-btn, .rk-btn-ghost, .rek-btn, .rek-cc');
 		var bookingVisible = false;
 		var buttonUnder = false;
 		var tucked = null;

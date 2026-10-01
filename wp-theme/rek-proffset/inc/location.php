@@ -141,7 +141,7 @@ add_shortcode( 'rek_location', function () {
 						<div><dt><?php echo esc_html( rek_t( 'ساعات العمل', 'Opening hours' ) ); ?></dt><dd><?php echo esc_html( $hours ); ?></dd></div>
 					<?php endif; ?>
 					<?php if ( $phone ) : ?>
-						<div><dt><?php echo esc_html( rek_t( 'الهاتف', 'Phone' ) ); ?></dt><dd><a href="tel:<?php echo esc_attr( preg_replace( '/[^\d+]/', '', $phone ) ); ?>" dir="ltr"><?php echo esc_html( $phone ); ?></a></dd></div>
+						<div><dt><?php echo esc_html( rek_t( 'الهاتف', 'Phone' ) ); ?></dt><dd><a href="<?php echo esc_attr( rek_tel_href( $phone ) ); ?>" dir="ltr"><?php echo esc_html( $phone ); ?></a></dd></div>
 					<?php endif; ?>
 					<?php if ( $wa ) : ?>
 						<div><dt><?php echo esc_html( rek_t( 'واتساب', 'WhatsApp' ) ); ?></dt><dd><a href="<?php echo esc_url( rek_whatsapp_url( 'general' ) ); ?>"<?php echo $ext; // phpcs:ignore ?> dir="ltr">+<?php echo esc_html( $wa ); ?></a></dd></div>

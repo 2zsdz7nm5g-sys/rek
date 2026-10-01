@@ -74,10 +74,14 @@ add_action( 'wp_head', function () {
 		$data['address']['streetAddress'] = rek_get( 'rek_address' );
 	}
 	if ( rek_get( 'rek_phone' ) ) {
-		$data['telephone'] = rek_get( 'rek_phone' );
+		$data['telephone'] = substr( rek_tel_href( rek_get( 'rek_phone' ) ), 4 );
 	}
-	if ( rek_get( 'rek_instagram' ) ) {
-		$data['sameAs'] = [ 'https://instagram.com/' . ltrim( rek_get( 'rek_instagram' ), '@' ) ];
+	if ( rek_get( 'rek_email' ) ) {
+		$data['email'] = rek_get( 'rek_email' );
+	}
+	$profiles = array_values( array_filter( [ rek_get( 'rek_instagram_url' ), rek_get( 'rek_tiktok_url' ), rek_get( 'rek_facebook_url' ) ] ) );
+	if ( $profiles ) {
+		$data['sameAs'] = $profiles;
 	}
 
 	echo '<script type="application/ld+json">' . wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
