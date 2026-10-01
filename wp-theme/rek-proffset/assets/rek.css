@@ -228,8 +228,14 @@ body {
 }
 .rek-wa:focus-visible .rek-wa__label { max-width: 260px; opacity: 1; padding-left: 22px; }
 .rek-wa:focus-visible::before { transform: translateX(22%); }
-/* Location bubble: the same glass, stacked 12px above the WhatsApp bubble, with a blue (not green) icon glow. */
-.rek-wa.rek-loc { bottom: calc(24px + 60px + 12px + env(safe-area-inset-bottom)); }
+/*
+ * Location bubble: the same glass with a blue (not green) icon glow, 12px to
+ * the left of the WhatsApp bubble, so the pair stays low and clear of content
+ * such as the hero buttons; on very narrow screens it sits 12px above instead.
+ * It sits beneath WhatsApp, whose label slides over it on hover; its own
+ * label grows to the left, into free space.
+ */
+.rek-wa.rek-loc { z-index: 89; right: calc(24px + var(--wa-size) + 12px + env(safe-area-inset-right)); max-width: calc(100vw - 60px - var(--wa-size)); }
 .rek-loc .rek-wa__icon::before { background: radial-gradient(circle, rgba(91, 184, 242, .24), rgba(91, 184, 242, 0) 70%); }
 .rek-loc .rek-wa__icon svg { filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .35)) drop-shadow(0 0 6px rgba(91, 184, 242, .25)); }
 /* Touch screens: a short glassy press, so the tap is felt before Google Maps opens. */
@@ -524,7 +530,10 @@ html:not([dir="rtl"]) .rek-field select { background-position: right 18px center
 	.rek-logo-img { width: 34px; height: 34px; }
 	.rek-footer__inner { grid-template-columns: 1fr; gap: 36px; padding-block-start: 64px; }
 	.rek-wa { --wa-size: 56px; bottom: calc(18px + env(safe-area-inset-bottom)); right: calc(18px + env(safe-area-inset-right)); }
-	.rek-wa.rek-loc { bottom: calc(18px + 56px + 12px + env(safe-area-inset-bottom)); }
+	.rek-wa.rek-loc { right: calc(18px + var(--wa-size) + 12px + env(safe-area-inset-right)); }
+}
+@media (max-width: 359px) {
+	.rek-wa.rek-loc { right: calc(18px + env(safe-area-inset-right)); bottom: calc(18px + var(--wa-size) + 12px + env(safe-area-inset-bottom)); }
 }
 @media (max-width: 782px) { .admin-bar .rek-header { inset-block-start: 46px; } }
 

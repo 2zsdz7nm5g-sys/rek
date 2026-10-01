@@ -210,20 +210,69 @@
 		});
 	}
 
-	/* Floating bubbles (location + WhatsApp): on small screens they step aside while the booking form is on screen, so it never covers the fields or the submit button. */
+	/*
+	 * Floating bubbles (location + WhatsApp) step aside, so they never cover:
+	 * - the booking form, while it is on screen on small screens;
+	 * - a button, while one sits beneath them (on short phones the hero
+	 *   buttons fall in that corner). They come back once it has scrolled on.
+	 */
 	var bubbles = document.querySelectorAll('[data-rek-wa], [data-rek-loc]');
-	var booking = document.querySelector('.rek-booking');
-	if (bubbles.length && booking && 'IntersectionObserver' in window) {
+	if (bubbles.length) {
 		var small = window.matchMedia('(max-width: 767px)');
+		var booking = document.querySelector('.rek-booking');
+		var buttons = document.querySelectorAll('.rk-btn, .rk-btn-ghost, .rek-btn');
 		var bookingVisible = false;
+		var buttonUnder = false;
+		var tucked = null;
 		var sync = function () {
-			bubbles.forEach(function (b) { b.classList.toggle('is-tucked', small.matches && bookingVisible); });
+			var tuck = (small.matches && bookingVisible) || buttonUnder;
+			if (tuck === tucked) { return; }
+			tucked = tuck;
+			bubbles.forEach(function (b) { b.classList.toggle('is-tucked', tuck); });
 		};
-		new IntersectionObserver(function (entries) {
-			bookingVisible = entries[0].isIntersecting;
+		/* The bubbles' resting box, from their fixed offsets (unaffected by the tuck transform), plus a small margin. */
+		var zones = [];
+		var measure = function () {
+			zones = Array.prototype.map.call(bubbles, function (b) {
+				var cs = window.getComputedStyle(b);
+				var right = window.innerWidth - parseFloat(cs.right) + 8;
+				var bottom = window.innerHeight - parseFloat(cs.bottom) + 8;
+				return { left: right - b.offsetWidth - 16, top: bottom - b.offsetHeight - 16, right: right, bottom: bottom };
+			});
+		};
+		var check = function () {
+			buttonUnder = false;
+			for (var i = 0; i < buttons.length && !buttonUnder; i++) {
+				var r = buttons[i].getBoundingClientRect();
+				if (!r.width || r.bottom < 0 || r.top > window.innerHeight) { continue; }
+				for (var z = 0; z < zones.length; z++) {
+					if (r.left < zones[z].right && r.right > zones[z].left && r.top < zones[z].bottom && r.bottom > zones[z].top) { buttonUnder = true; break; }
+				}
+			}
 			sync();
-		}).observe(booking);
-		small.addEventListener('change', sync);
+		};
+		var pending = false;
+		var schedule = function () {
+			if (pending) { return; }
+			pending = true;
+			window.requestAnimationFrame(function () { pending = false; check(); });
+		};
+		if (buttons.length) {
+			measure();
+			window.addEventListener('scroll', schedule, { passive: true });
+			window.addEventListener('resize', function () { measure(); schedule(); });
+			window.addEventListener('load', schedule);
+			/* Entrance animations move buttons into place after load, so look again as they settle. */
+			[800, 1600, 3000, 5000].forEach(function (ms) { window.setTimeout(schedule, ms); });
+			check();
+		}
+		if (booking && 'IntersectionObserver' in window) {
+			new IntersectionObserver(function (entries) {
+				bookingVisible = entries[0].isIntersecting;
+				sync();
+			}).observe(booking);
+			small.addEventListener('change', sync);
+		}
 	}
 
 	/* Colour configurator: swatches are Elementor buttons whose own background colour is the paint colour. */
