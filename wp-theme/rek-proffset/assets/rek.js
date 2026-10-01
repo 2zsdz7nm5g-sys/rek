@@ -192,6 +192,24 @@
 		show(buttons[0]);
 	});
 
+	/*
+	 * Google Maps links. On phones and tablets they open in the same tab, which
+	 * lets iOS and Android hand the link straight to the Google Maps app; on
+	 * desktop they keep opening in a new tab. Links placed in Elementor content
+	 * as /?rek=maps are pointed at the same official link directly.
+	 */
+	var mapsLink = document.querySelector('a[data-rek-maps]');
+	if (mapsLink && /^https:\/\/maps\.app\.goo\.gl\//.test(mapsLink.href)) {
+		var touch = window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+		document.querySelectorAll('a[data-rek-maps], a[href*="rek=maps"]').forEach(function (a) {
+			if (!a.hasAttribute('data-rek-maps')) {
+				a.href = mapsLink.href;
+				a.setAttribute('rel', 'noopener noreferrer');
+			}
+			if (touch) { a.removeAttribute('target'); } else { a.setAttribute('target', '_blank'); }
+		});
+	}
+
 	/* Floating bubbles (location + WhatsApp): on small screens they step aside while the booking form is on screen, so it never covers the fields or the submit button. */
 	var bubbles = document.querySelectorAll('[data-rek-wa], [data-rek-loc]');
 	var booking = document.querySelector('.rek-booking');

@@ -232,6 +232,11 @@ body {
 .rek-wa.rek-loc { bottom: calc(24px + 60px + 12px + env(safe-area-inset-bottom)); }
 .rek-loc .rek-wa__icon::before { background: radial-gradient(circle, rgba(91, 184, 242, .24), rgba(91, 184, 242, 0) 70%); }
 .rek-loc .rek-wa__icon svg { filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .35)) drop-shadow(0 0 6px rgba(91, 184, 242, .25)); }
+/* Touch screens: a short glassy press, so the tap is felt before Google Maps opens. */
+@media (hover: none) {
+	.rek-wa.rek-loc { -webkit-tap-highlight-color: transparent; transition: transform .18s var(--rek-ease), border-color .18s var(--rek-ease), box-shadow .18s var(--rek-ease); }
+	.rek-wa.rek-loc:active { transform: scale(.92); border-color: rgba(91, 184, 242, .45); box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .75), inset 0 1px 0 rgba(255, 255, 255, .24), inset 0 0 18px rgba(22, 137, 216, .4); }
+}
 
 /* Touch screens: no hover, so an occasional, very soft glow hints that the bubble is interactive. */
 @media (hover: none) {

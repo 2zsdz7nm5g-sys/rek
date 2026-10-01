@@ -3,10 +3,10 @@
  * Location: one Google Maps link (GOOGLE_MAPS_URL) used by every location
  * element on the site.
  *
- * The link is entered once in Appearance > Customize > REK PROFFSET contact
- * ("Google Maps URL"). It can also be pinned in wp-config.php with
- * define( 'REK_GOOGLE_MAPS_URL', 'https://maps.app.goo.gl/...' ), which takes
- * precedence. Nothing here contains a hard-coded address or coordinates.
+ * The official link supplied by REK PROFFSET is the default below. It can be
+ * changed in Appearance > Customize > REK PROFFSET contact ("Google Maps URL"),
+ * or pinned in wp-config.php with define( 'REK_GOOGLE_MAPS_URL', '...' ), which
+ * takes precedence. Nothing here contains guessed coordinates.
  *
  * Used by: the floating location bubble, /?rek=maps (for links placed in
  * Elementor content, such as the homepage location CTA) and the
@@ -17,21 +17,36 @@
 
 defined( 'ABSPATH' ) || exit;
 
-/** The Google Maps link for REK PROFFSET, or '' until it is configured. */
+/** The official REK PROFFSET Google Maps link, exactly as supplied by the business. */
+const REK_MAPS_URL_DEFAULT = 'https://maps.app.goo.gl/frn5fkDx3xUa1k1N6?g_st=ic';
+
+/**
+ * Embed for that link. The short link redirects to Google's own listing,
+ * "ريك بروفست العراق / RekProffset Iraq، شارع الصناعة، قرب جسر الربيعي، بغداد",
+ * feature id 0x15578361c792ac41:0x4e9c231f8297c315; the embed asks Google for
+ * that same listing, so the pin is Google's, not an approximation.
+ */
+const REK_MAPS_EMBED_DEFAULT = 'https://maps.google.com/maps?q=%D8%B1%D9%8A%D9%83%20%D8%A8%D8%B1%D9%88%D9%81%D8%B3%D8%AA%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%20%2F%20RekProffset%20Iraq%D8%8C%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9%D8%8C%20%D9%82%D8%B1%D8%A8%20%D8%AC%D8%B3%D8%B1%20%D8%A7%D9%84%D8%B1%D8%A8%D9%8A%D8%B9%D9%8A%D8%8C%20%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF%D8%8C%2010069&ftid=0x15578361c792ac41:0x4e9c231f8297c315&z=16&output=embed';
+
+/** The Google Maps link for REK PROFFSET. */
 function rek_maps_url() {
 	$url = defined( 'REK_GOOGLE_MAPS_URL' ) ? REK_GOOGLE_MAPS_URL : rek_get( 'rek_maps_url' );
-	return $url ? esc_url_raw( $url ) : '';
+	return esc_url_raw( $url ? $url : REK_MAPS_URL_DEFAULT );
 }
 
 /**
  * Map embed source. Uses the optional "Google Maps embed URL" (Share > Embed
- * a map > the src value). Without it, a real street address is embedded by
- * search; with neither, no map is embedded and a styled panel is shown.
+ * a map > the src value); else the official listing while the official link
+ * is in use; else a real street address by search; with none of these, no map
+ * is embedded and a styled panel is shown.
  */
 function rek_maps_embed_src() {
 	$embed = rek_get( 'rek_maps_embed' );
 	if ( $embed && preg_match( '#^https://(www\.)?google\.[a-z.]+/maps/embed\?#i', $embed ) ) {
 		return $embed;
+	}
+	if ( REK_MAPS_URL_DEFAULT === rek_maps_url() ) {
+		return REK_MAPS_EMBED_DEFAULT;
 	}
 	$address = rek_get( 'rek_address' );
 	return $address ? 'https://www.google.com/maps?output=embed&q=' . rawurlencode( $address . ', Baghdad, Iraq' ) : '';
@@ -67,9 +82,9 @@ function rek_pin_svg( $size = 24 ) {
 function rek_render_location_bubble() {
 	?>
 	<a class="rek-wa rek-loc" href="<?php echo esc_url( rek_location_href() ); ?>"<?php echo rek_location_target_attrs(); // phpcs:ignore ?>
-		aria-label="<?php echo esc_attr( rek_t( 'فتح موقع REK PROFFSET على خرائط Google', 'Open the REK PROFFSET location in Google Maps' ) ); ?>" data-rek-loc>
+		aria-label="<?php echo esc_attr( rek_t( 'موقعنا: فتح موقع REK PROFFSET في خرائط Google', 'Our location: open REK PROFFSET in Google Maps' ) ); ?>" data-rek-loc data-rek-maps>
 		<span class="rek-wa__icon" aria-hidden="true"><?php echo rek_pin_svg( 26 ); // phpcs:ignore ?></span>
-		<span class="rek-wa__label" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>"><?php echo esc_html( rek_t( 'موقعنا على الخريطة', 'Find us on the map' ) ); ?></span>
+		<span class="rek-wa__label" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>"><?php echo esc_html( rek_t( 'موقعنا', 'Our location' ) ); ?></span>
 	</a>
 	<?php
 }
@@ -77,7 +92,7 @@ function rek_render_location_bubble() {
 /**
  * [rek_location]: the closing location experience on the contact page:
  * a WhatsApp prompt, then the location heading, map and details with a
- * "Get directions" button. Every link uses rek_maps_url().
+ * "Open in Google Maps" button. Every link uses rek_maps_url().
  */
 add_shortcode( 'rek_location', function () {
 	$maps    = rek_maps_url();
@@ -112,7 +127,7 @@ add_shortcode( 'rek_location', function () {
 					<div class="rek-loc-map__caption">
 						<p class="rek-loc-map__city"><?php echo esc_html( rek_t( 'بغداد، العراق', 'Baghdad, Iraq' ) ); ?></p>
 						<?php if ( $maps ) : ?>
-							<a class="rek-loc-map__link" href="<?php echo esc_url( $maps ); ?>"<?php echo $ext; // phpcs:ignore ?>><?php echo esc_html( rek_t( 'افتح الموقع على خرائط Google', 'Open the location in Google Maps' ) ); ?></a>
+							<a class="rek-loc-map__link" href="<?php echo esc_url( $maps ); ?>"<?php echo $ext; // phpcs:ignore ?> data-rek-maps><?php echo esc_html( rek_t( 'افتح الموقع على خرائط Google', 'Open the location in Google Maps' ) ); ?></a>
 						<?php endif; ?>
 					</div>
 				<?php endif; ?>
@@ -133,9 +148,9 @@ add_shortcode( 'rek_location', function () {
 					<?php endif; ?>
 				</dl>
 				<?php if ( $maps ) : ?>
-					<a class="rek-btn rek-btn--primary rek-loc-info__cta" href="<?php echo esc_url( $maps ); ?>"<?php echo $ext; // phpcs:ignore ?>>
+					<a class="rek-btn rek-btn--primary rek-loc-info__cta" href="<?php echo esc_url( $maps ); ?>"<?php echo $ext; // phpcs:ignore ?> data-rek-maps>
 						<?php echo rek_pin_svg( 18 ); // phpcs:ignore ?>
-						<span><?php echo esc_html( rek_t( 'احصل على الاتجاهات', 'Get directions' ) ); ?></span>
+						<span><?php echo esc_html( rek_t( 'فتح الموقع في خرائط Google', 'Open in Google Maps' ) ); ?></span>
 					</a>
 				<?php elseif ( current_user_can( 'edit_theme_options' ) ) : ?>
 					<p class="rek-loc-info__admin" dir="ltr"><?php echo esc_html( 'Admins only: enter the Google Maps URL in Appearance > Customize > REK PROFFSET contact to show the map link and the "Get directions" button.' ); ?></p>
