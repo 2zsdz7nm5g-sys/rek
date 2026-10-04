@@ -64,10 +64,9 @@
 	/*
 	 * Benefit bubbles. The first one is shown from the start. The roll is mapped to the
 	 * scroll position (see frame); the bubbles are a separate state on the same scroll:
-	 * each distinct gesture that moves the roll forward (the page moving down: a swipe
-	 * up on a phone, the wheel or trackpad pushed forward) shows exactly one more bubble
-	 * once it has travelled THRESHOLD px while the section is on screen. Scrolling the
-	 * other way only turns the roll back; shown bubbles never go away.
+	 * each distinct upward scroll gesture (the page scrolling back up) shows exactly one
+	 * more bubble, the moment it is detected while the section is on screen. Scrolling
+	 * down never adds a bubble; shown bubbles never go away.
 	 * Gestures are told apart without timers: a new one starts when the direction
 	 * changes, when a finger touches the screen, or when GAP ms passed since the last
 	 * scroll event.
@@ -90,7 +89,7 @@
 	};
 	updateBubbles(0);
 
-	var GAP = 400, THRESHOLD = 40;
+	var GAP = 400, THRESHOLD = 1;
 	var lastY = window.scrollY, lastScrollT = 0, dir = 0, travelled = 0, revealed = false;
 	var sectionOnScreen = function () {
 		var r = section.getBoundingClientRect();
@@ -105,8 +104,8 @@
 		if (!dy) { return; }
 		var d = dy > 0 ? 1 : -1;
 		if (d !== dir || gap) { dir = d; travelled = 0; revealed = false; }
-		if (d < 0 || revealed || !sectionOnScreen()) { return; }
-		travelled += dy;
+		if (d > 0 || revealed || !sectionOnScreen()) { return; }
+		travelled -= dy;
 		if (travelled < THRESHOLD) { return; }
 		revealed = true;
 		var next = bubbles.filter(function (b) { return !b.on; })[0];
