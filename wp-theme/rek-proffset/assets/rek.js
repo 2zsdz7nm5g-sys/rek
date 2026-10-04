@@ -22,14 +22,17 @@
 
 	/*
 	 * Homepage hero video: the landscape or portrait file for the current
-	 * screen, loaded after the page itself so it never delays the hero image,
-	 * faded in once playing, paused while the hero is off screen, and swapped
-	 * if the screen changes shape (rotation, resize). If playback is refused
-	 * (Low Power Mode, data saver) the hero image simply stays.
+	 * screen, requested as soon as this script runs, faded in once playing,
+	 * paused while the hero is off screen, and swapped if the screen changes
+	 * shape (rotation, resize). The hero photo is hidden while the video is
+	 * present; with reduced motion or data saver the video is removed and the
+	 * photo shown instead.
 	 */
 	var heroVideo = document.querySelector('[data-rek-hero-video]');
 	var saveData = navigator.connection && navigator.connection.saveData;
 	if (heroVideo && (reduceMotion || saveData || !window.matchMedia)) {
+		var heroImg = heroVideo.parentNode.querySelector('.rek-hero-img--under-video');
+		if (heroImg) { heroImg.classList.remove('rek-hero-img--under-video'); }
 		heroVideo.parentNode.removeChild(heroVideo);
 	} else if (heroVideo) {
 		var portrait = window.matchMedia(heroVideo.getAttribute('data-portrait'));
@@ -63,7 +66,7 @@
 			pickHero();
 			if (portrait.addEventListener) { portrait.addEventListener('change', pickHero); } else { portrait.addListener(pickHero); }
 		};
-		if (document.readyState === 'complete') { startHero(); } else { window.addEventListener('load', startHero, { once: true }); }
+		startHero();
 	}
 
 	/* Booking result notice: move focus to it so screen readers announce it. */

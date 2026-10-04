@@ -6,12 +6,12 @@
  * assets/video/hero-desktop-1920x1080.mp4 for landscape screens and
  * assets/video/hero-mobile-1080x1920.mp4 for phones and portrait screens.
  *
- * The existing hero image stays in place as the poster and fallback: the
- * <video> is layered over it with the same rk-cover class, carries no src
- * in the markup, and rek.js gives it the right file after the page has
- * loaded, fading it in only once it is actually playing. So the image
- * remains the first paint, and wherever autoplay is not possible (Low Power
- * Mode, Save-Data, reduced motion, no JavaScript) the hero looks as before.
+ * The <video> is layered over the hero image with the same rk-cover class
+ * and carries no src in the markup; rek.js gives it the right file as soon
+ * as it runs and fades it in once it is playing. The hero image is hidden
+ * while the video is present (the hero shows its plain dark background until
+ * the video starts), and comes back only where rek.js removes the video
+ * (reduced motion, Save-Data).
  *
  * @package rek-proffset
  */
@@ -45,7 +45,8 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 		esc_url( $base . 'hero-mobile-1080x1920.mp4?ver=' . REK_VERSION ),
 		esc_attr( REK_HERO_VIDEO_PORTRAIT_QUERY )
 	);
+	/* The photo stays in the markup (it is the fallback when the video is switched off) but is hidden while the video is present. */
 	return preg_replace_callback( '#<img\b[^>]*\brk-hero-img\b[^>]*>#', function ( $m ) use ( $video ) {
-		return $m[0] . $video;
+		return preg_replace( '#\bclass="#', 'class="rek-hero-img--under-video ', $m[0], 1 ) . $video;
 	}, $content, 1 );
 } );

@@ -324,6 +324,9 @@ body {
 /* Homepage hero video (inc/hero-video.php): sits over the hero image and fades in once it is playing. */
 .rek-hero-video { opacity: 0; transition: opacity 1.2s var(--rek-ease); object-position: 50% 50%; pointer-events: none; }
 .rek-hero-video.is-playing { opacity: 1; }
+/* While the video is present the hero photo is not shown: the hero keeps its plain dark background until the video fades in. */
+.rek-hero-img--under-video { visibility: hidden; }
+.rk-hero:has(.rek-hero-video) { background-color: var(--rek-bg); }
 /* The video is brighter than the photo it replaces, so while it plays the text side gets a light extra scrim. */
 .rk-hero .rk-hero-shade::before {
 	content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity 1.2s var(--rek-ease);
