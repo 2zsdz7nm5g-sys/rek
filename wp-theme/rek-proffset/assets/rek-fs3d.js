@@ -65,11 +65,10 @@
 	 * Benefit bubbles. The first one is shown from the start. The roll is mapped to the
 	 * scroll position (see frame); the bubbles are a separate state on the same scroll:
 	 * each distinct upward scroll gesture (the page scrolling back up) shows exactly one
-	 * more bubble, the moment it is detected while the section is on screen. Scrolling
-	 * down never adds a bubble; shown bubbles never go away.
-	 * Gestures are told apart without timers: a new one starts when the direction
-	 * changes, when a finger touches the screen, or when GAP ms passed since the last
-	 * scroll event.
+	 * more bubble on its first upward scroll event, while the section is on screen.
+	 * Scrolling down never adds a bubble; shown bubbles never go away.
+	 * A new gesture starts when the scroll direction changes, when a finger touches the
+	 * screen, or when a new wheel/trackpad input begins (see the wheel listener below).
 	 */
 	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el, i) {
 		return { el: el, word: el.querySelector('.rek-bubble__word'), on: i === 0 };
@@ -89,24 +88,38 @@
 	};
 	updateBubbles(0);
 
-	var GAP = 400, THRESHOLD = 1;
-	var lastY = window.scrollY, lastScrollT = 0, dir = 0, travelled = 0, revealed = false;
+	var lastY = window.scrollY, dir = 0, revealed = false;
 	var sectionOnScreen = function () {
 		var r = section.getBoundingClientRect();
 		return r.top < window.innerHeight && r.bottom > 0;
 	};
 	window.addEventListener('touchstart', function () { dir = 0; }, { passive: true });
+	/*
+	 * Wheel/trackpad: marks the start of a new input gesture only (the roll ignores it).
+	 * New input = wheel events resume after QUIET ms, the wheel direction flips, or the
+	 * input grows again after it had been fading (a fresh swipe while the previous
+	 * swipe is still coasting), so momentum never hides the next swipe.
+	 */
+	var QUIET = 200, lastWheelT = 0, lastWheelAbs = 0, wheelSign = 0, fading = 0, low = 0;
+	window.addEventListener('wheel', function (e) {
+		if (e.ctrlKey || !e.deltaY) { return; }
+		var now = window.performance.now(), abs = Math.abs(e.deltaY), sign = e.deltaY > 0 ? 1 : -1;
+		var fresh = now - lastWheelT > QUIET || sign !== wheelSign || (fading >= 4 && abs >= low * 1.5 + 2);
+		if (fresh) { fading = 0; low = abs; }
+		else if (abs < lastWheelAbs) { fading++; low = Math.min(low, abs); }
+		else if (abs > lastWheelAbs && fading < 4) { fading = 0; low = abs; } // still speeding up: not coasting yet
+		lastWheelT = now;
+		lastWheelAbs = abs;
+		wheelSign = sign;
+		if (fresh) { dir = 0; }
+	}, { passive: true });
 	window.addEventListener('scroll', function () {
-		var now = window.performance.now(), y = window.scrollY, dy = y - lastY;
-		var gap = now - lastScrollT > GAP;
+		var y = window.scrollY, dy = y - lastY;
 		lastY = y;
-		lastScrollT = now;
 		if (!dy) { return; }
 		var d = dy > 0 ? 1 : -1;
-		if (d !== dir || gap) { dir = d; travelled = 0; revealed = false; }
+		if (d !== dir) { dir = d; revealed = false; }
 		if (d > 0 || revealed || !sectionOnScreen()) { return; }
-		travelled -= dy;
-		if (travelled < THRESHOLD) { return; }
 		revealed = true;
 		var next = bubbles.filter(function (b) { return !b.on; })[0];
 		if (next) { next.on = true; updateBubbles(lastDeg); }
