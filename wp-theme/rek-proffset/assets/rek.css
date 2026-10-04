@@ -377,41 +377,35 @@ html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-s
 .rek-fs3d__label sup { font-size: .7em; }
 .rek-fs3d__title { margin: 0; font-family: var(--rek-font-display); font-weight: 600; font-size: clamp(24px, 3vw, 40px); line-height: 1.25; color: var(--rek-ink); }
 
-/* Benefit words in water/glass bubbles, behind the product (the canvas is layered above). */
+/* Benefit words in water drops, behind the product (the canvas is layered above).
+ * Each drop is an organic, slightly asymmetric teardrop: the outline (an SVG mask) clips a
+ * refracting blur of what lies behind, and an SVG overlay with the same outline adds the water
+ * tint, a bright rim, specular highlights and the caustic light gathered at the bottom. */
 .rek-fs3d__words { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
 .rek-bubble {
 	--b: clamp(104px, 9vw, 150px);
-	position: absolute; left: var(--x); top: var(--y);
-	width: var(--b); height: var(--b); margin: calc(var(--b) / -2) 0 0 calc(var(--b) / -2);
-	display: grid; place-items: center; border-radius: 50%;
-	/* Water sphere: faint body, a brighter meniscus ring and a cool refraction tint toward the lower edge. */
-	background:
-		radial-gradient(circle at 68% 76%, rgba(91, 184, 242, .30), rgba(91, 184, 242, 0) 38%),
-		radial-gradient(circle at 50% 50%, rgba(245, 247, 250, .02) 0%, rgba(22, 137, 216, .05) 54%, rgba(91, 184, 242, .22) 66%, rgba(245, 247, 250, .26) 69.5%, rgba(245, 247, 250, 0) 71%);
-	border: 1px solid rgba(245, 247, 250, .14);
-	box-shadow:
-		inset 0 0 26px rgba(91, 184, 242, .18),
-		0 0 24px -6px rgba(91, 184, 242, .18),
-		inset -10px -14px 26px rgba(0, 0, 0, .22),
-		inset 10px 10px 20px rgba(255, 255, 255, .07),
-		0 22px 44px -22px rgba(0, 0, 0, .8);
-	-webkit-backdrop-filter: blur(6px) saturate(140%); backdrop-filter: blur(6px) saturate(140%);
+	position: absolute; left: var(--x); top: var(--y); box-sizing: border-box;
+	/* Same anchor as before: the round body of the drop sits on (--x, --y); the tip rises above it. */
+	width: var(--b); height: calc(var(--b) * 1.22); margin: calc(var(--b) * -.78) 0 0 calc(var(--b) / -2);
+	padding-top: calc(var(--b) * .34);
+	display: grid; place-items: center;
 	will-change: transform, opacity;
 }
-/* Specular highlight on the upper edge. */
+/* The water body: refraction of the background through the drop, masked to the drop outline. */
 .rek-bubble::before {
-	content: ""; position: absolute; top: 11%; left: 20%; width: 36%; height: 20%; border-radius: 50%;
-	background: radial-gradient(ellipse at center, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0) 70%);
-	transform: rotate(-28deg); filter: blur(1px);
+	content: ""; position: absolute; inset: 0; z-index: 0;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 122' preserveAspectRatio='none'%3E %3Cdefs%3E %3CradialGradient id='b' cx='.44' cy='.6' r='.62'%3E%3Cstop offset='0' stop-color='%23f5f7fa' stop-opacity='.03'/%3E%3Cstop offset='.6' stop-color='%231689d8' stop-opacity='.07'/%3E%3Cstop offset='.86' stop-color='%235bb8f2' stop-opacity='.2'/%3E%3Cstop offset='1' stop-color='%23d8eefc' stop-opacity='.34'/%3E%3C/radialGradient%3E %3ClinearGradient id='r' x1='0' y1='0' x2='.7' y2='1'%3E%3Cstop offset='0' stop-color='%23fff' stop-opacity='.7'/%3E%3Cstop offset='.45' stop-color='%23bfe3fb' stop-opacity='.22'/%3E%3Cstop offset='1' stop-color='%235bb8f2' stop-opacity='.5'/%3E%3C/linearGradient%3E %3CradialGradient id='c' cx='.5' cy='.5' r='.5'%3E%3Cstop offset='0' stop-color='%23a9dcfb' stop-opacity='.55'/%3E%3Cstop offset='1' stop-color='%23a9dcfb' stop-opacity='0'/%3E%3C/radialGradient%3E %3ClinearGradient id='s' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2303070c' stop-opacity='.32'/%3E%3C/linearGradient%3E %3Cfilter id='f'%3E%3CfeGaussianBlur stdDeviation='1.4'/%3E%3C/filter%3E%3Cfilter id='g'%3E%3CfeGaussianBlur stdDeviation='.5'/%3E%3C/filter%3E %3C/defs%3E %3Cpath d='M53 3C61 22 92 44 93 74C94 101 75 119 50 119C25 119 6 102 7 76C8 49 43 25 53 3Z' fill='url(%23b)'/%3E %3Cpath d='M53 3C61 22 92 44 93 74C94 101 75 119 50 119C25 119 6 102 7 76C8 49 43 25 53 3Z' fill='url(%23s)'/%3E %3Cellipse cx='63' cy='100' rx='20' ry='9' fill='url(%23c)' transform='rotate(-24 63 100)'/%3E %3Cpath d='M53 3C61 22 92 44 93 74C94 101 75 119 50 119C25 119 6 102 7 76C8 49 43 25 53 3Z' fill='none' stroke='url(%23r)' stroke-width='1.6'/%3E %3Cpath d='M24 64C26 50 35 38 44 28' fill='none' stroke='%23fff' stroke-opacity='.55' stroke-width='4' stroke-linecap='round' filter='url(%23f)'/%3E %3Cellipse cx='27' cy='55' rx='3' ry='5' fill='%23fff' fill-opacity='.75' transform='rotate(22 27 55)' filter='url(%23g)'/%3E %3Cpath d='M78 92C74 103 66 110 55 112' fill='none' stroke='%23d6efff' stroke-opacity='.5' stroke-width='1.6' stroke-linecap='round' filter='url(%23g)'/%3E %3C/svg%3E") center / 100% 100% no-repeat;
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 122' preserveAspectRatio='none'%3E%3Cpath d='M53 3C61 22 92 44 93 74C94 101 75 119 50 119C25 119 6 102 7 76C8 49 43 25 53 3Z' fill='%23000'/%3E%3C/svg%3E") center / 100% 100% no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 122' preserveAspectRatio='none'%3E%3Cpath d='M53 3C61 22 92 44 93 74C94 101 75 119 50 119C25 119 6 102 7 76C8 49 43 25 53 3Z' fill='%23000'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+	-webkit-backdrop-filter: blur(5px) saturate(155%) brightness(1.08); backdrop-filter: blur(5px) saturate(155%) brightness(1.08);
 }
-/* Caustic crescent where light gathers inside the sphere. */
+/* Soft shadow the drop casts, offset down and to the side. */
 .rek-bubble::after {
-	content: ""; position: absolute; right: 16%; bottom: 12%; width: 30%; height: 14%; border-radius: 50%;
-	border-bottom: 2px solid rgba(160, 215, 250, .45); transform: rotate(-30deg); filter: blur(.6px);
+	content: ""; position: absolute; z-index: -1; left: 18%; right: 6%; bottom: -7%; height: 22%; border-radius: 50%;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, .42), rgba(0, 0, 0, 0) 70%); filter: blur(6px);
 }
 .rek-bubble__word {
-	position: relative; font-family: var(--rek-font-display); font-weight: 600; font-size: calc(var(--b) * .19); line-height: 1;
-	color: var(--rek-ink); text-shadow: 0 1px 14px rgba(91, 184, 242, .45);
+	position: relative; z-index: 1; font-family: var(--rek-font-display); font-weight: 600; font-size: calc(var(--b) * .19); line-height: 1;
+	color: var(--rek-ink); text-shadow: 0 1px 2px rgba(5, 11, 18, .55), 0 0 12px rgba(91, 184, 242, .28);
 }
 /* Balanced, asymmetric placement around the product (reveal order 1 to 4). */
 .rek-bubble--1 { --x: 69%; --y: 27%; }

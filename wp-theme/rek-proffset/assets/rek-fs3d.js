@@ -6,8 +6,8 @@
  * studio environment. Its position and rotation are driven by scroll:
  * it rises from below the hero, turns about 100 degrees while it reaches the
  * centre, then keeps turning slowly (170 degrees more) while the stage is pinned,
- * revealing four benefit words in turn. Scrolling up
- * plays everything backwards because every value is derived from the scroll
+ * revealing four benefit words in turn (each stays once it has appeared). Scrolling up
+ * plays the product backwards because every value is derived from the scroll
  * position, never from time.
  *
  * Three.js is self-hosted and loaded only when the stage is near the viewport,
@@ -62,20 +62,22 @@
 	};
 
 	/*
-	 * Benefit bubbles: one word per stretch of rotation, derived from the same
-	 * damped angle as the product, so they stay in lockstep and reverse with it.
-	 * Windows are in degrees of the product's rotation; F softens each edge.
+	 * Benefit drops: each appears at its point in the product's rotation (the same
+	 * damped angle, so they keep pace with it) and then stays: a drop never fades
+	 * out, also not when scrolling back up. Start angles are in degrees of rotation;
+	 * FEATHER softens the appearance.
 	 */
 	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el) {
-		return { el: el, word: el.querySelector('.rek-bubble__word') };
+		return { el: el, word: el.querySelector('.rek-bubble__word'), shown: 0 };
 	});
-	var WINDOWS = [[15, 70], [70, 125], [125, 180], [180, Infinity]];
+	var STARTS = [15, 70, 125, 180];
 	var FEATHER = 16;
 	var updateBubbles = function (deg) {
 		bubbles.forEach(function (b, i) {
-			var w = WINDOWS[i];
-			var v = clamp((deg - w[0]) / FEATHER + 0.5, 0, 1) * (w[1] === Infinity ? 1 : clamp((w[1] - deg) / FEATHER + 0.5, 0, 1));
+			var v = clamp((deg - STARTS[i]) / FEATHER + 0.5, 0, 1);
 			v = v * v * (3 - 2 * v); // smoothstep
+			b.shown = Math.max(b.shown, v); // once shown, it stays
+			v = b.shown;
 			// A gentle drift that is also a function of rotation: it moves only when the product does.
 			var fy = Math.sin(deg * 0.035 + i * 1.7) * 6;
 			var fx = Math.cos(deg * 0.028 + i * 2.3) * 3;
