@@ -6,7 +6,7 @@
  * studio environment. Its position and rotation are driven by scroll:
  * it rises from below the hero, turns about 100 degrees while it reaches the
  * centre, then keeps turning slowly (170 degrees more) while the stage is pinned,
- * revealing four benefit words in turn (each stays once it has appeared). Scrolling up
+ * while four benefit words appear, one per upward scroll step (see below). Scrolling up
  * plays the product backwards because every value is derived from the scroll
  * position, never from time.
  *
@@ -62,30 +62,53 @@
 	};
 
 	/*
-	 * Benefit drops: each appears at its point in the product's rotation (the same
-	 * damped angle, so they keep pace with it) and then stays: a drop never fades
-	 * out, also not when scrolling back up. Start angles are in degrees of rotation;
-	 * FEATHER softens the appearance.
+	 * Benefit bubbles: each distinct upward scroll step while the section is on
+	 * screen adds exactly one bubble, in order, and a bubble never goes away
+	 * (not on scrolling down, not on scrolling up again). A step is one
+	 * continuous upward scroll: it ends when scrolling pauses for GAP ms or turns
+	 * downward. The gentle drift still follows the product's rotation.
 	 */
 	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el) {
-		return { el: el, word: el.querySelector('.rek-bubble__word'), shown: 0 };
+		return { el: el, word: el.querySelector('.rek-bubble__word'), on: false };
 	});
-	var STARTS = [15, 70, 125, 180];
-	var FEATHER = 16;
+	var lastDeg = 0;
 	var updateBubbles = function (deg) {
+		lastDeg = deg;
 		bubbles.forEach(function (b, i) {
-			var v = clamp((deg - STARTS[i]) / FEATHER + 0.5, 0, 1);
-			v = v * v * (3 - 2 * v); // smoothstep
-			b.shown = Math.max(b.shown, v); // once shown, it stays
-			v = b.shown;
+			var v = b.on ? 1 : 0;
 			// A gentle drift that is also a function of rotation: it moves only when the product does.
 			var fy = Math.sin(deg * 0.035 + i * 1.7) * 6;
 			var fx = Math.cos(deg * 0.028 + i * 2.3) * 3;
-			b.el.style.opacity = v.toFixed(3);
+			b.el.style.opacity = String(v);
 			b.el.style.transform = 'translate3d(' + fx.toFixed(1) + 'px,' + (fy + (1 - v) * 14).toFixed(1) + 'px,0) scale(' + (0.82 + 0.18 * v).toFixed(3) + ')';
-			b.word.style.filter = v < 0.999 ? 'blur(' + ((1 - v) * 6).toFixed(2) + 'px)' : '';
+			b.word.style.filter = v ? '' : 'blur(6px)';
 		});
 	};
+	updateBubbles(0);
+
+	var shown = 0, lastY = window.scrollY, stepping = false, stepTimer = 0, GAP = 250;
+	var sectionOnScreen = function () {
+		var r = section.getBoundingClientRect();
+		return r.top < window.innerHeight && r.bottom > 0;
+	};
+	window.addEventListener('scroll', function () {
+		var y = window.scrollY, dy = y - lastY;
+		lastY = y;
+		if (dy < 0) {
+			if (!stepping) {
+				stepping = true;
+				if (shown < bubbles.length && sectionOnScreen()) {
+					bubbles[shown].on = true;
+					shown++;
+					updateBubbles(lastDeg);
+				}
+			}
+		} else if (dy > 0) {
+			stepping = false;
+		}
+		clearTimeout(stepTimer);
+		stepTimer = setTimeout(function () { stepping = false; }, GAP);
+	}, { passive: true });
 
 	var THREE, renderer, scene, camera, box, shadow, running = false, ready = false, visible = true;
 	var cur = { enter: 0, pin: 0 };
