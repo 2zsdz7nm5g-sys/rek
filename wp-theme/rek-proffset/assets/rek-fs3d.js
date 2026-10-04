@@ -6,9 +6,9 @@
  * studio environment. Its position and rotation are driven by scroll:
  * it rises from below the hero, turns about 100 degrees while it reaches the
  * centre, then keeps turning slowly (170 degrees more) while the stage is pinned,
- * while benefit words appear, one more per upward scroll gesture (see below). Scrolling up
- * plays the product backwards because every value is derived from the scroll
- * position, never from time.
+ * while benefit words appear, one more per forward scroll gesture (see below). Scrolling
+ * back plays the product backwards because every value is the scroll position
+ * itself, never time, and nothing moves once the page stops.
  *
  * Three.js is self-hosted and loaded only when the stage is near the viewport,
  * after the page has finished loading. Nothing renders while the page is
@@ -62,12 +62,15 @@
 	};
 
 	/*
-	 * Benefit bubbles. The first one is shown from the start. Each distinct upward
-	 * scroll gesture while the section is on screen shows exactly one more, the
-	 * moment the gesture begins, while the product turns with the scroll as usual.
-	 * Shown bubbles never go away (scrolling down only turns the product back).
-	 * Gestures are told apart without timers: a new upward gesture starts when the
-	 * page was scrolling down before, or when GAP ms passed since the last scroll event.
+	 * Benefit bubbles. The first one is shown from the start. The roll is mapped to the
+	 * scroll position (see frame); the bubbles are a separate state on the same scroll:
+	 * each distinct gesture that moves the roll forward (the page moving down: a swipe
+	 * up on a phone, the wheel or trackpad pushed forward) shows exactly one more bubble
+	 * once it has travelled THRESHOLD px while the section is on screen. Scrolling the
+	 * other way only turns the roll back; shown bubbles never go away.
+	 * Gestures are told apart without timers: a new one starts when the direction
+	 * changes, when a finger touches the screen, or when GAP ms passed since the last
+	 * scroll event.
 	 */
 	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el, i) {
 		return { el: el, word: el.querySelector('.rek-bubble__word'), on: i === 0 };
@@ -87,26 +90,27 @@
 	};
 	updateBubbles(0);
 
-	var GAP = 400;
-	var lastY = window.scrollY, lastScrollT = 0, goingUp = false;
+	var GAP = 400, THRESHOLD = 40;
+	var lastY = window.scrollY, lastScrollT = 0, dir = 0, travelled = 0, revealed = false;
 	var sectionOnScreen = function () {
 		var r = section.getBoundingClientRect();
 		return r.top < window.innerHeight && r.bottom > 0;
 	};
+	window.addEventListener('touchstart', function () { dir = 0; }, { passive: true });
 	window.addEventListener('scroll', function () {
 		var now = window.performance.now(), y = window.scrollY, dy = y - lastY;
-		var newGesture = !goingUp || now - lastScrollT > GAP;
+		var gap = now - lastScrollT > GAP;
 		lastY = y;
 		lastScrollT = now;
-		if (dy < 0) {
-			if (newGesture && sectionOnScreen()) {
-				var next = bubbles.filter(function (b) { return !b.on; })[0];
-				if (next) { next.on = true; updateBubbles(lastDeg); }
-			}
-			goingUp = true;
-		} else if (dy > 0) {
-			goingUp = false;
-		}
+		if (!dy) { return; }
+		var d = dy > 0 ? 1 : -1;
+		if (d !== dir || gap) { dir = d; travelled = 0; revealed = false; }
+		if (d < 0 || revealed || !sectionOnScreen()) { return; }
+		travelled += dy;
+		if (travelled < THRESHOLD) { return; }
+		revealed = true;
+		var next = bubbles.filter(function (b) { return !b.on; })[0];
+		if (next) { next.on = true; updateBubbles(lastDeg); }
 	}, { passive: true });
 
 	var THREE, renderer, scene, camera, box, shadow, running = false, ready = false, visible = true;
@@ -260,17 +264,11 @@
 		camera.updateProjectionMatrix();
 	}
 
-	var lastT = 0;
-	function frame(now) {
+	function frame() {
 		running = false;
-		// Time-based damping: the same smooth follow at 30, 60 or 120 fps, always converging on the scroll position.
-		var dt = lastT ? Math.min(0.1, (now - lastT) / 1000) : 1 / 60;
-		lastT = now;
-		var k = 1 - Math.exp(-dt * 9);
-		cur.enter += (target.enter - cur.enter) * k;
-		cur.pin += (target.pin - cur.pin) * k;
-		var settled = Math.abs(target.enter - cur.enter) < 0.0005 && Math.abs(target.pin - cur.pin) < 0.0005;
-		if (settled) { cur.enter = target.enter; cur.pin = target.pin; }
+		// The roll is the scroll position, with no smoothing: it moves only while the page moves.
+		cur.enter = target.enter;
+		cur.pin = target.pin;
 
 		var e = ease(cur.enter);
 		var group = box.userData.group;
@@ -287,6 +285,5 @@
 		shadow.material.opacity = 0.7 * e;
 
 		renderer.render(scene, camera);
-		if (settled) { lastT = 0; } else { running = true; window.requestAnimationFrame(frame); }
 	}
 })();
