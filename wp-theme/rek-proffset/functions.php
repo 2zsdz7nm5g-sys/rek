@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'REK_VERSION', '1.8.14' );
+define( 'REK_VERSION', '1.8.15' );
 define( 'REK_DIR', get_stylesheet_directory() );
 define( 'REK_URI', get_stylesheet_directory_uri() );
 
