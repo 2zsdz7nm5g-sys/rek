@@ -1,0 +1,41 @@
+/*
+ * Homepage space journey (loaded only on the homepage, see inc/journey.php).
+ *
+ * .rek-journey-boot  set in <head>: the sections after the hero wait, hidden, until the journey has placed them.
+ * .rek-jm            journey layout: sections lose their own backgrounds and the tall section padding,
+ *                    the FlexiShield stage shows only its copy (the product is drawn in the space scene).
+ * .rek-journey       running: each station is fixed to the screen and placed by rek-journey.js
+ *                    through --rek-t (transform), --rek-o (opacity) and --rek-z (stacking).
+ */
+.rek-journey-boot [data-elementor-type="wp-page"] > :not(.rk-hero),
+.rek-journey-boot .rek-footer { visibility: hidden; }
+
+/* ---------- Journey layout ---------- */
+.rek-jm, .rek-jm body { background: var(--rek-bg); }
+.rek-jm #page, .rek-jm .site-content, .rek-jm #content, .rek-jm .ast-container,
+.rek-jm [data-elementor-type="wp-page"] { background: transparent !important; }
+.rek-jm [data-elementor-type="wp-page"] > .e-con:not(.rk-hero) {
+	background: transparent !important; background-image: none !important;
+	padding-block: 28px !important; min-height: 0 !important; border: 0 !important;
+}
+.rek-jm .rek-fs3d__still, .rek-jm .rek-fs3d__stage::before { display: none !important; }
+.rek-jm .rek-fs3d__stage { min-height: 0 !important; padding: 0 !important; gap: 0 !important; overflow: visible !important; }
+.rek-jm .rek-fs3d__copy { opacity: 1 !important; transform: none !important; }
+/* Sections are revealed by the journey, so the entrance animations inside them are shown as finished. */
+.rek-jm [data-interaction-id]:not(.rek-st) { opacity: 1 !important; transform: none !important; }
+
+/* ---------- Running ---------- */
+#rek-space { position: fixed; inset: 0; width: 100%; height: 100%; display: block; z-index: 0; pointer-events: none; }
+.rek-journey .rek-st {
+	position: fixed !important; left: 50% !important; top: 50% !important; right: auto !important; bottom: auto !important;
+	margin: 0 !important; max-width: none !important; flex: none !important; box-sizing: border-box;
+	transform: var(--rek-t) !important; opacity: var(--rek-o) !important; z-index: var(--rek-z, 10) !important;
+	transform-origin: 50% 50%; will-change: transform, opacity; pointer-events: none;
+}
+.rek-journey .rek-st.rk-hero { left: 0 !important; top: 0 !important; width: 100vw !important; height: 100vh !important; height: 100svh !important; }
+.rek-journey .rek-st.is-active { pointer-events: auto; }
+.rek-journey .rek-st[data-rek-off] { display: none !important; }
+.rek-journey .rek-st-host { display: contents !important; }
+/* Scroll distance for the journey; the stations themselves are fixed. */
+.rek-journey-track { display: none; }
+.rek-journey .rek-journey-track { display: block; width: 1px; }
