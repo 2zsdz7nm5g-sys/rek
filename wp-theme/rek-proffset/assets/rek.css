@@ -365,10 +365,21 @@ html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-s
 	position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 36px;
 	min-height: 90vh; padding: 96px 20px; overflow: hidden;
 }
-/* A restrained pool of light behind the product. */
+/*
+ * Deep space behind the product: a starfield with a faint blue nebula
+ * (fs3d/space*.webp, built by tools/fs3d-space/build.py) under a restrained
+ * pool of light, fading into the page at the top and bottom edges.
+ */
 .rek-fs3d__stage::before {
 	content: ""; position: absolute; inset: 0; pointer-events: none;
-	background: radial-gradient(34% 46% at 50% 48%, rgba(18, 63, 105, .42), rgba(5, 11, 18, 0) 70%);
+	background:
+		radial-gradient(34% 46% at 50% 48%, rgba(18, 63, 105, .32), rgba(5, 11, 18, 0) 70%),
+		var(--rek-bg) url("fs3d/space.webp") center / cover no-repeat;
+	-webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
+	mask-image: linear-gradient(to bottom, transparent, #000 14%, #000 86%, transparent);
+}
+@media (max-width: 767px) {
+	.rek-fs3d__stage::before { background-image: radial-gradient(40% 34% at 50% 48%, rgba(18, 63, 105, .32), rgba(5, 11, 18, 0) 70%), url("fs3d/space-m.webp"); }
 }
 .rek-fs3d__still { position: relative; display: block; height: min(60vh, 620px); width: auto; filter: drop-shadow(0 40px 50px rgba(0, 0, 0, .6)); }
 .rek-fs3d__canvas { display: none; }
