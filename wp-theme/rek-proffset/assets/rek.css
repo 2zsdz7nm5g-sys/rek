@@ -559,12 +559,14 @@ a.rek-cc:focus-visible { outline: 2px solid var(--rek-accent-light); outline-off
 	:root { --rek-header-h: 68px; }
 	.rek-nav, .rek-header__actions > .rek-lang { display: none; }
 	.rek-menu-toggle { display: block; }
+	.rek-menu__list a { font-size: 20px; font-weight: 500; line-height: 1.4; padding-block: 16px; }
 	.rek-footer__inner { grid-template-columns: 1fr 1fr; }
 	.rek-footer__brand { grid-column: 1 / -1; }
 }
 @media (max-width: 767px) {
 	:root { --rek-header-h: 64px; }
 	.rek-header__cta { display: none; }
+	.rek-menu__list a { font-size: 18px; padding-block: 15px; }
 	.rek-wordmark { font-size: 14px; letter-spacing: .12em; }
 	.rek-logo-img { width: 34px; height: 34px; }
 	.rek-footer__inner { grid-template-columns: 1fr; gap: 36px; padding-block-start: 64px; }
