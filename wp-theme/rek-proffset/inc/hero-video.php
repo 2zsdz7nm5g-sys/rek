@@ -47,8 +47,14 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 	);
 	/* The photo stays in the markup (it is the fallback when the video is switched off) but is hidden while the video is present. */
 	return preg_replace_callback( '#<img\b[^>]*\brk-hero-img\b[^>]*>#', function ( $m ) use ( $video ) {
-		$img = preg_replace( '#\bclass="#', 'class="rek-hero-img--under-video ', $m[0], 1 );
-		$img = str_replace( 'fetchpriority="high"', 'fetchpriority="low"', $img ); // the video comes first
-		return $img . $video;
+		return preg_replace( '#\bclass="#', 'class="rek-hero-img--under-video ', $m[0], 1 ) . $video;
 	}, $content, 1 );
+} );
+
+/* The hidden hero photo is only a fallback, so it should not compete with the video for bandwidth. */
+add_filter( 'wp_get_attachment_image_attributes', function ( $attr ) {
+	if ( isset( $attr['class'] ) && false !== strpos( $attr['class'], 'rk-hero-img' ) && is_singular() && in_array( get_queried_object_id(), rek_home_page_ids(), true ) ) {
+		$attr['fetchpriority'] = 'low';
+	}
+	return $attr;
 } );
