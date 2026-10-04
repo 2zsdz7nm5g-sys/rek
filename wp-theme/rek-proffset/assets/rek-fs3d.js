@@ -5,9 +5,8 @@
  * packaging) with the four photographed sides as textures, lit by a small
  * studio environment. Its position and rotation are driven by scroll:
  * it rises from below the hero, turns about 100 degrees while it reaches the
- * centre, then keeps turning slowly (170 degrees more) while the stage is pinned,
- * while benefit words appear, one more per forward scroll gesture (see below). Scrolling
- * back plays the product backwards because every value is the scroll position
+ * centre, then keeps turning slowly (170 degrees more) while the stage is pinned.
+ * Scrolling back plays the product backwards because every value is the scroll position
  * itself, never time, and nothing moves once the page stops.
  *
  * Three.js is self-hosted and loaded only when the stage is near the viewport,
@@ -60,70 +59,6 @@
 		}
 		copy.classList.toggle('is-visible', target.enter > 0.98 && target.pin > 0.04);
 	};
-
-	/*
-	 * Benefit bubbles. The first one is shown from the start. The roll is mapped to the
-	 * scroll position (see frame); the bubbles are a separate state on the same scroll:
-	 * each distinct upward scroll gesture (the page scrolling back up) shows exactly one
-	 * more bubble on its first upward scroll event, while the section is on screen.
-	 * Scrolling down never adds a bubble; shown bubbles never go away.
-	 * A new gesture starts when the scroll direction changes, when a finger touches the
-	 * screen, or when a new wheel/trackpad input begins (see the wheel listener below).
-	 */
-	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el, i) {
-		return { el: el, word: el.querySelector('.rek-bubble__word'), on: i === 0 };
-	});
-	var lastDeg = 0;
-	var updateBubbles = function (deg) {
-		lastDeg = deg;
-		bubbles.forEach(function (b, i) {
-			var v = b.on ? 1 : 0;
-			// A gentle drift that is also a function of rotation: it moves only when the product does.
-			var fy = Math.sin(deg * 0.035 + i * 1.7) * 6;
-			var fx = Math.cos(deg * 0.028 + i * 2.3) * 3;
-			b.el.style.opacity = String(v);
-			b.el.style.transform = 'translate3d(' + fx.toFixed(1) + 'px,' + (fy + (1 - v) * 14).toFixed(1) + 'px,0) scale(' + (0.82 + 0.18 * v).toFixed(3) + ')';
-			b.word.style.filter = v ? '' : 'blur(6px)';
-		});
-	};
-	updateBubbles(0);
-
-	var lastY = window.scrollY, dir = 0, revealed = false;
-	var sectionOnScreen = function () {
-		var r = section.getBoundingClientRect();
-		return r.top < window.innerHeight && r.bottom > 0;
-	};
-	window.addEventListener('touchstart', function () { dir = 0; }, { passive: true });
-	/*
-	 * Wheel/trackpad: marks the start of a new input gesture only (the roll ignores it).
-	 * New input = wheel events resume after QUIET ms, the wheel direction flips, or the
-	 * input grows again after it had been fading (a fresh swipe while the previous
-	 * swipe is still coasting), so momentum never hides the next swipe.
-	 */
-	var QUIET = 200, lastWheelT = 0, lastWheelAbs = 0, wheelSign = 0, fading = 0, low = 0;
-	window.addEventListener('wheel', function (e) {
-		if (e.ctrlKey || !e.deltaY) { return; }
-		var now = window.performance.now(), abs = Math.abs(e.deltaY), sign = e.deltaY > 0 ? 1 : -1;
-		var fresh = now - lastWheelT > QUIET || sign !== wheelSign || (fading >= 4 && abs >= low * 1.5 + 2);
-		if (fresh) { fading = 0; low = abs; }
-		else if (abs < lastWheelAbs) { fading++; low = Math.min(low, abs); }
-		else if (abs > lastWheelAbs && fading < 4) { fading = 0; low = abs; } // still speeding up: not coasting yet
-		lastWheelT = now;
-		lastWheelAbs = abs;
-		wheelSign = sign;
-		if (fresh) { dir = 0; }
-	}, { passive: true });
-	window.addEventListener('scroll', function () {
-		var y = window.scrollY, dy = y - lastY;
-		lastY = y;
-		if (!dy) { return; }
-		var d = dy > 0 ? 1 : -1;
-		if (d !== dir) { dir = d; revealed = false; }
-		if (d > 0 || revealed || !sectionOnScreen()) { return; }
-		revealed = true;
-		var next = bubbles.filter(function (b) { return !b.on; })[0];
-		if (next) { next.on = true; updateBubbles(lastDeg); }
-	}, { passive: true });
 
 	var THREE, renderer, scene, camera, box, shadow, running = false, ready = false, visible = true;
 	var cur = { enter: 0, pin: 0 };
@@ -286,11 +221,9 @@
 		var group = box.userData.group;
 		// Rises from below while the stage scrolls in, then rests at the centre.
 		group.position.y = -BOX_H * 0.62 * (1 - e) + BOX_H * 0.03 * cur.pin;
-		// About 100 degrees on the way in, then a slow further 170 degrees while pinned (270 in all),
-		// so each benefit word gets a similar share of the scroll.
+		// About 100 degrees on the way in, then a slow further 170 degrees while pinned (270 in all).
 		var deg = -35 + 100 * e + 170 * cur.pin;
 		group.rotation.y = THREE.MathUtils.degToRad(deg);
-		updateBubbles(deg);
 		group.rotation.x = 0.1 * (1 - e) + 0.03;
 		group.rotation.z = 0.04 * (1 - e);
 		shadow.position.set(0, group.position.y - BOX_H / 2 - 0.35, 0);
