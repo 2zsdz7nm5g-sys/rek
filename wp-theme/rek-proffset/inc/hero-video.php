@@ -51,10 +51,3 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 	}, $content, 1 );
 } );
 
-/* The hidden hero photo is only a fallback, so it should not compete with the video for bandwidth. */
-add_filter( 'wp_get_loading_optimization_attributes', function ( $loading, $tag, $attr ) {
-	if ( 'img' === $tag && isset( $attr['class'] ) && false !== strpos( $attr['class'], 'rk-hero-img' ) && is_singular() && in_array( get_queried_object_id(), rek_home_page_ids(), true ) ) {
-		$loading['fetchpriority'] = 'low';
-	}
-	return $loading;
-}, 10, 3 );
