@@ -425,9 +425,9 @@ html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-s
 	.rek-bubble--3 { --x: 23%; --y: 29%; }
 	.rek-bubble--4 { --x: 78%; --y: 60%; }
 }
-/* Live mode: rek-fs3d.js adds one bubble per upward scroll step, so they start hidden. */
-.rek-fs3d.is-live .rek-bubble { opacity: 0; transition: opacity .7s var(--rek-ease), transform .7s var(--rek-ease); }
-.rek-fs3d.is-live .rek-bubble__word { transition: filter .7s var(--rek-ease); }
+/* Live mode: rek-fs3d.js shows the first bubble, then one more per upward scroll gesture. */
+.rek-fs3d.is-live .rek-bubble { opacity: 0; transition: opacity .45s var(--rek-ease), transform .45s var(--rek-ease); }
+.rek-fs3d.is-live .rek-bubble__word { transition: filter .45s var(--rek-ease); }
 .rek-fs3d.is-live .rek-fs3d__canvas { z-index: 1; }
 
 .rek-fs3d.is-live { height: 240vh; }

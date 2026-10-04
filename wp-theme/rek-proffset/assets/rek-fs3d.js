@@ -6,7 +6,7 @@
  * studio environment. Its position and rotation are driven by scroll:
  * it rises from below the hero, turns about 100 degrees while it reaches the
  * centre, then keeps turning slowly (170 degrees more) while the stage is pinned,
- * and after an upward scroll step has finished turning it, the benefit words appear one by one (see below). Scrolling up
+ * while benefit words appear, one more per upward scroll gesture (see below). Scrolling up
  * plays the product backwards because every value is derived from the scroll
  * position, never from time.
  *
@@ -62,17 +62,15 @@
 	};
 
 	/*
-	 * Benefit bubbles, driven by the product's rotation state:
-	 *   upward scroll step -> the product turns (as before, from the scroll)
-	 *   -> the step has ended AND the damped rotation has settled
-	 *   -> the bubbles not yet shown appear one by one, STAGGER ms apart.
-	 * The scroll event itself never shows a bubble; it only arms the reveal.
-	 * Shown bubbles never go away (not on scrolling down, not on scrolling up).
-	 * A step is one continuous upward scroll while the section is on screen; it
-	 * ends when scrolling pauses for GAP ms or turns downward.
+	 * Benefit bubbles. The first one is shown from the start. Each distinct upward
+	 * scroll gesture while the section is on screen shows exactly one more, the
+	 * moment the gesture begins, while the product turns with the scroll as usual.
+	 * Shown bubbles never go away (scrolling down only turns the product back).
+	 * Gestures are told apart without timers: a new upward gesture starts when the
+	 * page was scrolling down before, or when GAP ms passed since the last scroll event.
 	 */
-	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el) {
-		return { el: el, word: el.querySelector('.rek-bubble__word'), on: false };
+	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble')).map(function (el, i) {
+		return { el: el, word: el.querySelector('.rek-bubble__word'), on: i === 0 };
 	});
 	var lastDeg = 0;
 	var updateBubbles = function (deg) {
@@ -89,42 +87,26 @@
 	};
 	updateBubbles(0);
 
-	var GAP = 250, STAGGER = 420;
-	var lastY = window.scrollY, stepping = false, stepTimer = 0;
-	var armed = false;        // an upward step happened; reveal once its rotation is complete
-	var rollSettled = true;   // set by the render loop: the damped rotation has reached the scroll position
-	var revealing = false;
+	var GAP = 400;
+	var lastY = window.scrollY, lastScrollT = 0, goingUp = false;
 	var sectionOnScreen = function () {
 		var r = section.getBoundingClientRect();
 		return r.top < window.innerHeight && r.bottom > 0;
 	};
-	var revealNext = function () {
-		var next = bubbles.filter(function (b) { return !b.on; })[0];
-		if (!next) { revealing = false; return; }
-		next.on = true;
-		updateBubbles(lastDeg);
-		window.setTimeout(revealNext, STAGGER);
-	};
-	/* Called when a step ends and whenever the rotation settles: both must be true. */
-	var maybeReveal = function () {
-		if (!armed || stepping || !rollSettled || revealing) { return; }
-		armed = false;
-		revealing = true;
-		window.setTimeout(revealNext, 120); // a short beat after the product comes to rest
-	};
 	window.addEventListener('scroll', function () {
-		var y = window.scrollY, dy = y - lastY;
+		var now = window.performance.now(), y = window.scrollY, dy = y - lastY;
+		var newGesture = !goingUp || now - lastScrollT > GAP;
 		lastY = y;
+		lastScrollT = now;
 		if (dy < 0) {
-			if (!stepping) {
-				stepping = true;
-				if (sectionOnScreen()) { armed = true; }
+			if (newGesture && sectionOnScreen()) {
+				var next = bubbles.filter(function (b) { return !b.on; })[0];
+				if (next) { next.on = true; updateBubbles(lastDeg); }
 			}
+			goingUp = true;
 		} else if (dy > 0) {
-			stepping = false;
+			goingUp = false;
 		}
-		window.clearTimeout(stepTimer);
-		stepTimer = window.setTimeout(function () { stepping = false; maybeReveal(); }, GAP);
 	}, { passive: true });
 
 	var THREE, renderer, scene, camera, box, shadow, running = false, ready = false, visible = true;
@@ -134,11 +116,7 @@
 	var requestFrame = function () {
 		if (!running && ready && visible) { running = true; window.requestAnimationFrame(frame); }
 	};
-	var onScroll = function () {
-		readScroll();
-		if (ready && visible) { rollSettled = false; } // the render loop sets it back once the product has caught up
-		requestFrame();
-	};
+	var onScroll = function () { readScroll(); requestFrame(); };
 	window.addEventListener('scroll', onScroll, { passive: true });
 	readScroll();
 
@@ -293,7 +271,6 @@
 		cur.pin += (target.pin - cur.pin) * k;
 		var settled = Math.abs(target.enter - cur.enter) < 0.0005 && Math.abs(target.pin - cur.pin) < 0.0005;
 		if (settled) { cur.enter = target.enter; cur.pin = target.pin; }
-		rollSettled = settled;
 
 		var e = ease(cur.enter);
 		var group = box.userData.group;
@@ -310,6 +287,6 @@
 		shadow.material.opacity = 0.7 * e;
 
 		renderer.render(scene, camera);
-		if (settled) { lastT = 0; maybeReveal(); } else { running = true; window.requestAnimationFrame(frame); }
+		if (settled) { lastT = 0; } else { running = true; window.requestAnimationFrame(frame); }
 	}
 })();
