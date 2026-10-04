@@ -47,6 +47,8 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 	);
 	/* The photo stays in the markup (it is the fallback when the video is switched off) but is hidden while the video is present. */
 	return preg_replace_callback( '#<img\b[^>]*\brk-hero-img\b[^>]*>#', function ( $m ) use ( $video ) {
-		return preg_replace( '#\bclass="#', 'class="rek-hero-img--under-video ', $m[0], 1 ) . $video;
+		$img = preg_replace( '#\bclass="#', 'class="rek-hero-img--under-video ', $m[0], 1 );
+		$img = str_replace( 'fetchpriority="high"', 'fetchpriority="low"', $img ); // the video comes first
+		return $img . $video;
 	}, $content, 1 );
 } );
