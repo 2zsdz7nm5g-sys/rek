@@ -349,8 +349,9 @@ body {
 
 /* ---------- FlexiShield partnership: the second-language lines keep their own direction ---------- */
 [dir="rtl"] .rk-partner-en, [dir="rtl"] .rk-partner-en-text { direction: ltr; text-align: right; }
-html:not([dir="rtl"]) .rk-partner-en, html:not([dir="rtl"]) .rk-partner-en-text { direction: rtl; text-align: left; }
-/* Arabic letters must stay joined: no tracking or uppercase transform on the Arabic line. */
+/* English pages: these lines are in English too, so they run left to right. */
+html:not([dir="rtl"]) .rk-partner-en, html:not([dir="rtl"]) .rk-partner-en-text { direction: ltr; text-align: left; }
+/* English pages keep the body font for these lines (no tracking or uppercase transform). */
 html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-size: 15px; letter-spacing: 0; text-transform: none; }
 .rk-partner-logo { width: auto !important; }
 
