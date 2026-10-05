@@ -162,14 +162,15 @@ add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
 function rek_has_real_posts() {
 	static $has = null;
 	if ( null === $has ) {
-		$has = (bool) get_posts( [
+		$posts = get_posts( [
 			'post_type'      => 'post',
 			'post_status'    => 'publish',
-			'posts_per_page' => 1,
-			'fields'         => 'ids',
-			'post_name__not_in' => [ 'hello-world' ],
+			'posts_per_page' => 2,
 			'lang'           => '',
 		] );
+		$has = (bool) array_filter( $posts, function ( $post ) {
+			return 'hello-world' !== $post->post_name;
+		} );
 	}
 	return $has;
 }
