@@ -21,6 +21,17 @@ add_shortcode( 'rek_fs3d', function () {
 		<div class="rek-fs3d__stage" data-rek-fs3d
 			data-three="<?php echo esc_url( REK_URI . '/assets/vendor/three.min.js?ver=r128' ); ?>"
 			data-textures="<?php echo esc_url( $base ); ?>">
+			<?php if ( rek_is_rtl_lang() ) : ?>
+				<div class="rek-fs3d__words" aria-hidden="true">
+					<?php
+					// Behind the product (earlier in the markup than the still and the canvas). Revealed one at a time,
+					// in this order, one per upward scroll gesture (see rek-fs3d.js).
+					foreach ( [ 'حماية', 'أمان', 'لمعان', 'ثقة' ] as $i => $word ) :
+						?>
+						<span class="rek-bubble rek-bubble--<?php echo (int) $i + 1; ?>"><span class="rek-bubble__word"><?php echo esc_html( $word ); ?></span></span>
+					<?php endforeach; ?>
+				</div>
+			<?php endif; ?>
 			<img class="rek-fs3d__still" src="<?php echo esc_url( $base . 'still.webp' ); ?>" width="434" height="1200" loading="lazy" decoding="async"
 				alt="<?php echo esc_attr( rek_t( 'عبوة فلم حماية الطلاء FlexiShield', 'FlexiShield paint protection film packaging' ) ); ?>">
 			<div class="rek-fs3d__canvas"></div>

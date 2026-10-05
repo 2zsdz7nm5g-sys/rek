@@ -32,6 +32,56 @@
 		} catch (e) { return false; }
 	})();
 
+	/*
+	 * Benefit bubbles: a state of their own on the same scroll (the roll does not drive them).
+	 * All four start hidden. Each distinct upward scroll gesture (the page scrolling back up)
+	 * reveals exactly one more bubble on its first upward scroll event, while the section is
+	 * on screen, in the order of the markup. Scrolling down never adds or removes a bubble;
+	 * shown bubbles stay until the page is reloaded.
+	 * A new gesture starts when the scroll direction changes, when a finger touches the
+	 * screen, or when a new wheel/trackpad input begins (see the wheel listener below).
+	 */
+	var bubbles = Array.prototype.slice.call(stageEl.querySelectorAll('.rek-bubble'));
+	if (bubbles.length) {
+		section.classList.add('has-bubbles');
+		var shown = 0, lastY = window.scrollY, dir = 0, revealed = false;
+		var sectionOnScreen = function () {
+			var r = section.getBoundingClientRect();
+			return r.top < window.innerHeight && r.bottom > 0;
+		};
+		window.addEventListener('touchstart', function () { dir = 0; }, { passive: true });
+		/*
+		 * Wheel/trackpad: marks the start of a new input gesture only (nothing else reads it).
+		 * New input = wheel events resume after QUIET ms, the wheel direction flips, or the
+		 * input grows again after it had been fading (a fresh swipe while the previous
+		 * swipe is still coasting), so momentum never hides the next swipe.
+		 */
+		var QUIET = 200, lastWheelT = 0, lastWheelAbs = 0, wheelSign = 0, fading = 0, low = 0;
+		window.addEventListener('wheel', function (e) {
+			if (e.ctrlKey || !e.deltaY) { return; }
+			// The event's own time (when the input happened), so a busy main thread never splits one gesture.
+			var now = e.timeStamp, abs = Math.abs(e.deltaY), sign = e.deltaY > 0 ? 1 : -1;
+			var fresh = now - lastWheelT > QUIET || sign !== wheelSign || (fading >= 4 && abs >= low * 1.5 + 2);
+			if (fresh) { fading = 0; low = abs; }
+			else if (abs < lastWheelAbs) { fading++; low = Math.min(low, abs); }
+			else if (abs > lastWheelAbs && fading < 4) { fading = 0; low = abs; } // still speeding up: not coasting yet
+			lastWheelT = now;
+			lastWheelAbs = abs;
+			wheelSign = sign;
+			if (fresh) { dir = 0; }
+		}, { passive: true });
+		window.addEventListener('scroll', function () {
+			var y = window.scrollY, dy = y - lastY;
+			lastY = y;
+			if (!dy || shown >= bubbles.length) { return; }
+			var d = dy > 0 ? 1 : -1;
+			if (d !== dir) { dir = d; revealed = false; }
+			if (d > 0 || revealed || !sectionOnScreen()) { return; }
+			revealed = true;
+			bubbles[shown++].classList.add('is-on');
+		}, { passive: true });
+	}
+
 	/* Static mode: no scroll choreography, the rendered still image stays. */
 	if (reduce.matches || !hasWebGL) {
 		section.classList.add('is-static');

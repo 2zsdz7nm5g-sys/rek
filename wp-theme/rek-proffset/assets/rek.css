@@ -389,6 +389,63 @@ html:not([dir="rtl"]) .rk-partner-en { font-family: var(--rek-font-body); font-s
 .rek-fs3d__label sup { font-size: .7em; }
 .rek-fs3d__title { margin: 0; font-family: var(--rek-font-display); font-weight: 600; font-size: clamp(24px, 3vw, 40px); line-height: 1.25; color: var(--rek-ink); }
 
+/* Benefit words in water/glass bubbles, behind the product (the still follows them in the markup; the live canvas is z-index 1). */
+.rek-fs3d__words { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+.rek-bubble {
+	--b: clamp(104px, 9vw, 150px);
+	position: absolute; left: var(--x); top: var(--y);
+	width: var(--b); height: var(--b); margin: calc(var(--b) / -2) 0 0 calc(var(--b) / -2);
+	display: grid; place-items: center; border-radius: 50%;
+	/* Water sphere: faint body, a brighter meniscus ring and a cool refraction tint toward the lower edge. */
+	background:
+		radial-gradient(circle at 68% 76%, rgba(91, 184, 242, .30), rgba(91, 184, 242, 0) 38%),
+		radial-gradient(circle at 50% 50%, rgba(245, 247, 250, .02) 0%, rgba(22, 137, 216, .05) 54%, rgba(91, 184, 242, .22) 66%, rgba(245, 247, 250, .26) 69.5%, rgba(245, 247, 250, 0) 71%);
+	border: 1px solid rgba(245, 247, 250, .14);
+	box-shadow:
+		inset 0 0 26px rgba(91, 184, 242, .18),
+		0 0 24px -6px rgba(91, 184, 242, .18),
+		inset -10px -14px 26px rgba(0, 0, 0, .22),
+		inset 10px 10px 20px rgba(255, 255, 255, .07),
+		0 22px 44px -22px rgba(0, 0, 0, .8);
+	-webkit-backdrop-filter: blur(6px) saturate(140%); backdrop-filter: blur(6px) saturate(140%);
+}
+/* Specular highlight on the upper edge. */
+.rek-bubble::before {
+	content: ""; position: absolute; top: 11%; left: 20%; width: 36%; height: 20%; border-radius: 50%;
+	background: radial-gradient(ellipse at center, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0) 70%);
+	transform: rotate(-28deg); filter: blur(1px);
+}
+/* Caustic crescent where light gathers inside the sphere. */
+.rek-bubble::after {
+	content: ""; position: absolute; right: 16%; bottom: 12%; width: 30%; height: 14%; border-radius: 50%;
+	border-bottom: 2px solid rgba(160, 215, 250, .45); transform: rotate(-30deg); filter: blur(.6px);
+}
+.rek-bubble__word {
+	position: relative; font-family: var(--rek-font-display); font-weight: 600; font-size: calc(var(--b) * .19); line-height: 1;
+	color: var(--rek-ink); text-shadow: 0 1px 10px rgba(5, 11, 18, .55);
+}
+/* Balanced, asymmetric placement around the product (reveal order 1 to 4). */
+.rek-bubble--1 { --x: 69%; --y: 27%; }
+.rek-bubble--2 { --x: 27%; --y: 61%; }
+.rek-bubble--3 { --x: 31%; --y: 26%; }
+.rek-bubble--4 { --x: 73%; --y: 62%; }
+@media (max-width: 767px) {
+	.rek-bubble { --b: 92px; }
+	.rek-bubble--1 { --x: 77%; --y: 25%; }
+	.rek-bubble--2 { --x: 22%; --y: 57%; }
+	.rek-bubble--3 { --x: 23%; --y: 29%; }
+	.rek-bubble--4 { --x: 78%; --y: 60%; }
+}
+/*
+ * rek-fs3d.js hides the bubbles and reveals one per upward scroll gesture (.is-on).
+ * The reveal starts on the same frame as the gesture, already partly visible, so it is never late.
+ */
+.rek-fs3d.has-bubbles .rek-bubble { opacity: 0; }
+.rek-fs3d.has-bubbles .rek-bubble.is-on { opacity: 1; animation: rek-bubble-in .42s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes rek-bubble-in { from { opacity: .45; transform: scale(.86); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+	.rek-fs3d.has-bubbles .rek-bubble.is-on { animation: none; }
+}
 .rek-fs3d.is-live .rek-fs3d__canvas { z-index: 1; }
 
 .rek-fs3d.is-live { height: 240vh; }
