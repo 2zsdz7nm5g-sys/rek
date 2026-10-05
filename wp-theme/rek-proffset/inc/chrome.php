@@ -32,7 +32,7 @@ function rek_logo_html( $size = 40 ) {
 		'class'    => 'rek-logo-img',
 		'width'    => $size,
 		'height'   => $size,
-		'alt'      => '',
+		'alt'      => rek_t( 'شعار ريك بروفسيت', 'REK PROFFSET logo' ),
 		'loading'  => 'eager',
 		'decoding' => 'async',
 	] ) : '';
@@ -148,7 +148,7 @@ function rek_render_footer() {
 		<div class="rek-footer__inner">
 			<div class="rek-footer__brand">
 				<?php echo rek_logo_html( 48 ); // phpcs:ignore ?>
-				<p><?php echo esc_html( rek_t( 'استوديو متخصص في حماية السيارات والعناية بها في بغداد.', 'An automotive protection and detailing studio in Baghdad.' ) ); ?></p>
+				<p><?php echo esc_html( rek_t( 'شركة ريك بروفسيت للعناية بالسيارات، استوديو متخصص في حماية السيارات والعناية بها في بغداد.', 'An automotive protection and detailing studio in Baghdad.' ) ); ?></p>
 			</div>
 			<nav class="rek-footer__nav" aria-label="<?php echo esc_attr( rek_t( 'روابط الموقع', 'Site links' ) ); ?>">
 				<?php

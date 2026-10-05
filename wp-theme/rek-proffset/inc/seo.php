@@ -47,45 +47,144 @@ add_action( 'wp_head', function () {
 	echo '<meta name="theme-color" content="#050B12">' . "\n";
 }, 2 );
 
+/*
+ * Search titles: a page can set its own document title in the `rek_seo_title`
+ * post meta (used for the Arabic pages); otherwise WordPress builds it as usual.
+ */
+add_filter( 'pre_get_document_title', function ( $title ) {
+	if ( is_singular() ) {
+		$custom = get_post_meta( get_queried_object_id(), 'rek_seo_title', true );
+		if ( $custom ) {
+			return $custom;
+		}
+	}
+	return $title;
+}, 20 );
+
+/*
+ * Structured data on the homepage: the business (AutoRepair, a LocalBusiness
+ * type) and the website, linked by @id. Only details the business has
+ * supplied are used: the contact details from rek_get(), the logo, the
+ * Google Maps listing (its address: Al-Sinaa Street near Al-Rubaie Bridge,
+ * Baghdad, see inc/location.php) and the social profiles. No coordinates or
+ * opening hours are given, so none are claimed.
+ */
 add_action( 'wp_head', function () {
 	if ( ! is_front_page() ) {
 		return;
 	}
+	$home = 'https://rekproffsetiraq.com/';
 
-	$data = [
-		'@context'   => 'https://schema.org',
-		'@type'      => 'AutoRepair',
-		'name'       => 'REK PROFFSET',
-		'url'        => home_url( '/' ),
-		'description' => get_bloginfo( 'description' ),
-		'areaServed' => [ '@type' => 'City', 'name' => 'Baghdad' ],
-		'address'    => [
+	$business = [
+		'@type'         => 'AutoRepair',
+		'@id'           => $home . '#business',
+		'name'          => 'شركة ريك بروفسيت للعناية بالسيارات',
+		'alternateName' => [ 'REK Proffset', 'REK PROFFSET', 'ريك بروفسيت', 'شركة ريك بروفسيت', 'ريك للعناية بالسيارات' ],
+		'url'           => $home,
+		'description'   => rek_t(
+			'شركة ريك بروفسيت للعناية بالسيارات في بغداد: فلم حماية الطلاء PPF، النانو سيراميك، التلميع والعناية المتكاملة بالسيارات.',
+			'REK Proffset, an automotive care company in Baghdad: paint protection film (PPF), nano ceramic coating, polishing and complete car care.'
+		),
+		'address'       => [
 			'@type'           => 'PostalAddress',
-			'addressLocality' => 'Baghdad',
+			'streetAddress'   => 'شارع الصناعة، قرب جسر الربيعي',
+			'addressLocality' => 'بغداد',
 			'addressCountry'  => 'IQ',
 		],
+		'areaServed'    => [ '@type' => 'City', 'name' => 'بغداد' ],
+		'hasMap'        => rek_maps_url(),
 	];
 
 	$logo_id = (int) get_theme_mod( 'custom_logo' );
 	if ( $logo_id ) {
-		$data['logo'] = wp_get_attachment_image_url( $logo_id, 'full' );
+		$business['logo']  = wp_get_attachment_image_url( $logo_id, 'full' );
+		$business['image'] = $business['logo'];
 	}
-	if ( rek_get( 'rek_address' ) ) {
-		$data['address']['streetAddress'] = rek_get( 'rek_address' );
-	}
-	if ( rek_get( 'rek_phone' ) ) {
-		$data['telephone'] = substr( rek_tel_href( rek_get( 'rek_phone' ) ), 4 );
+	$phones = array_values( array_filter( array_map( function ( $number ) {
+		return $number ? substr( rek_tel_href( $number ), 4 ) : '';
+	}, [ rek_get( 'rek_phone' ), rek_get( 'rek_phone2' ) ] ) ) );
+	if ( $phones ) {
+		$business['telephone']    = $phones[0];
+		$business['contactPoint'] = array_map( function ( $phone ) {
+			return [
+				'@type'             => 'ContactPoint',
+				'telephone'         => $phone,
+				'contactType'       => 'customer service',
+				'areaServed'        => 'IQ',
+				'availableLanguage' => [ 'ar', 'en' ],
+			];
+		}, $phones );
 	}
 	if ( rek_get( 'rek_email' ) ) {
-		$data['email'] = rek_get( 'rek_email' );
+		$business['email'] = rek_get( 'rek_email' );
 	}
-	$profiles = array_values( array_filter( [ rek_get( 'rek_instagram_url' ), rek_get( 'rek_tiktok_url' ), rek_get( 'rek_facebook_url' ) ] ) );
+	// Social profiles; the Instagram link loses its QR tracking parameters.
+	$instagram = rek_get( 'rek_instagram_url' );
+	$profiles  = array_values( array_filter( [
+		$instagram ? strtok( $instagram, '?' ) : '',
+		rek_get( 'rek_facebook_url' ),
+		rek_get( 'rek_tiktok_url' ),
+	] ) );
 	if ( $profiles ) {
-		$data['sameAs'] = $profiles;
+		$business['sameAs'] = $profiles;
 	}
 
+	$website = [
+		'@type'         => 'WebSite',
+		'@id'           => $home . '#website',
+		'url'           => $home,
+		'name'          => 'ريك بروفسيت',
+		'alternateName' => [ 'REK Proffset', 'شركة ريك بروفسيت للعناية بالسيارات' ],
+		'inLanguage'    => [ 'ar', 'en' ],
+		'publisher'     => [ '@id' => $home . '#business' ],
+	];
+
+	$data = [ '@context' => 'https://schema.org', '@graph' => [ $business, $website ] ];
 	echo '<script type="application/ld+json">' . wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . '</script>' . "\n";
 }, 3 );
+
+/* hreflang: Arabic, the default language, is also the x-default for visitors in any other language. */
+add_filter( 'pll_rel_hreflang_attributes', function ( $hreflangs ) {
+	if ( isset( $hreflangs['ar'] ) && count( $hreflangs ) > 1 ) {
+		$hreflangs['x-default'] = $hreflangs['ar'];
+	}
+	return $hreflangs;
+} );
+
+/*
+ * Sitemap (WordPress core, /wp-sitemap.xml): only the site's pages. No author
+ * sitemap (it lists the admin account), and no posts or categories while the
+ * only post is WordPress's default "Hello world!".
+ */
+add_filter( 'wp_sitemaps_add_provider', function ( $provider, $name ) {
+	return 'users' === $name ? false : $provider;
+}, 10, 2 );
+function rek_has_real_posts() {
+	static $has = null;
+	if ( null === $has ) {
+		$has = (bool) get_posts( [
+			'post_type'      => 'post',
+			'post_status'    => 'publish',
+			'posts_per_page' => 1,
+			'fields'         => 'ids',
+			'post_name__not_in' => [ 'hello-world' ],
+			'lang'           => '',
+		] );
+	}
+	return $has;
+}
+add_filter( 'wp_sitemaps_post_types', function ( $types ) {
+	if ( ! rek_has_real_posts() ) {
+		unset( $types['post'] );
+	}
+	return $types;
+} );
+add_filter( 'wp_sitemaps_taxonomies', function ( $taxonomies ) {
+	if ( ! rek_has_real_posts() ) {
+		unset( $taxonomies['category'] );
+	}
+	return $taxonomies;
+} );
 
 /*
  * Image alt text per language: attachments keep their Arabic alt text, and
