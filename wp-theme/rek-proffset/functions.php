@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'REK_VERSION', '1.8.22' );
+define( 'REK_VERSION', '1.8.23' );
 define( 'REK_DIR', get_stylesheet_directory() );
 define( 'REK_URI', get_stylesheet_directory_uri() );
 
@@ -18,6 +18,7 @@ require REK_DIR . '/inc/booking.php';
 require REK_DIR . '/inc/location.php';
 require REK_DIR . '/inc/fs3d.php';
 require REK_DIR . '/inc/hero-video.php';
+require REK_DIR . '/inc/garage-door.php';
 require REK_DIR . '/inc/ppf-studio.php';
 require REK_DIR . '/inc/work-gallery.php';
 

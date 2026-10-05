@@ -1,0 +1,87 @@
+/*
+ * Homepage entrance: the garage door (loaded only on the homepage, see inc/garage-door.php).
+ * The door shows only while <html> has .rek-garage-on (set in <head> before the page paints);
+ * assets/garage/garage.js lifts it with the visitor's swipe or scroll and removes it once open.
+ */
+.rek-garage { display: none; }
+html.rek-garage-on, html.rek-garage-on body { overflow: hidden !important; overscroll-behavior: none; }
+.rek-garage-on .rek-garage {
+	display: block; position: fixed; inset: 0; z-index: 99999; overflow: hidden;
+	touch-action: none; cursor: ns-resize; -webkit-user-select: none; user-select: none;
+	-webkit-tap-highlight-color: transparent; outline: none;
+	--steel-hi: #474d54; --steel: #33383e; --steel-lo: #1f2327; --frame: #121417;
+}
+
+/* Inside the garage: dark until the door lifts, then the lights come up. */
+.rek-garage__dark { position: absolute; inset: 0; background: #020406; opacity: .93; pointer-events: none; }
+.rek-garage__spill { position: absolute; inset-inline: 0; top: 0; height: 26vh; pointer-events: none; mix-blend-mode: screen; opacity: 0;
+	background: radial-gradient(62% 100% at 50% 0%, rgba(255, 244, 228, .32), rgba(255, 244, 228, .08) 45%, rgba(255, 244, 228, 0) 75%); }
+
+/* The door: sections of anthracite steel with two V-grooves each, hinges and a rubber seal. */
+.rek-garage__door { position: absolute; inset: 0; perspective: 1400px; perspective-origin: 50% 0; pointer-events: none;
+	/* Until the script lays out the sections, the closed door is painted as one surface. */
+	background:
+		repeating-linear-gradient(to bottom, rgba(255, 255, 255, .10) 0 1px, transparent 1px calc(100% / 5)),
+		linear-gradient(to bottom, #3b4046, #2b2f34 50%, #23272b); }
+.rek-garage-ready .rek-garage__door { background: none; }
+.rek-garage__panel {
+	position: absolute; left: 0; right: 0; top: 0; transform-origin: 50% 100%; backface-visibility: hidden;
+	border-top: 1px solid rgba(255, 255, 255, .10);
+	box-shadow: inset 0 -3px 4px rgba(0, 0, 0, .55), inset 0 2px 1px rgba(255, 255, 255, .04);
+	background-image:
+		linear-gradient(to bottom, transparent 32.2%, rgba(0, 0, 0, .58) 32.6%, rgba(0, 0, 0, .58) 33.3%, rgba(255, 255, 255, .11) 33.6%, transparent 34.6%,
+			transparent 65.6%, rgba(0, 0, 0, .58) 66%, rgba(0, 0, 0, .58) 66.7%, rgba(255, 255, 255, .11) 67%, transparent 68%),
+		repeating-linear-gradient(to bottom, rgba(255, 255, 255, .016) 0 1px, rgba(0, 0, 0, .03) 1px 3px),
+		repeating-linear-gradient(97deg, rgba(255, 255, 255, .012) 0 2px, rgba(0, 0, 0, .012) 2px 5px),
+		linear-gradient(to bottom, var(--steel-hi), var(--steel) 36%, var(--steel-lo));
+}
+.rek-garage__panel i { position: absolute; inset: 0; background: #000; opacity: 0; } /* turning away from the light on the ceiling track */
+.rek-garage__panel::before, .rek-garage__panel::after { content: ""; position: absolute; top: -5px; width: 30px; height: 10px; border-radius: 1px;
+	background: linear-gradient(to bottom, #50565d, #2a2e33); box-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
+.rek-garage__panel::before { left: 9%; }
+.rek-garage__panel::after { right: 9%; }
+.rek-garage__panel.is-first::before, .rek-garage__panel.is-first::after { display: none; }
+.rek-garage__seal { position: absolute; inset-inline: 0; top: 0; height: 10px; transform: translateY(calc(100vh - 10px)); background: linear-gradient(to bottom, #111316, #050607); box-shadow: 0 2px 6px rgba(0, 0, 0, .7); pointer-events: none; }
+/* Lamps in front of the garage: their light stays put while the steel slides past. */
+.rek-garage__light { position: absolute; inset: 0; pointer-events: none;
+	background:
+		radial-gradient(60% 50% at 32% 14%, rgba(255, 255, 255, .11), rgba(255, 255, 255, 0) 70%),
+		linear-gradient(115deg, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, .045) 46%, rgba(255, 255, 255, 0) 56%),
+		linear-gradient(to bottom, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, .35)),
+		radial-gradient(130% 100% at 50% 40%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, .45)); }
+
+/* On the door: the official logo, the name, the company line, the motto and the invitation. */
+.rek-garage__sign {
+	position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(92vw, 640px);
+	display: grid; justify-items: center; text-align: center; pointer-events: none;
+	color: #e6eaee; text-shadow: 0 1px 0 rgba(0, 0, 0, .75), 0 0 18px rgba(0, 0, 0, .45);
+}
+.rek-garage__sign p { margin: 0; }
+.rek-garage__logo { display: block; width: clamp(112px, 12vw, 160px); height: auto; aspect-ratio: 1; border-radius: 3px;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, .08), 0 14px 30px rgba(0, 0, 0, .55), 0 2px 4px rgba(0, 0, 0, .5); }
+.rek-garage__brand { margin-top: 22px !important; font-family: var(--rek-font-mono); font-size: clamp(12px, 1vw, 14px); letter-spacing: .46em; color: #f5f7fa; }
+.rek-garage__brand span { color: var(--rek-accent-light); }
+.rek-garage__company { margin-top: 14px !important; font-family: var(--rek-font-display); font-weight: 500; font-size: clamp(20px, 1.9vw, 27px); line-height: 1.35; color: #f2f4f7; }
+.rek-garage__motto { margin-top: 8px !important; font-family: var(--rek-font-body); font-size: clamp(15px, 1.2vw, 17px); line-height: 1.6; color: rgba(230, 234, 238, .78); }
+.rek-garage__lift { margin-top: 30px !important; font-family: var(--rek-font-display); font-size: clamp(14px, 1.15vw, 16px); }
+.rek-garage__lift span { display: inline-flex; align-items: center; gap: 10px; padding: 10px 22px 11px; border: 1px solid rgba(245, 247, 250, .28); border-radius: 999px; background: rgba(8, 12, 16, .38); color: #f5f7fa; }
+.rek-garage__lift b { font-weight: 400; color: var(--rek-accent-light); display: inline-block; animation: rek-garage-nudge 1.8s cubic-bezier(.45, 0, .2, 1) infinite; }
+@keyframes rek-garage-nudge { 0%, 100% { transform: translateY(2px); opacity: .7; } 50% { transform: translateY(-5px); opacity: 1; } }
+.rek-garage__sign[dir="ltr"] .rek-garage__company { letter-spacing: .01em; }
+.rek-garage__sign[dir="ltr"] .rek-garage__motto { letter-spacing: .01em; }
+
+/* The opening: a lintel above and a jamb on each side; the door lifts in behind the lintel. */
+.rek-garage__lintel { position: absolute; inset-inline: 0; top: 0; height: max(28px, 4.6vh); background: linear-gradient(to bottom, #1c2024, var(--frame)); box-shadow: 0 6px 14px rgba(0, 0, 0, .6); z-index: 3; pointer-events: none; }
+.rek-garage__jamb { position: absolute; top: 0; bottom: 0; width: max(10px, 1.1vw); background: linear-gradient(to right, #0d0f11, #1b1e22 60%, #0e1012); z-index: 3; pointer-events: none; }
+.rek-garage__jamb--l { left: 0; box-shadow: 4px 0 10px rgba(0, 0, 0, .5); }
+.rek-garage__jamb--r { right: 0; box-shadow: -4px 0 10px rgba(0, 0, 0, .5); }
+
+@media (max-width: 767px) {
+	.rek-garage__panel::before, .rek-garage__panel::after { width: 22px; height: 8px; top: -4px; }
+	.rek-garage__brand { margin-top: 18px !important; letter-spacing: .38em; }
+	.rek-garage__lift { margin-top: 24px !important; }
+	.rek-garage__lift span { padding: 9px 18px 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.rek-garage__lift b { animation: none; }
+}
