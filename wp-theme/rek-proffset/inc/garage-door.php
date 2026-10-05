@@ -65,7 +65,7 @@ add_action( 'wp_body_open', function () {
 		<div class="rek-garage__sign" dir="<?php echo esc_attr( rek_t( 'rtl', 'ltr' ) ); ?>">
 			<?php echo $logo; // phpcs:ignore WordPress.Security.EscapeOutput -- core image markup ?>
 			<p class="rek-garage__brand" dir="ltr">REK <span>PROFFSET</span></p>
-			<p class="rek-garage__company"><?php echo esc_html( rek_t( 'شركة العناية بالسيارات', 'Automotive Care Company' ) ); ?></p>
+			<p class="rek-garage__company"><?php echo esc_html( rek_t( 'شركة ريك بروفسيت للعناية بالسيارات', 'Automotive Care Company' ) ); ?></p>
 			<p class="rek-garage__motto"><?php echo esc_html( rek_t( 'العناية ليست خيارًا، إنها هويتنا.', 'Care Is Not an Option. It\'s Our Identity.' ) ); ?></p>
 			<p class="rek-garage__lift"><span><?php echo esc_html( rek_t( 'ارفع الباب… واكتشف عالم REK', 'Raise the Door… Discover the REK World' ) ); ?> <b aria-hidden="true">↑</b></span></p>
 		</div>
