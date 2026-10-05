@@ -1,0 +1,2158 @@
+{
+ "post_id": 139,
+ "exported": "2026-10-01T15:25:47+00:00",
+ "post_modified": "2026-09-30 13:53:22",
+ "meta": {
+  "_elementor_data": "[{\"id\":\"7466a5bf\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-cf58c0d\",\"g-060fe5c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"27d71d03\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-48b4671\",\"g-29543c7\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":32}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV Hero Photo\"},\"version\":\"0.0\"},{\"id\":\"456442b5\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-3586771\",\"g-5090591\"]}},\"elements\":[{\"id\":\"60e721ff\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-e107c20\"]}},\"elements\":[{\"id\":\"21be78d5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"SERVICES\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV Label\"},\"version\":\"0.0\"},{\"id\":\"3af2dd16\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f11ef7f\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h1\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062e\\u062f\\u0645\\u0627\\u062a \\u0645\\u0635\\u0645\\u0645\\u0629 \\u0644\\u0643\\u0644 \\u062a\\u0641\\u0635\\u064a\\u0644.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV Title\"},\"version\":\"0.0\"},{\"id\":\"7bbd5997\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0646 \\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0634\\u0641\\u0627\\u0641\\u0629 \\u0625\\u0644\\u0649 \\u062a\\u063a\\u064a\\u064a\\u0631 \\u0627\\u0644\\u0644\\u0648\\u0646 \\u0648\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0627\\u0644\\u062f\\u0627\\u062e\\u0644\\u064a\\u0629\\u060c \\u0643\\u0644 \\u062e\\u062f\\u0645\\u0629 \\u062a\\u0628\\u062f\\u0623 \\u0628\\u0641\\u062d\\u0635 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629 \\u0648\\u062a\\u0646\\u062a\\u0647\\u064a \\u0628\\u0645\\u0631\\u0627\\u062c\\u0639\\u0629 \\u062f\\u0642\\u064a\\u0642\\u0629 \\u0642\\u0628\\u0644 \\u0627\\u0644\\u062a\\u0633\\u0644\\u064a\\u0645.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV Lead\"},\"version\":\"0.0\"},{\"id\":\"36ffa2be\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d8ddb37\"]}},\"elements\":[{\"id\":\"34db8ef4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 PPF\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#ppf\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip ppf\"},\"version\":\"0.0\"},{\"id\":\"31d79401\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0627\\u0646\\u0648 \\u0633\\u064a\\u0631\\u0627\\u0645\\u064a\\u0643\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#ceramic\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip ceramic\"},\"version\":\"0.0\"},{\"id\":\"68d98f37\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0635\\u062d\\u064a\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0648\\u0627\\u0644\\u0628\\u0648\\u0644\\u064a\\u0634\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#correction\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip correction\"},\"version\":\"0.0\"},{\"id\":\"53cd0dfd\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0627\\u0644\\u062f\\u0627\\u062e\\u0644\\u064a\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#interior\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip interior\"},\"version\":\"0.0\"},{\"id\":\"36426bf0\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0635\\u0644\\u0627\\u062d \\u0627\\u0644\\u0635\\u062f\\u0645\\u0627\\u062a \\u0628\\u062f\\u0648\\u0646 \\u0635\\u0628\\u063a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#pdr\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip pdr\"},\"version\":\"0.0\"},{\"id\":\"726c9f2f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0632\\u062c\\u0627\\u062c \\u0627\\u0644\\u0623\\u0645\\u0627\\u0645\\u064a\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#windshield\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip windshield\"},\"version\":\"0.0\"},{\"id\":\"3c03d49f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0638\\u0644\\u064a\\u0644 \\u0627\\u0644\\u0646\\u0648\\u0627\\u0641\\u0630\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#tint\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip tint\"},\"version\":\"0.0\"},{\"id\":\"a1c2471\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7838994\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"PPF \\u0627\\u0644\\u0645\\u0644\\u0648\\u0651\\u0646 \\u0648\\u062a\\u063a\\u064a\\u064a\\u0631 \\u0627\\u0644\\u0644\\u0648\\u0646\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#color-ppf\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Chip color-ppf\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Chips\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-hero\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"load\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1000,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV Hero Content\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Hero Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Hero\"},\"version\":\"0.0\"},{\"id\":\"2b3d7ffe\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"54cfa6ff\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"1dd8e80a\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d31d85f\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"79556645\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-98c1b76\"]}},\"elements\":[{\"id\":\"40c53584\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":20}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 01 ppf Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-ppf\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 01 ppf Media\"},\"version\":\"0.0\"},{\"id\":\"48c1ebb7\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"34dfcc98\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"01 \\/ PAINT PROTECTION FILM\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 01 ppf Label\"},\"version\":\"0.0\"},{\"id\":\"10921611\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 PPF\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 01 ppf Title\"},\"version\":\"0.0\"},{\"id\":\"1f8c2f37\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0634\\u0641\\u0627\\u0641\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u0628\\u0648\\u0644\\u064a \\u064a\\u0648\\u0631\\u064a\\u062b\\u0627\\u0646 \\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u064a \\u062a\\u064f\\u0631\\u0643\\u0651\\u0628 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0644\\u062a\\u062d\\u0645\\u064a\\u0647 \\u0645\\u0646 \\u0627\\u0644\\u062d\\u062c\\u0627\\u0631\\u0629 \\u0648\\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0627\\u0644\\u064a\\u0648\\u0645\\u064a\\u0629 \\u0648\\u0622\\u062b\\u0627\\u0631 \\u0627\\u0644\\u0637\\u0631\\u064a\\u0642\\u060c \\u0645\\u0639 \\u0627\\u0644\\u062d\\u0641\\u0627\\u0638 \\u0639\\u0644\\u0649 \\u0644\\u0648\\u0646\\u0647 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u0648\\u0644\\u0645\\u0639\\u0627\\u0646\\u0647.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 01 ppf Lead\"},\"version\":\"0.0\"},{\"id\":\"3da4899c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"2ce24ce0\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u063a\\u0637\\u064a\\u0629 \\u0643\\u0627\\u0645\\u0644\\u0629 \\u0644\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629 \\u0623\\u0648 \\u0644\\u0644\\u0623\\u062c\\u0632\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0643\\u062b\\u0631 \\u062a\\u0639\\u0631\\u0636\\u064b\\u0627\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 01 ppf Item 1\"},\"version\":\"0.0\"},{\"id\":\"5feb22f1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0639\\u0644\\u0648\\u064a\\u0629 \\u062a\\u0644\\u062a\\u0626\\u0645 \\u062e\\u062f\\u0648\\u0634\\u0647\\u0627 \\u0627\\u0644\\u062f\\u0642\\u064a\\u0642\\u0629 \\u0628\\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 01 ppf Item 2\"},\"version\":\"0.0\"},{\"id\":\"7de0a03b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0642\\u0627\\u0648\\u0645\\u0629 \\u0644\\u0644\\u0627\\u0635\\u0641\\u0631\\u0627\\u0631 \\u0648\\u0634\\u0641\\u0627\\u0641\\u064a\\u0629 \\u0639\\u0627\\u0644\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 01 ppf Item 3\"},\"version\":\"0.0\"},{\"id\":\"2547b80d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0642\\u0635 \\u0631\\u0642\\u0645\\u064a \\u062f\\u0642\\u064a\\u0642 \\u064a\\u0646\\u0627\\u0633\\u0628 \\u0645\\u0648\\u062f\\u064a\\u0644 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 01 ppf Item 4\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 01 ppf List\"},\"version\":\"0.0\"},{\"id\":\"7c9d0382\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"827a13e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 01 ppf Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 01 ppf Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-ppf\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 01 ppf Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 01 ppf\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Catalog\"},\"version\":\"0.0\"},{\"id\":\"f9c974f\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a2a0583\",\"g-1fbde86\",\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"53c91bee\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"1afacbaa\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-74a5552\"]}},\"elements\":[{\"id\":\"751ca2f5\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"4fad262c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PPF \\u00b7 FLEXISHIELD USA\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-label\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Label\"},\"version\":\"0.0\"},{\"id\":\"7bc75c50\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9eda8de\",\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"PPF \\u0645\\u0646 FlexiShield \\u0627\\u0644\\u0623\\u0645\\u0631\\u064a\\u0643\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-title\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":80,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Title\"},\"version\":\"0.0\"},{\"id\":\"78eb526\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-069c14d\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u062a\\u064a \\u062a\\u062c\\u0645\\u0639 \\u0628\\u064a\\u0646 \\u0627\\u0644\\u062a\\u0642\\u0646\\u064a\\u0629 \\u0648\\u0627\\u0644\\u062f\\u0642\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-sub\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":160,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Sub\"},\"version\":\"0.0\"},{\"id\":\"53c47ad5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0645\\u062a\\u0642\\u062f\\u0645\\u0629 \\u0644\\u0637\\u0644\\u0627\\u0621 \\u0633\\u064a\\u0627\\u0631\\u062a\\u0643 \\u0645\\u0646 \\u062e\\u0644\\u0627\\u0644 PPF \\u0645\\u0646 FlexiShield \\u0627\\u0644\\u0623\\u0645\\u0631\\u064a\\u0643\\u064a\\u0629\\u060c \\u0645\\u0642\\u062f\\u0645\\u0629 \\u0648\\u062a\\u0631\\u0643\\u064a\\u0628 \\u0627\\u062d\\u062a\\u0631\\u0627\\u0641\\u064a \\u0639\\u0628\\u0631 REK PROFFSET.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-lead\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Lead\"},\"version\":\"0.0\"},{\"id\":\"9e84b0c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-913daf1\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"REK PROFFSET \\u0647\\u064a \\u0627\\u0644\\u0648\\u0643\\u064a\\u0644 \\u0627\\u0644\\u062d\\u0635\\u0631\\u064a \\u0641\\u064a \\u0627\\u0644\\u0639\\u0631\\u0627\\u0642 \\u0644\\u0639\\u0644\\u0627\\u0645\\u0629 FlexiShield \\u0627\\u0644\\u0623\\u0645\\u0631\\u064a\\u0643\\u064a\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-cred\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":320,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Cred\"},\"version\":\"0.0\"},{\"id\":\"2ba524d4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-da8a138\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"REK PROFFSET is the exclusive agent in Iraq for FlexiShield USA.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-second\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":380,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Second\"},\"version\":\"0.0\"},{\"id\":\"49a9a88\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"4d9adc15\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0643\\u062a\\u0634\\u0641 FlexiShield\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"#flexishield-specs\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"FSP Discover\"},\"version\":\"0.0\"},{\"id\":\"394e6855\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2b792c0\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0645\\u0648\\u0639\\u062f\\u0643\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"FSP Book\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-cta\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":440,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Copy\"},\"version\":\"0.0\"},{\"id\":\"21cd65ab\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-bfa4ce6\",\"g-a2ff8a7\"]}},\"elements\":[{\"id\":\"22cee30f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-80b3e66\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":280}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"FSP Photo\"},\"version\":\"0.0\"},{\"id\":\"46c60c5d\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-9ef5cc2\"]}},\"elements\":[{\"id\":\"67673734\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-624974f\"]}},\"elements\":[{\"id\":\"4dd4bd92\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-41bb480\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":262}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"FSP Logo\"},\"version\":\"0.0\"},{\"id\":\"22f8a966\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"FLEXISHIELD USA \\u00b7 PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Caption\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-plate\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":450,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Plate\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-media\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1200,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Media\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Grid\"},\"version\":\"0.0\"},{\"id\":\"5f5af56e\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-7af2501\",\"g-b931e2d\",\"g-308d5fe\"]}},\"elements\":[{\"id\":\"fe045de\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"TECHNICAL PROFILE\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Specs Label\"},\"version\":\"0.0\"},{\"id\":\"68169f71\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-43f185b\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h3\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0648\\u0627\\u0635\\u0641\\u0627\\u062a FlexiShield PPF\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-title\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Specs Title\"},\"version\":\"0.0\"},{\"id\":\"52246b2d\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-13342b7\"]}},\"elements\":[{\"id\":\"315f24e5\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a998c1b\"]}},\"elements\":[{\"id\":\"4ec49f8f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-05b3025\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-line-1\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"scale\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 1 Line\"},\"version\":\"0.0\"},{\"id\":\"1f3e1445\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"01\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 1 Num\"},\"version\":\"0.0\"},{\"id\":\"4eda6dcb\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"SELF-HEALING\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 1 Key\"},\"version\":\"0.0\"},{\"id\":\"367d957f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0639\\u0644\\u0648\\u064a\\u0629 \\u0630\\u0627\\u062a\\u064a\\u0629 \\u0627\\u0644\\u0627\\u0644\\u062a\\u0626\\u0627\\u0645 \\u062a\\u0633\\u062a\\u0639\\u064a\\u062f \\u0645\\u0638\\u0647\\u0631\\u0647\\u0627 \\u0645\\u0646 \\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0627\\u0644\\u062f\\u0642\\u064a\\u0642\\u0629 \\u0628\\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 1 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-1\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 1\"},\"version\":\"0.0\"},{\"id\":\"3c8e2460\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a998c1b\"]}},\"elements\":[{\"id\":\"8ef3df1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-05b3025\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-line-2\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"scale\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 2 Line\"},\"version\":\"0.0\"},{\"id\":\"41d398e7\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"02\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 2 Num\"},\"version\":\"0.0\"},{\"id\":\"418f9e81\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"TPU FILM\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 2 Key\"},\"version\":\"0.0\"},{\"id\":\"1d789a73\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u0645\\u0646 \\u0627\\u0644\\u0628\\u0648\\u0644\\u064a \\u064a\\u0648\\u0631\\u064a\\u062b\\u0627\\u0646 \\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u064a (TPU)\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 2 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-2\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 2\"},\"version\":\"0.0\"},{\"id\":\"2ae2b25c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a998c1b\"]}},\"elements\":[{\"id\":\"1f31ba73\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-05b3025\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-line-3\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"scale\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 3 Line\"},\"version\":\"0.0\"},{\"id\":\"89be824\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"03\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 3 Num\"},\"version\":\"0.0\"},{\"id\":\"5fc74b70\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"OPTICAL CLARITY\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 3 Key\"},\"version\":\"0.0\"},{\"id\":\"1727f2b9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0634\\u0641\\u0627\\u0641\\u064a\\u0629 \\u0648\\u0644\\u0645\\u0639\\u0627\\u0646 \\u0639\\u0627\\u0644\\u064a\\u0627\\u0646 \\u064a\\u062d\\u0627\\u0641\\u0638\\u0627\\u0646 \\u0639\\u0644\\u0649 \\u0645\\u0638\\u0647\\u0631 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 3 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-3\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":360,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 3\"},\"version\":\"0.0\"},{\"id\":\"5229aec5\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a998c1b\"]}},\"elements\":[{\"id\":\"494d224f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-05b3025\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-line-4\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"scale\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 4 Line\"},\"version\":\"0.0\"},{\"id\":\"513e853\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"04\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 4 Num\"},\"version\":\"0.0\"},{\"id\":\"2352b010\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"ANTI-YELLOWING\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 4 Key\"},\"version\":\"0.0\"},{\"id\":\"3cface39\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0642\\u0627\\u0648\\u0645 \\u0644\\u0644\\u0627\\u0635\\u0641\\u0631\\u0627\\u0631\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 4 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-4\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 4\"},\"version\":\"0.0\"},{\"id\":\"7721b34\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a998c1b\"]}},\"elements\":[{\"id\":\"41e9ef78\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-05b3025\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-line-5\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"scale\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 5 Line\"},\"version\":\"0.0\"},{\"id\":\"14b57aa6\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"05\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 5 Num\"},\"version\":\"0.0\"},{\"id\":\"785c6e60\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PAINT PROTECTION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 5 Key\"},\"version\":\"0.0\"},{\"id\":\"353ed4c2\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u062d\\u062c\\u0627\\u0631\\u0629 \\u0648\\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0648\\u0627\\u0644\\u0623\\u0634\\u0639\\u0629 \\u0641\\u0648\\u0642 \\u0627\\u0644\\u0628\\u0646\\u0641\\u0633\\u062c\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 5 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-5\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 5\"},\"version\":\"0.0\"},{\"id\":\"66b891d2\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a998c1b\"]}},\"elements\":[{\"id\":\"746f30ee\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-05b3025\"]}},\"elements\":[],\"widgetType\":\"e-divider\",\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-line-6\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"scale\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":240,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 6 Line\"},\"version\":\"0.0\"},{\"id\":\"7c8da064\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"06\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 6 Num\"},\"version\":\"0.0\"},{\"id\":\"572c561e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-c49af28\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"PRECISION CUT\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 6 Key\"},\"version\":\"0.0\"},{\"id\":\"4a2ea120\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-8679076\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0642\\u0635 \\u0631\\u0642\\u0645\\u064a \\u0648\\u0641\\u0642 \\u0642\\u0627\\u0644\\u0628 \\u0643\\u0644 \\u0645\\u0648\\u062f\\u064a\\u0644 \\u0648\\u062a\\u0634\\u0637\\u064a\\u0628 \\u064a\\u062f\\u0648\\u064a \\u0644\\u0644\\u062d\\u0648\\u0627\\u0641\\u060c \\u0628\\u062a\\u063a\\u0637\\u064a\\u0629 \\u062c\\u0632\\u0626\\u064a\\u0629 \\u0623\\u0648 \\u0643\\u0627\\u0645\\u0644\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Spec 6 Value\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-spec-6\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":360,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Spec 6\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Tech\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Specs\"},\"version\":\"0.0\"},{\"id\":\"36bbd432\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b7dcb70\"]}},\"elements\":[{\"id\":\"1c3bcb3f\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ffac970\"]}},\"elements\":[{\"id\":\"2dbe20ec\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-d2f6a68\"]}},\"elements\":[{\"id\":\"1f19db5d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":34}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"FSP Fig 1 Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Fig 1 Media\"},\"version\":\"0.0\"},{\"id\":\"ae7344b\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-6520a5a\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0646 \\u0623\\u0639\\u0645\\u0627\\u0644\\u0646\\u0627 \\u0641\\u064a \\u0628\\u063a\\u062f\\u0627\\u062f: \\u0645\\u0631\\u0633\\u064a\\u062f\\u0633 S-Class\\u060c \\u062a\\u063a\\u0637\\u064a\\u0629 \\u0643\\u0627\\u0645\\u0644\\u0629 \\u0628\\u0640 FlexiShield PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Fig 1 Cap\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-fig1\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Fig 1\"},\"version\":\"0.0\"},{\"id\":\"1a453487\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ffac970\"]}},\"elements\":[{\"id\":\"1b4c51a8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-acad842\"]}},\"elements\":[{\"id\":\"21a45eda\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":18}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"FSP Fig 2 Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Fig 2 Media\"},\"version\":\"0.0\"},{\"id\":\"2e232886\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-6520a5a\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0631\\u0643\\u064a\\u0628 \\u0627\\u0644\\u0641\\u0644\\u0645 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u0627\\u0644\\u0623\\u0643\\u062b\\u0631 \\u062a\\u0639\\u0631\\u0636\\u064b\\u0627\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"FSP Fig 2 Cap\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"fsp-fig2\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":1100,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":150,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"FSP Fig 2\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Gallery\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"FSP Section\"},\"version\":\"0.0\"},{\"id\":\"5c8006d8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-38f484c\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"55267b84\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b3355a9\"]}},\"elements\":[{\"id\":\"3685c306\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-09d5b09\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"56b90a4\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ce3d0a2\",\"g-98c1b76\"]}},\"elements\":[{\"id\":\"3c2f12e5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":21}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 02 ceramic Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-ceramic\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 02 ceramic Media\"},\"version\":\"0.0\"},{\"id\":\"4ead5b0b\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"3731551e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"02 \\/ NANO CERAMIC\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 02 ceramic Label\"},\"version\":\"0.0\"},{\"id\":\"4a5e0fc0\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0646\\u0627\\u0646\\u0648 \\u0633\\u064a\\u0631\\u0627\\u0645\\u064a\\u0643\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 02 ceramic Title\"},\"version\":\"0.0\"},{\"id\":\"2f5b37d9\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u062d\\u0645\\u0627\\u064a\\u0629 \\u0635\\u0644\\u0628\\u0629 \\u062a\\u0644\\u062a\\u0635\\u0642 \\u0628\\u0633\\u0637\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0641\\u062a\\u0645\\u0646\\u062d\\u0647 \\u0644\\u0645\\u0639\\u0627\\u0646\\u064b\\u0627 \\u0639\\u0645\\u064a\\u0642\\u064b\\u0627 \\u0648\\u062a\\u062c\\u0639\\u0644\\u0647 \\u0637\\u0627\\u0631\\u062f\\u064b\\u0627 \\u0644\\u0644\\u0645\\u0627\\u0621 \\u0648\\u0627\\u0644\\u0623\\u0648\\u0633\\u0627\\u062e\\u060c \\u0645\\u0627 \\u064a\\u0633\\u0647\\u0651\\u0644 \\u062a\\u0646\\u0638\\u064a\\u0641 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 02 ceramic Lead\"},\"version\":\"0.0\"},{\"id\":\"187373c8\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"20572d1f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0646\\u0638\\u064a\\u0641 \\u0648\\u062a\\u062d\\u0636\\u064a\\u0631 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0642\\u0628\\u0644 \\u0627\\u0644\\u062a\\u0637\\u0628\\u064a\\u0642\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 02 ceramic Item 1\"},\"version\":\"0.0\"},{\"id\":\"e2dc184\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0637\\u0628\\u064a\\u0642 \\u064a\\u062f\\u0648\\u064a \\u0639\\u0644\\u0649 \\u0645\\u0631\\u0627\\u062d\\u0644\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 02 ceramic Item 2\"},\"version\":\"0.0\"},{\"id\":\"77940242\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0644\\u0645\\u0639\\u0627\\u0646 \\u0623\\u0639\\u0645\\u0642 \\u0648\\u0633\\u0637\\u062d \\u0637\\u0627\\u0631\\u062f \\u0644\\u0644\\u0645\\u0627\\u0621\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 02 ceramic Item 3\"},\"version\":\"0.0\"},{\"id\":\"6efff95d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u064a\\u0645\\u0643\\u0646 \\u062a\\u0637\\u0628\\u064a\\u0642\\u0647 \\u0641\\u0648\\u0642 \\u0641\\u0644\\u0645 PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 02 ceramic Item 4\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 02 ceramic List\"},\"version\":\"0.0\"},{\"id\":\"8b20294\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"4729f296\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 02 ceramic Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 02 ceramic Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-ceramic\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 02 ceramic Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 02 ceramic\"},\"version\":\"0.0\"},{\"id\":\"53c50b34\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-80c3543\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"dd9644c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-98c1b76\"]}},\"elements\":[{\"id\":\"572d3fc4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":22}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 03 correction Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-correction\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 03 correction Media\"},\"version\":\"0.0\"},{\"id\":\"2db54b24\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"3a075e04\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"03 \\/ PAINT CORRECTION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 03 correction Label\"},\"version\":\"0.0\"},{\"id\":\"573dc640\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0635\\u062d\\u064a\\u062d \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0648\\u0627\\u0644\\u0628\\u0648\\u0644\\u064a\\u0634\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 03 correction Title\"},\"version\":\"0.0\"},{\"id\":\"4019baa4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0632\\u0627\\u0644\\u0629 \\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0627\\u0644\\u062f\\u0627\\u0626\\u0631\\u064a\\u0629 \\u0648\\u0627\\u0644\\u0628\\u0647\\u062a\\u0627\\u0646 \\u0648\\u0639\\u0644\\u0627\\u0645\\u0627\\u062a \\u0627\\u0644\\u063a\\u0633\\u064a\\u0644 \\u0639\\u0628\\u0631 \\u0645\\u0631\\u0627\\u062d\\u0644 \\u062a\\u0644\\u0645\\u064a\\u0639 \\u0645\\u062a\\u062f\\u0631\\u062c\\u0629\\u060c \\u0644\\u0627\\u0633\\u062a\\u0639\\u0627\\u062f\\u0629 \\u0648\\u0636\\u0648\\u062d \\u0627\\u0644\\u0627\\u0646\\u0639\\u0643\\u0627\\u0633 \\u0648\\u0646\\u0642\\u0627\\u0621 \\u0627\\u0644\\u0644\\u0648\\u0646.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 03 correction Lead\"},\"version\":\"0.0\"},{\"id\":\"4118f934\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"10dedf55\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u062d\\u0635 \\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u062a\\u062d\\u062a \\u0625\\u0636\\u0627\\u0621\\u0629 \\u0645\\u062e\\u0635\\u0635\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 03 correction Item 1\"},\"version\":\"0.0\"},{\"id\":\"2b7dd1d5\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0644\\u0645\\u064a\\u0639 \\u0645\\u062a\\u0639\\u062f\\u062f \\u0627\\u0644\\u0645\\u0631\\u0627\\u062d\\u0644 \\u062d\\u0633\\u0628 \\u062d\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0633\\u0637\\u062d\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 03 correction Item 2\"},\"version\":\"0.0\"},{\"id\":\"2b794eb6\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0632\\u0627\\u0644\\u0629 \\u0627\\u0644\\u062e\\u062f\\u0648\\u0634 \\u0627\\u0644\\u0633\\u0637\\u062d\\u064a\\u0629 \\u0648\\u0627\\u0644\\u062f\\u0648\\u0627\\u0626\\u0631\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 03 correction Item 3\"},\"version\":\"0.0\"},{\"id\":\"50755e51\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u062d\\u0636\\u064a\\u0631 \\u0645\\u062b\\u0627\\u0644\\u064a \\u0642\\u0628\\u0644 \\u0627\\u0644\\u0633\\u064a\\u0631\\u0627\\u0645\\u064a\\u0643 \\u0623\\u0648 PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 03 correction Item 4\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 03 correction List\"},\"version\":\"0.0\"},{\"id\":\"1fc3161\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"22b3d094\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 03 correction Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 03 correction Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-correction\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 03 correction Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 03 correction\"},\"version\":\"0.0\"},{\"id\":\"c8ad59d\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-00f520c\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"1c2de6c4\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ce3d0a2\",\"g-98c1b76\"]}},\"elements\":[{\"id\":\"3bb68693\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":25}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 04 interior Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-interior\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 04 interior Media\"},\"version\":\"0.0\"},{\"id\":\"63136940\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"3733d904\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"04 \\/ INTERIOR DETAILING\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 04 interior Label\"},\"version\":\"0.0\"},{\"id\":\"49d09567\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0627\\u0644\\u062f\\u0627\\u062e\\u0644\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 04 interior Title\"},\"version\":\"0.0\"},{\"id\":\"41a7d22f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0646\\u0638\\u064a\\u0641 \\u0639\\u0645\\u064a\\u0642 \\u0644\\u0644\\u0645\\u0642\\u0635\\u0648\\u0631\\u0629 \\u064a\\u0634\\u0645\\u0644 \\u0627\\u0644\\u0645\\u0642\\u0627\\u0639\\u062f \\u0648\\u0627\\u0644\\u062c\\u0644\\u062f \\u0648\\u0627\\u0644\\u0633\\u0642\\u0641 \\u0648\\u0627\\u0644\\u0623\\u0631\\u0636\\u064a\\u0627\\u062a \\u0648\\u0627\\u0644\\u0623\\u0633\\u0637\\u062d\\u060c \\u0628\\u0645\\u0648\\u0627\\u062f \\u0645\\u0646\\u0627\\u0633\\u0628\\u0629 \\u0644\\u0643\\u0644 \\u062e\\u0627\\u0645\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 04 interior Lead\"},\"version\":\"0.0\"},{\"id\":\"4da4c303\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"142c2e5e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0646\\u0638\\u064a\\u0641 \\u0627\\u0644\\u062c\\u0644\\u062f \\u0648\\u062a\\u0631\\u0637\\u064a\\u0628\\u0647\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 04 interior Item 1\"},\"version\":\"0.0\"},{\"id\":\"1b834e65\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0646\\u0638\\u064a\\u0641 \\u0627\\u0644\\u0623\\u0642\\u0645\\u0634\\u0629 \\u0648\\u0627\\u0644\\u0633\\u062c\\u0627\\u062f\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 04 interior Item 2\"},\"version\":\"0.0\"},{\"id\":\"7cf855b8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u0639\\u0646\\u0627\\u064a\\u0629 \\u0628\\u0627\\u0644\\u0623\\u0633\\u0637\\u062d \\u0627\\u0644\\u062f\\u0627\\u062e\\u0644\\u064a\\u0629 \\u0648\\u0627\\u0644\\u0634\\u0627\\u0634\\u0627\\u062a\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 04 interior Item 3\"},\"version\":\"0.0\"},{\"id\":\"22a308\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0632\\u0627\\u0644\\u0629 \\u0627\\u0644\\u0623\\u0648\\u0633\\u0627\\u062e \\u0627\\u0644\\u0639\\u0627\\u0644\\u0642\\u0629 \\u0648\\u0627\\u0644\\u0631\\u0648\\u0627\\u0626\\u062d\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 04 interior Item 4\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 04 interior List\"},\"version\":\"0.0\"},{\"id\":\"3d24d430\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"721d57e1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 04 interior Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 04 interior Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-interior\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 04 interior Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 04 interior\"},\"version\":\"0.0\"},{\"id\":\"37771ae1\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-b76b26f\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"79e57bba\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-98c1b76\"]}},\"elements\":[{\"id\":\"182833f8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":26}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 05 pdr Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-pdr\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 05 pdr Media\"},\"version\":\"0.0\"},{\"id\":\"595b93fc\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"7043ff41\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"05 \\/ PAINTLESS DENT REPAIR\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 05 pdr Label\"},\"version\":\"0.0\"},{\"id\":\"3f367ae4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0625\\u0635\\u0644\\u0627\\u062d \\u0627\\u0644\\u0635\\u062f\\u0645\\u0627\\u062a \\u0628\\u062f\\u0648\\u0646 \\u0635\\u0628\\u063a\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 05 pdr Title\"},\"version\":\"0.0\"},{\"id\":\"3b2359cd\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0642\\u0646\\u064a\\u0629 \\u0644\\u0625\\u0639\\u0627\\u062f\\u0629 \\u062a\\u0634\\u0643\\u064a\\u0644 \\u0627\\u0644\\u0627\\u0646\\u0628\\u0639\\u0627\\u062c\\u0627\\u062a \\u0627\\u0644\\u0628\\u0633\\u064a\\u0637\\u0629 \\u0645\\u0646 \\u062f\\u0627\\u062e\\u0644 \\u0627\\u0644\\u0647\\u064a\\u0643\\u0644\\u060c \\u0645\\u0639 \\u0627\\u0644\\u062d\\u0641\\u0627\\u0638 \\u0639\\u0644\\u0649 \\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0645\\u0635\\u0646\\u0639 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u062f\\u0648\\u0646 \\u0645\\u0639\\u062c\\u0648\\u0646 \\u0623\\u0648 \\u0635\\u0628\\u063a.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 05 pdr Lead\"},\"version\":\"0.0\"},{\"id\":\"3767759\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"1962a10a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0646\\u0627\\u0633\\u0628 \\u0644\\u0644\\u0627\\u0646\\u0628\\u0639\\u0627\\u062c\\u0627\\u062a \\u0627\\u0644\\u0635\\u063a\\u064a\\u0631\\u0629 \\u0648\\u0622\\u062b\\u0627\\u0631 \\u0627\\u0644\\u0628\\u064e\\u0631\\u064e\\u062f\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 05 pdr Item 1\"},\"version\":\"0.0\"},{\"id\":\"400f5c77\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u0644\\u062d\\u0641\\u0627\\u0638 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 05 pdr Item 2\"},\"version\":\"0.0\"},{\"id\":\"7278a0\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0642\\u064a\\u064a\\u0645 \\u0643\\u0644 \\u0635\\u062f\\u0645\\u0629 \\u0642\\u0628\\u0644 \\u0627\\u0644\\u0628\\u062f\\u0621 \\u0628\\u0627\\u0644\\u0639\\u0645\\u0644\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 05 pdr Item 3\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 05 pdr List\"},\"version\":\"0.0\"},{\"id\":\"10c615cd\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"668beab4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 05 pdr Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 05 pdr Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-pdr\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 05 pdr Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 05 pdr\"},\"version\":\"0.0\"},{\"id\":\"6206d50a\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2cf7dd2\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"240d5efb\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ce3d0a2\",\"g-98c1b76\"]}},\"elements\":[{\"id\":\"3a1af43f\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":330}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 06 windshield Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-windshield\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 06 windshield Media\"},\"version\":\"0.0\"},{\"id\":\"702ccf21\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"6396aca2\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"06 \\/ WINDSHIELD PROTECTION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 06 windshield Label\"},\"version\":\"0.0\"},{\"id\":\"195d2e7a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0632\\u062c\\u0627\\u062c \\u0627\\u0644\\u0623\\u0645\\u0627\\u0645\\u064a\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 06 windshield Title\"},\"version\":\"0.0\"},{\"id\":\"754037f8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0641\\u0644\\u0645 \\u0634\\u0641\\u0627\\u0641 \\u064a\\u064f\\u0631\\u0643\\u0651\\u0628 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0632\\u062c\\u0627\\u062c \\u0627\\u0644\\u0623\\u0645\\u0627\\u0645\\u064a \\u0644\\u064a\\u0642\\u0644\\u0644 \\u0623\\u062b\\u0631 \\u0627\\u0644\\u062d\\u0635\\u0649 \\u0648\\u0627\\u0644\\u062e\\u062f\\u0648\\u0634\\u060c \\u062f\\u0648\\u0646 \\u0627\\u0644\\u062a\\u0623\\u062b\\u064a\\u0631 \\u0639\\u0644\\u0649 \\u0648\\u0636\\u0648\\u062d \\u0627\\u0644\\u0631\\u0624\\u064a\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 06 windshield Lead\"},\"version\":\"0.0\"},{\"id\":\"1b12c00c\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"4a44e10c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0637\\u0628\\u0642\\u0629 \\u0634\\u0641\\u0627\\u0641\\u0629 \\u0644\\u0627 \\u062a\\u0624\\u062b\\u0631 \\u0639\\u0644\\u0649 \\u0627\\u0644\\u0631\\u0624\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 06 windshield Item 1\"},\"version\":\"0.0\"},{\"id\":\"33210d11\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0645\\u0646 \\u0627\\u0644\\u062d\\u0635\\u0649 \\u0648\\u0627\\u0644\\u062e\\u062f\\u0648\\u0634\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 06 windshield Item 2\"},\"version\":\"0.0\"},{\"id\":\"496ec1fd\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0631\\u0643\\u064a\\u0628 \\u062f\\u0642\\u064a\\u0642 \\u0639\\u0644\\u0649 \\u0627\\u0646\\u062d\\u0646\\u0627\\u0621\\u0627\\u062a \\u0627\\u0644\\u0632\\u062c\\u0627\\u062c\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 06 windshield Item 3\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 06 windshield List\"},\"version\":\"0.0\"},{\"id\":\"7583ea89\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"2a7e81d1\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 06 windshield Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 06 windshield Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-windshield\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 06 windshield Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 06 windshield\"},\"version\":\"0.0\"},{\"id\":\"4cecf826\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-33672ae\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"4b627314\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-98c1b76\"]}},\"elements\":[{\"id\":\"1f9ce2a4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":28}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 07 tint Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-tint\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 07 tint Media\"},\"version\":\"0.0\"},{\"id\":\"5b1a59bf\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"67915ae\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"07 \\/ WINDOW TINT\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 07 tint Label\"},\"version\":\"0.0\"},{\"id\":\"1c347b7d\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0638\\u0644\\u064a\\u0644 \\u0627\\u0644\\u0646\\u0648\\u0627\\u0641\\u0630\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 07 tint Title\"},\"version\":\"0.0\"},{\"id\":\"de7f505\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0623\\u0641\\u0644\\u0627\\u0645 \\u062a\\u0638\\u0644\\u064a\\u0644 \\u062a\\u0645\\u0646\\u062d \\u0627\\u0644\\u0645\\u0642\\u0635\\u0648\\u0631\\u0629 \\u062e\\u0635\\u0648\\u0635\\u064a\\u0629 \\u0623\\u0643\\u0628\\u0631 \\u0648\\u062a\\u0642\\u0644\\u0644 \\u0627\\u0644\\u0648\\u0647\\u062c \\u0648\\u062d\\u0631\\u0627\\u0631\\u0629 \\u0627\\u0644\\u0634\\u0645\\u0633 \\u062f\\u0627\\u062e\\u0644 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 07 tint Lead\"},\"version\":\"0.0\"},{\"id\":\"2939d8c3\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"2cc009f8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062f\\u0631\\u062c\\u0627\\u062a \\u062a\\u0638\\u0644\\u064a\\u0644 \\u0645\\u062a\\u0639\\u062f\\u062f\\u0629 \\u062d\\u0633\\u0628 \\u0631\\u063a\\u0628\\u062a\\u0643\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 07 tint Item 1\"},\"version\":\"0.0\"},{\"id\":\"47774533\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0642\\u0644\\u064a\\u0644 \\u0627\\u0644\\u0648\\u0647\\u062c \\u0648\\u0627\\u0644\\u062d\\u0631\\u0627\\u0631\\u0629 \\u062f\\u0627\\u062e\\u0644 \\u0627\\u0644\\u0645\\u0642\\u0635\\u0648\\u0631\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 07 tint Item 2\"},\"version\":\"0.0\"},{\"id\":\"16886ede\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0631\\u0643\\u064a\\u0628 \\u0646\\u0638\\u064a\\u0641 \\u0648\\u0645\\u062d\\u0643\\u0645 \\u0627\\u0644\\u062d\\u0648\\u0627\\u0641\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 07 tint Item 3\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 07 tint List\"},\"version\":\"0.0\"},{\"id\":\"6a7bf2f4\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"5a66b866\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 07 tint Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 07 tint Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-tint\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 07 tint Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 07 tint\"},\"version\":\"0.0\"},{\"id\":\"f52245\",\"elType\":\"e-grid\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-4e7e5cd\",\"g-d29f796\"]}},\"elements\":[{\"id\":\"6ce98891\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ce3d0a2\",\"g-98c1b76\"]}},\"elements\":[{\"id\":\"1e94d400\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-f9693fd\",\"g-bf0a7aa\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":29}}},\"size\":{\"$$type\":\"string\",\"value\":\"large\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Photo\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-media-color-ppf\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 08 color-ppf Media\"},\"version\":\"0.0\"},{\"id\":\"67d7b8e9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-308d5fe\"]}},\"elements\":[{\"id\":\"38207e9a\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"08 \\/ COLOR PPF\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Label\"},\"version\":\"0.0\"},{\"id\":\"15a052f4\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5a839c7\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"PPF \\u0627\\u0644\\u0645\\u0644\\u0648\\u0651\\u0646 \\u0648\\u062a\\u063a\\u064a\\u064a\\u0631 \\u0627\\u0644\\u0644\\u0648\\u0646\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Title\"},\"version\":\"0.0\"},{\"id\":\"725ee249\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ff7c116\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u063a\\u064a\\u0651\\u0631 \\u0644\\u0648\\u0646 \\u0633\\u064a\\u0627\\u0631\\u062a\\u0643 \\u0623\\u0648 \\u062a\\u0634\\u0637\\u064a\\u0628\\u0647\\u0627\\u060c \\u0644\\u0627\\u0645\\u0639 \\u0623\\u0648 \\u0633\\u0627\\u062a\\u0627\\u0646 \\u0623\\u0648 \\u0645\\u0637\\u0641\\u064a\\u060c \\u0645\\u0639 \\u0637\\u0628\\u0642\\u0629 \\u062a\\u062d\\u0645\\u064a \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u062a\\u062d\\u062a\\u0647\\u0627 \\u0648\\u062a\\u0628\\u0642\\u064a\\u0647 \\u0643\\u0645\\u0627 \\u0647\\u0648.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Lead\"},\"version\":\"0.0\"},{\"id\":\"408a890f\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-119cf7a\"]}},\"elements\":[{\"id\":\"c4a12c8\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0634\\u0637\\u064a\\u0628\\u0627\\u062a \\u0644\\u0627\\u0645\\u0639\\u0629 \\u0648\\u0633\\u0627\\u062a\\u0627\\u0646 \\u0648\\u0645\\u0637\\u0641\\u064a\\u0629\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Item 1\"},\"version\":\"0.0\"},{\"id\":\"197fb633\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062d\\u0645\\u0627\\u064a\\u0629 \\u0627\\u0644\\u0637\\u0644\\u0627\\u0621 \\u0627\\u0644\\u0623\\u0635\\u0644\\u064a \\u0623\\u0633\\u0641\\u0644 \\u0627\\u0644\\u0644\\u0648\\u0646 \\u0627\\u0644\\u062c\\u062f\\u064a\\u062f\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Item 2\"},\"version\":\"0.0\"},{\"id\":\"6b79c587\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-a30d94b\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0645\\u0639\\u0627\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0623\\u0644\\u0648\\u0627\\u0646 \\u0642\\u0628\\u0644 \\u0627\\u062a\\u062e\\u0627\\u0630 \\u0627\\u0644\\u0642\\u0631\\u0627\\u0631\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Item 3\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 08 color-ppf List\"},\"version\":\"0.0\"},{\"id\":\"6021341\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-dfa4f7c\"]}},\"elements\":[{\"id\":\"171f7e40\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0647\\u0630\\u0647 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV 08 color-ppf Cta\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 08 color-ppf Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-body-color-ppf\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":120,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV 08 color-ppf Body\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV 08 color-ppf\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"Rest Wrap\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Catalog Rest\"},\"version\":\"0.0\"},{\"id\":\"46f55ae9\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-0dd97fd\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"section\"}},\"elements\":[{\"id\":\"64ab8c5c\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-15ef223\",\"g-29543c7\"]},\"image\":{\"$$type\":\"image\",\"value\":{\"src\":{\"$$type\":\"image-src\",\"value\":{\"id\":{\"$$type\":\"image-attachment-id\",\"value\":33}}},\"size\":{\"$$type\":\"string\",\"value\":\"full\"}}}},\"elements\":[],\"widgetType\":\"e-image\",\"editor_settings\":{\"title\":\"SV Final Photo\"},\"version\":\"0.0\"},{\"id\":\"3bfe64dd\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-76abc61\"]}},\"elements\":[{\"id\":\"4e21a912\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ca8ad4e\"]}},\"elements\":[{\"id\":\"4b88eb7e\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-ed6df42\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"CONSULTATION\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV Final Label\"},\"version\":\"0.0\"},{\"id\":\"65fb9138\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-58be460\"]},\"tag\":{\"$$type\":\"string\",\"value\":\"h2\"},\"title\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0644\\u0633\\u062a \\u0645\\u062a\\u0623\\u0643\\u062f\\u064b\\u0627 \\u0645\\u0646 \\u0627\\u0644\\u062e\\u062f\\u0645\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0627\\u0633\\u0628\\u0629\\u061f\"}},\"elements\":[],\"widgetType\":\"e-heading\",\"editor_settings\":{\"title\":\"SV Final Title\"},\"version\":\"0.0\"},{\"id\":\"419f6345\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5fdf75d\"]},\"paragraph\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0645\\u0648\\u0639\\u062f\\u064b\\u0627 \\u0644\\u0641\\u062d\\u0635 \\u0627\\u0644\\u0633\\u064a\\u0627\\u0631\\u0629\\u060c \\u0648\\u0633\\u0646\\u0634\\u0631\\u062d \\u0644\\u0643 \\u0627\\u0644\\u062e\\u064a\\u0627\\u0631\\u0627\\u062a \\u0627\\u0644\\u0645\\u0646\\u0627\\u0633\\u0628\\u0629 \\u0644\\u062d\\u0627\\u0644\\u062a\\u0647\\u0627 \\u0648\\u0637\\u0631\\u064a\\u0642\\u0629 \\u0627\\u0633\\u062a\\u062e\\u062f\\u0627\\u0645\\u0643 \\u0644\\u0647\\u0627.\"}},\"elements\":[],\"widgetType\":\"e-paragraph\",\"editor_settings\":{\"title\":\"SV Final Lead\"},\"version\":\"0.0\"},{\"id\":\"25d5f222\",\"elType\":\"e-flexbox\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-60474c4\"]}},\"elements\":[{\"id\":\"8d282fd\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-5aeb29f\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u0627\\u062d\\u062c\\u0632 \\u0645\\u0648\\u0639\\u062f\\u0643\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/contact\\/#appointment\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Final Book\"},\"version\":\"0.0\"},{\"id\":\"65fbcd91\",\"elType\":\"widget\",\"settings\":{\"classes\":{\"$$type\":\"classes\",\"value\":[\"g-2b792c0\"]},\"text\":{\"$$type\":\"escaped-html\",\"value\":\"\\u062a\\u0648\\u0627\\u0635\\u0644 \\u0639\\u0628\\u0631 \\u0648\\u0627\\u062a\\u0633\\u0627\\u0628\"},\"link\":{\"$$type\":\"link\",\"value\":{\"destination\":{\"$$type\":\"url\",\"value\":\"https:\\/\\/pink-frog-150349.hostingersite.com\\/?rek=whatsapp\"},\"tag\":{\"$$type\":\"string\",\"value\":\"a\"}}}},\"elements\":[],\"widgetType\":\"e-button\",\"editor_settings\":{\"title\":\"SV Final WhatsApp\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Final Buttons\"},\"version\":\"0.0\"}],\"isInner\":false,\"interactions\":{\"items\":[{\"$$type\":\"interaction-item\",\"value\":{\"interaction_id\":{\"$$type\":\"string\",\"value\":\"sv-final\"},\"trigger\":{\"$$type\":\"string\",\"value\":\"scrollIn\"},\"animation\":{\"$$type\":\"animation-preset-props\",\"value\":{\"effect\":{\"$$type\":\"string\",\"value\":\"fade\"},\"type\":{\"$$type\":\"string\",\"value\":\"in\"},\"direction\":{\"$$type\":\"string\",\"value\":\"bottom\"},\"timing_config\":{\"$$type\":\"timing-config\",\"value\":{\"duration\":{\"$$type\":\"size\",\"value\":{\"size\":900,\"unit\":\"ms\"}},\"delay\":{\"$$type\":\"size\",\"value\":{\"size\":0,\"unit\":\"ms\"}}}}}}}}],\"version\":1},\"editor_settings\":{\"title\":\"SV Final Content\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Final Shade\"},\"version\":\"0.0\"}],\"isInner\":false,\"editor_settings\":{\"title\":\"SV Final\"},\"version\":\"0.0\"}]",
+  "_elementor_page_settings": {
+   "hide_title": "yes",
+   "background_background": "classic",
+   "background_color": "#050B12"
+  },
+  "elementor-interactions-cache": {
+   "60e721ff": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-hero"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "load"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1000,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "79556645": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-ppf"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "48c1ebb7": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-ppf"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4fad262c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-label"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7bc75c50": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-title"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 80,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "78eb526": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-sub"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 160,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "53c47ad5": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-lead"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "9e84b0c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-cred"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 320,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "2ba524d4": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-second"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 380,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "49a9a88": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-cta"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 440,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "21cd65ab": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-media"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1200,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "67673734": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-plate"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 450,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "68169f71": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-title"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "315f24e5": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-1"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4ec49f8f": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-line-1"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "scale"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "3c8e2460": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-2"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "8ef3df1": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-line-2"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "scale"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "2ae2b25c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-3"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 360,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "1f31ba73": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-line-3"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "scale"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5229aec5": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-4"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "494d224f": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-line-4"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "scale"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "7721b34": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-5"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "41e9ef78": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-line-5"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "scale"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "66b891d2": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-spec-6"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 360,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "746f30ee": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-line-6"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "scale"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 240,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "1c3bcb3f": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-fig1"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "1a453487": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "fsp-fig2"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 1100,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 150,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "56b90a4": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-ceramic"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4ead5b0b": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-ceramic"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "dd9644c": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-correction"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "2db54b24": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-correction"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "1c2de6c4": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-interior"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "63136940": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-interior"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "79e57bba": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-pdr"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "595b93fc": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-pdr"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "240d5efb": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-windshield"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "702ccf21": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-windshield"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4b627314": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-tint"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "5b1a59bf": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-tint"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "6ce98891": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-media-color-ppf"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "67d7b8e9": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-body-color-ppf"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 120,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ],
+   "4e21a912": [
+    {
+     "$$type": "interaction-item",
+     "value": {
+      "interaction_id": {
+       "$$type": "string",
+       "value": "sv-final"
+      },
+      "trigger": {
+       "$$type": "string",
+       "value": "scrollIn"
+      },
+      "animation": {
+       "$$type": "animation-preset-props",
+       "value": {
+        "effect": {
+         "$$type": "string",
+         "value": "fade"
+        },
+        "type": {
+         "$$type": "string",
+         "value": "in"
+        },
+        "direction": {
+         "$$type": "string",
+         "value": "bottom"
+        },
+        "timing_config": {
+         "$$type": "timing-config",
+         "value": {
+          "duration": {
+           "$$type": "size",
+           "value": {
+            "size": 900,
+            "unit": "ms"
+           }
+          },
+          "delay": {
+           "$$type": "size",
+           "value": {
+            "size": 0,
+            "unit": "ms"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  "_elementor_used_global_class": "g-48b4671"
+ }
+}

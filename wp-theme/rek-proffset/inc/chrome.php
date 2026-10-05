@@ -1,0 +1,209 @@
+<?php
+/**
+ * Site chrome: header, full-screen mobile menu, footer and floating WhatsApp.
+ * Replaces Astra's header and footer output through Astra's own hooks.
+ *
+ * @package rek-proffset
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+add_action( 'wp', function () {
+	if ( is_admin() ) {
+		return;
+	}
+	remove_all_actions( 'astra_header' );
+	remove_all_actions( 'astra_footer' );
+	add_action( 'astra_header', 'rek_render_header' );
+	add_action( 'astra_footer', 'rek_render_footer' );
+} );
+
+function rek_is_rtl_lang() {
+	return is_rtl();
+}
+
+function rek_t( $ar, $en ) {
+	return rek_is_rtl_lang() ? $ar : $en;
+}
+
+function rek_logo_html( $size = 40 ) {
+	$logo_id = (int) get_theme_mod( 'custom_logo' );
+	$img     = $logo_id ? wp_get_attachment_image( $logo_id, 'thumbnail', false, [
+		'class'    => 'rek-logo-img',
+		'width'    => $size,
+		'height'   => $size,
+		'alt'      => rek_t( 'شعار ريك بروفسيت', 'REK PROFFSET logo' ),
+		'loading'  => 'eager',
+		'decoding' => 'async',
+	] ) : '';
+
+	return $img . '<span class="rek-wordmark" dir="ltr">REK <span>PROFFSET</span></span>';
+}
+
+function rek_lang_switcher() {
+	if ( ! function_exists( 'pll_the_languages' ) ) {
+		return '';
+	}
+	$langs = pll_the_languages( [ 'raw' => 1, 'hide_if_empty' => 0 ] );
+	if ( empty( $langs ) || count( $langs ) < 2 ) {
+		return '';
+	}
+	$out = '<div class="rek-lang" role="group" aria-label="' . esc_attr( rek_t( 'اللغة', 'Language' ) ) . '">';
+	$i   = 0;
+	foreach ( $langs as $lang ) {
+		if ( $i++ ) {
+			$out .= '<span class="rek-lang-sep" aria-hidden="true">|</span>';
+		}
+		$label = 'ar' === $lang['slug'] ? 'العربية' : strtoupper( $lang['slug'] );
+		$out  .= sprintf(
+			'<a href="%s" lang="%s" hreflang="%s"%s>%s</a>',
+			esc_url( $lang['url'] ),
+			esc_attr( $lang['slug'] ),
+			esc_attr( $lang['slug'] ),
+			$lang['current_lang'] ? ' aria-current="true" class="is-current"' : '',
+			esc_html( $label )
+		);
+	}
+	return $out . '</div>';
+}
+
+function rek_appointment_url() {
+	return rek_contact_page_url() . '#appointment';
+}
+
+function rek_render_header() {
+	$home = function_exists( 'pll_home_url' ) ? pll_home_url() : home_url( '/' );
+	?>
+	<a class="rek-skip" href="#content"><?php echo esc_html( rek_t( 'تخطَّ إلى المحتوى', 'Skip to content' ) ); ?></a>
+	<header class="rek-header" data-rek-header>
+		<div class="rek-header__inner">
+			<a class="rek-brand" href="<?php echo esc_url( $home ); ?>" aria-label="REK PROFFSET">
+				<?php echo rek_logo_html(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+			</a>
+			<nav class="rek-nav" aria-label="<?php echo esc_attr( rek_t( 'القائمة الرئيسية', 'Main navigation' ) ); ?>">
+				<?php
+				wp_nav_menu( [
+					'theme_location' => 'rek_primary',
+					'container'      => false,
+					'menu_class'     => 'rek-nav__list',
+					'depth'          => 1,
+					'fallback_cb'    => false,
+				] );
+				?>
+			</nav>
+			<div class="rek-header__actions">
+				<?php echo rek_lang_switcher(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+				<a class="rek-btn rek-btn--primary rek-header__cta" href="<?php echo esc_url( rek_appointment_url() ); ?>">
+					<?php echo esc_html( rek_t( 'احجز موعدك', 'Book an appointment' ) ); ?>
+				</a>
+				<button class="rek-menu-toggle" type="button" aria-expanded="false" aria-controls="rek-menu" data-rek-menu-open>
+					<span class="rek-menu-toggle__bars" aria-hidden="true"></span>
+					<span class="rek-sr"><?php echo esc_html( rek_t( 'فتح القائمة', 'Open menu' ) ); ?></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="rek-menu" id="rek-menu" role="dialog" aria-modal="true" aria-label="<?php echo esc_attr( rek_t( 'القائمة', 'Menu' ) ); ?>" hidden data-rek-menu>
+		<div class="rek-menu__top">
+			<a class="rek-brand" href="<?php echo esc_url( $home ); ?>" aria-label="REK PROFFSET"><?php echo rek_logo_html( 36 ); // phpcs:ignore ?></a>
+			<button class="rek-menu__close" type="button" data-rek-menu-close>
+				<span aria-hidden="true">&times;</span>
+				<span class="rek-sr"><?php echo esc_html( rek_t( 'إغلاق القائمة', 'Close menu' ) ); ?></span>
+			</button>
+		</div>
+		<nav aria-label="<?php echo esc_attr( rek_t( 'القائمة الرئيسية', 'Main navigation' ) ); ?>">
+			<?php
+			wp_nav_menu( [
+				'theme_location' => 'rek_primary',
+				'container'      => false,
+				'menu_class'     => 'rek-menu__list',
+				'depth'          => 1,
+				'fallback_cb'    => false,
+			] );
+			?>
+		</nav>
+		<div class="rek-menu__foot">
+			<?php echo rek_lang_switcher(); // phpcs:ignore ?>
+			<a class="rek-btn rek-btn--primary rek-btn--block" href="<?php echo esc_url( rek_appointment_url() ); ?>">
+				<?php echo esc_html( rek_t( 'احجز موعدك', 'Book an appointment' ) ); ?>
+			</a>
+			<?php if ( rek_whatsapp_digits() ) : ?>
+				<a class="rek-btn rek-btn--ghost rek-btn--block" href="<?php echo esc_url( rek_whatsapp_url() ); ?>" target="_blank" rel="noopener">
+					<?php echo esc_html( rek_t( 'تواصل عبر واتساب', 'Chat on WhatsApp' ) ); ?>
+				</a>
+			<?php endif; ?>
+		</div>
+	</div>
+	<?php
+}
+
+function rek_render_footer() {
+	$phone     = rek_get( 'rek_phone' );
+	$instagram = rek_get( 'rek_instagram_url' );
+	$address   = rek_get( 'rek_address' );
+	$hours     = rek_get( 'rek_hours' );
+	?>
+	<footer class="rek-footer">
+		<div class="rek-footer__inner">
+			<div class="rek-footer__brand">
+				<?php echo rek_logo_html( 48 ); // phpcs:ignore ?>
+				<p><?php echo esc_html( rek_t( 'شركة ريك بروفسيت للعناية بالسيارات، استوديو متخصص في حماية السيارات والعناية بها في بغداد.', 'An automotive protection and detailing studio in Baghdad.' ) ); ?></p>
+			</div>
+			<nav class="rek-footer__nav" aria-label="<?php echo esc_attr( rek_t( 'روابط الموقع', 'Site links' ) ); ?>">
+				<?php
+				wp_nav_menu( [
+					'theme_location' => 'rek_primary',
+					'container'      => false,
+					'menu_class'     => 'rek-footer__list',
+					'depth'          => 1,
+					'fallback_cb'    => false,
+				] );
+				?>
+			</nav>
+			<div class="rek-footer__contact">
+				<p class="rek-footer__label"><?php echo esc_html( rek_t( 'تواصل', 'Contact' ) ); ?></p>
+				<ul>
+					<li><?php echo esc_html( $address ? $address : rek_t( 'بغداد، العراق', 'Baghdad, Iraq' ) ); ?></li>
+					<?php if ( $hours ) : ?>
+						<li><?php echo esc_html( $hours ); ?></li>
+					<?php endif; ?>
+					<?php if ( $phone ) : ?>
+						<li><a href="<?php echo esc_attr( rek_tel_href( $phone ) ); ?>" dir="ltr"><?php echo esc_html( $phone ); ?></a></li>
+					<?php endif; ?>
+					<?php if ( rek_whatsapp_digits() ) : ?>
+						<li><a href="<?php echo esc_url( rek_whatsapp_url() ); ?>" target="_blank" rel="noopener">WhatsApp</a></li>
+					<?php endif; ?>
+					<?php if ( $instagram ) : ?>
+						<li><a href="<?php echo esc_url( $instagram ); ?>" target="_blank" rel="noopener noreferrer" dir="ltr">@<?php echo esc_html( rek_social_handle( $instagram ) ); ?></a></li>
+					<?php endif; ?>
+				</ul>
+			</div>
+		</div>
+		<div class="rek-footer__base">
+			<span dir="ltr">&copy; <?php echo esc_html( gmdate( 'Y' ) ); ?> REK PROFFSET</span>
+		</div>
+	</footer>
+
+	<?php
+	rek_render_location_bubble();
+	rek_render_whatsapp_bubble();
+}
+
+/**
+ * Floating glass WhatsApp bubble, shown on every page. It opens the chat
+ * with the general message; before a number is configured it links to the
+ * contact page instead (same tab, since it stays on this site).
+ */
+function rek_render_whatsapp_bubble() {
+	$external = (bool) rek_whatsapp_digits();
+	?>
+	<a class="rek-wa" href="<?php echo esc_url( rek_whatsapp_url( 'general' ) ); ?>"<?php echo $external ? ' target="_blank" rel="noopener"' : ''; ?>
+		aria-label="<?php echo esc_attr( rek_t( 'التواصل مع REK PROFFSET عبر واتساب', 'Contact REK PROFFSET on WhatsApp' ) ); ?>" data-rek-wa>
+		<span class="rek-wa__icon" aria-hidden="true">
+			<svg viewBox="0 0 24 24" width="26" height="26" focusable="false"><path fill="currentColor" d="<?php echo esc_attr( REK_WHATSAPP_ICON_PATH ); ?>"/></svg>
+		</span>
+		<span class="rek-wa__label" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>"><?php echo esc_html( rek_t( 'تواصل معنا عبر واتساب', 'Chat with us on WhatsApp' ) ); ?></span>
+	</a>
+	<?php
+}

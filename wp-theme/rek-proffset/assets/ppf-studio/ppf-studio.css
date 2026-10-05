@@ -1,0 +1,142 @@
+/*
+ * REK PPF Color Studio ([rek_ppf_studio]). Loaded only on pages with the studio.
+ * Uses the site's design tokens from rek.css.
+ */
+/* The Elementor flexbox that holds the shortcode is a padded row by default; let the studio span it. */
+.e-con:has(> .elementor-widget-shortcode .rek-ppf) { flex-direction: column; padding: 0; }
+.elementor-widget-shortcode:has(.rek-ppf) { width: 100%; max-width: 100%; }
+.rek-ppf { width: 100%; box-sizing: border-box; }
+.rek-ppf {
+	--ppf-ease: var(--rek-ease, cubic-bezier(.2, .7, .2, 1));
+	position: relative; color: var(--rek-ink); background: var(--rek-bg);
+	padding: calc(var(--rek-header-h, 76px) + clamp(28px, 4vw, 56px)) clamp(16px, 3.4vw, 56px) clamp(48px, 6vw, 88px);
+}
+.rek-ppf__head { max-width: 1600px; margin: 0 auto clamp(18px, 2.4vw, 30px); }
+.rek-ppf__label { margin: 0 0 12px; font-family: var(--rek-font-mono); font-size: 12px; letter-spacing: .24em; color: var(--rek-accent-light); }
+.rek-ppf__title { margin: 0; color: var(--rek-ink); font-family: var(--rek-font-display); font-weight: 600; font-size: clamp(30px, 4.4vw, 58px); line-height: 1.12; }
+.rek-ppf__lead { margin: 12px 0 0; max-width: 640px; font-size: clamp(15px, 1.3vw, 17px); line-height: 1.8; color: rgba(245, 247, 250, .72); }
+
+.rek-ppf__frame { position: relative; max-width: 1600px; margin: 0 auto; }
+.rek-ppf__stage {
+	position: relative; height: clamp(560px, 80vh, 880px); overflow: hidden; outline: none; border-radius: 2px;
+	background: #07090c; border: 1px solid var(--rek-hairline);
+}
+.rek-ppf__stage:focus-visible { outline: 2px solid var(--rek-accent-light); outline-offset: 3px; }
+.rek-ppf__canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; opacity: 0; transition: opacity .9s var(--ppf-ease); }
+.rek-ppf__canvas:active { cursor: grabbing; }
+.rek-ppf.is-ready .rek-ppf__canvas { opacity: 1; }
+.rek-ppf__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; transition: opacity .9s var(--ppf-ease); }
+.rek-ppf.is-ready .rek-ppf__poster { opacity: 0; }
+
+.rek-ppf__loader { position: absolute; inset-inline: 0; inset-block-end: 26px; z-index: 1; display: grid; justify-items: center; gap: 10px; transition: opacity .5s; }
+.rek-ppf.is-ready .rek-ppf__loader { opacity: 0; pointer-events: none; }
+.rek-ppf__status { font-size: 13px; color: var(--rek-muted); }
+.rek-ppf__track { width: 160px; height: 2px; background: rgba(245, 247, 250, .1); overflow: hidden; }
+.rek-ppf__bar { display: block; height: 100%; background: var(--rek-accent-light); transform: scaleX(0); transform-origin: right; transition: transform .2s; }
+.rek-ppf.is-fallback .rek-ppf__track, .rek-ppf.is-fallback .rek-ppf__tools { display: none; }
+
+.rek-ppf__hint { position: absolute; inset-block-start: 14px; inset-inline-end: 18px; margin: 0; font-size: 12px; color: var(--rek-muted); opacity: 0; transition: opacity .6s .4s; pointer-events: none; }
+.rek-ppf.is-ready .rek-ppf__hint { opacity: 1; }
+.rek-ppf__hint--touch { display: none; }
+@media (hover: none), (pointer: coarse) { .rek-ppf__hint--mouse { display: none; } .rek-ppf__hint--touch { display: inline; } }
+
+/* Small glass tools in the stage corner: 360°, zoom. */
+.rek-ppf__tools { position: absolute; inset-block-end: 14px; inset-inline-end: 14px; z-index: 2; display: flex; gap: 8px; opacity: 0; transition: opacity .6s .3s; }
+.rek-ppf.is-ready .rek-ppf__tools { opacity: 1; }
+.rek-ppf__tool {
+	display: grid; place-items: center; min-width: 40px; height: 40px; padding: 0 10px; border-radius: 999px; cursor: pointer;
+	font: 600 12px var(--rek-font-mono); color: var(--rek-ink);
+	background: linear-gradient(150deg, rgba(18, 63, 105, .42), rgba(5, 11, 18, .7));
+	-webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+	border: 1px solid rgba(245, 247, 250, .16); transition: border-color .3s, color .3s;
+}
+.rek-ppf__tool:hover, .rek-ppf__tool[aria-pressed="true"] { border-color: var(--rek-accent-light); color: var(--rek-accent-light); }
+.rek-ppf__tool:disabled { opacity: .4; cursor: default; }
+
+/* Glass control panel: sidebar on the reading side on wide screens. */
+.rek-ppf__panel {
+	position: absolute; inset-block: 20px; inset-inline-start: 20px; width: 360px; z-index: 2;
+	display: flex; flex-direction: column; gap: 14px; padding: 20px; border-radius: 2px; min-height: 0;
+	background: linear-gradient(150deg, rgba(18, 63, 105, .34), rgba(5, 11, 18, .78));
+	-webkit-backdrop-filter: blur(18px) saturate(140%); backdrop-filter: blur(18px) saturate(140%);
+	border: 1px solid rgba(245, 247, 250, .12);
+	box-shadow: 0 24px 50px -24px rgba(0, 0, 0, .8), inset 0 1px 0 rgba(255, 255, 255, .07);
+}
+.rek-ppf__readout { display: flex; align-items: center; gap: 14px; padding-block-end: 14px; border-block-end: 1px solid var(--rek-hairline); }
+.rek-ppf__dot { flex: none; width: 44px; height: 44px; border-radius: 50%; background: #c80b2c; border: 1px solid rgba(245, 247, 250, .3);
+	box-shadow: inset 0 3px 8px rgba(255, 255, 255, .3), inset 0 -8px 12px rgba(0, 0, 0, .35); transition: background .5s var(--ppf-ease); }
+.rek-ppf__meta { display: grid; gap: 1px; min-width: 0; }
+.rek-ppf__meta small { font-family: var(--rek-font-mono); font-size: 11px; letter-spacing: .16em; color: var(--rek-accent-light); }
+.rek-ppf__meta small b { font-weight: 500; color: var(--rek-muted); margin-inline-start: 6px; }
+.rek-ppf__name { font-family: var(--rek-font-display); font-weight: 600; font-size: 19px; line-height: 1.3; }
+.rek-ppf__sub { font-size: 13px; color: rgba(245, 247, 250, .7); text-align: start; }
+.rek-ppf__sub:empty { display: none; }
+.rek-ppf__finish { font-size: 13px; color: var(--rek-muted); }
+
+.rek-ppf__tabs { display: grid; grid-template-columns: repeat(6, auto); gap: 4px; justify-content: space-between; }
+.rek-ppf__tab {
+	display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; min-height: 40px; padding: 2px 7px; cursor: pointer; border-radius: 2px;
+	font: 500 12px var(--rek-font-body); color: rgba(245, 247, 250, .78); background: rgba(5, 11, 18, .35); border: 1px solid rgba(245, 247, 250, .14);
+	transition: border-color .3s, color .3s, background .3s;
+}
+.rek-ppf__tab-en { font-family: var(--rek-font-mono); letter-spacing: .08em; font-size: 10px; }
+.rek-ppf__tab-n { font-family: var(--rek-font-mono); font-size: 10px; color: var(--rek-muted); }
+.rek-ppf__tab[aria-selected="true"] { border-color: var(--rek-accent-light); color: var(--rek-ink); background: rgba(22, 137, 216, .14); }
+
+.rek-ppf__grid {
+	flex: 1 1 auto; min-height: 120px; overflow-y: auto; overscroll-behavior: contain; margin: 0; padding: 4px 2px 4px 6px; list-style: none;
+	display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 10px; align-content: start; outline: none;
+	scrollbar-width: thin; scrollbar-color: rgba(91, 184, 242, .35) transparent;
+}
+.rek-ppf__grid li { display: grid; place-items: center; }
+.rek-ppf__grid li[hidden] { display: none; }
+.rek-ppf__sw {
+	position: relative; width: 40px; height: 40px; border-radius: 50%; padding: 0; cursor: pointer;
+	background: var(--sw); border: 1px solid rgba(245, 247, 250, .26);
+	box-shadow: inset 0 3px 7px rgba(255, 255, 255, .3), inset 0 -7px 11px rgba(0, 0, 0, .35);
+	transition: transform .25s var(--ppf-ease), box-shadow .25s var(--ppf-ease);
+}
+.rek-ppf__sw--matte { box-shadow: inset 0 -6px 10px rgba(0, 0, 0, .22); }
+.rek-ppf__sw--satin { box-shadow: inset 0 2px 6px rgba(255, 255, 255, .14), inset 0 -7px 11px rgba(0, 0, 0, .3); }
+.rek-ppf__sw--metallic { background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0) 46%), var(--sw); }
+.rek-ppf__sw--special { background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, .75), rgba(255, 255, 255, 0) 40%), conic-gradient(from 200deg, rgba(120, 200, 255, .35), rgba(255, 120, 220, .3), rgba(255, 230, 120, .3), rgba(120, 200, 255, .35)), var(--sw); background-blend-mode: screen, overlay, normal; }
+.rek-ppf__sw[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--rek-bg), 0 0 0 4px var(--rek-accent-light); }
+.rek-ppf__sw:disabled { opacity: .35; cursor: default; }
+.rek-ppf__sw:focus-visible { outline: 2px solid var(--rek-accent-light); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) { .rek-ppf__sw:not(:disabled):hover { transform: scale(1.1); } }
+
+.rek-ppf__actions { display: grid; gap: 10px; }
+.rek-ppf__order {
+	display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 18px; border-radius: 2px;
+	font: 600 15px var(--rek-font-body); color: var(--rek-bg); background: var(--rek-accent); text-decoration: none; cursor: pointer; transition: background .3s, opacity .3s;
+}
+.rek-ppf__order:hover { background: var(--rek-accent-light); color: var(--rek-bg); }
+.rek-ppf__order.is-disabled { opacity: .45; cursor: default; }
+.rek-ppf__row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.rek-ppf__btn {
+	min-height: 44px; padding: 0 12px; border-radius: 2px; cursor: pointer; font: 500 14px var(--rek-font-body); color: var(--rek-ink);
+	background: transparent; border: 1px solid rgba(245, 247, 250, .26); transition: border-color .3s, color .3s;
+}
+.rek-ppf__btn:hover { border-color: var(--rek-accent-light); color: var(--rek-accent-light); }
+.rek-ppf__btn:disabled { opacity: .4; cursor: default; }
+.rek-ppf__note { margin: 2px 0 0; font-size: 11.5px; line-height: 1.6; color: var(--rek-muted); }
+
+.rek-ppf.is-fallback .rek-ppf__panel { display: none; }
+
+/* Tablet and phone: the panel sits below the stage, so it never covers the car. */
+@media (max-width: 1023px) {
+	.rek-ppf__stage { height: clamp(420px, 62vh, 640px); }
+	.rek-ppf__panel { position: relative; inset: auto; width: auto; margin-top: 12px; }
+	.rek-ppf__grid { max-height: 300px; flex: none; }
+}
+@media (max-width: 600px) {
+	.rek-ppf__stage { height: auto; aspect-ratio: 1 / 1.25; }
+	.rek-ppf__tabs { grid-template-columns: repeat(3, 1fr); }
+	.rek-ppf__panel { padding: 16px; }
+	.rek-ppf__grid { grid-template-columns: repeat(auto-fill, minmax(44px, 1fr)); max-height: 264px; }
+	.rek-ppf__sw { width: 44px; height: 44px; }
+	.rek-ppf__tool { min-width: 38px; height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) {
+	.rek-ppf *, .rek-ppf *::before { transition-duration: .01ms !important; }
+}

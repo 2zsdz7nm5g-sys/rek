@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>R8 model test · REK PPF Color Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>html,body{margin:0;background:#050B12}</style>
+<style>/*CSS*/
+.rek-ppf__finishes{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.rek-ppf__chip{min-height:36px;padding:0 12px;border-radius:2px;cursor:pointer;font:500 13px "IBM Plex Sans Arabic",sans-serif;color:var(--ppf-ink);background:rgba(5,11,18,.4);border:1px solid rgba(245,247,250,.2)}
+.rek-ppf__chip[aria-pressed="true"]{border-color:var(--ppf-accent-light);color:var(--ppf-accent-light)}
+.rek-ppf__chip:disabled{opacity:.4;cursor:default}
+.r8-diag{max-width:1520px;margin:14px auto 0;padding:12px 16px;font:500 12px "IBM Plex Mono",monospace;color:#8B98A8;border:1px dashed rgba(91,184,242,.25);display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.r8-diag b{color:#F5F7FA;font-weight:500}
+.r8-diag button{font:inherit;color:#F5F7FA;background:transparent;border:1px solid rgba(245,247,250,.25);padding:6px 10px;cursor:pointer}
+</style>
+</head><body>
+<section class="rek-ppf" data-rek-ppf data-model="MODEL_URL" data-draco="DRACO_URL" aria-labelledby="rek-ppf-title">
+	<header class="rek-ppf__head">
+		<p class="rek-ppf__label" dir="ltr">REK PPF COLOR STUDIO · R8 MODEL TEST</p>
+		<h2 class="rek-ppf__title" id="rek-ppf-title">اختبار نموذج Audi R8</h2>
+		<p class="rek-ppf__lead">صفحة اختبار مؤقتة: تدوير 360°، تقريب، جودة المواد، وتغيير لون الطلاء فقط.</p>
+	</header>
+	<div class="rek-ppf__frame">
+		<div class="rek-ppf__stage" data-ppf-stage tabindex="0" role="img" aria-label="نموذج ثلاثي الأبعاد لسيارة Audi R8. استخدم الأسهم للتدوير و + و - للتقريب.">
+			<img class="rek-ppf__poster" src="POSTER_URL" alt="" width="1600" height="900">
+			<p class="rek-ppf__hint"><span class="rek-ppf__hint--mouse">اسحب للتدوير · عجلة الفأرة للتقريب</span><span class="rek-ppf__hint--touch">اسحب للتدوير · قرّب بإصبعين</span></p>
+			<div class="rek-ppf__loader" aria-live="polite">
+				<span class="rek-ppf__status" data-ppf-status data-nowebgl="العرض ثلاثي الأبعاد غير مدعوم على هذا الجهاز." data-error="تعذّر تحميل النموذج ثلاثي الأبعاد.">جاري تحميل النموذج ثلاثي الأبعاد</span>
+				<i class="rek-ppf__track"><b class="rek-ppf__bar" data-ppf-bar></b></i>
+			</div>
+		</div>
+		<div class="rek-ppf__panel">
+			<div class="rek-ppf__readout" aria-live="polite">
+				<span class="rek-ppf__dot" data-ppf-dot style="background:#c80b2c"></span>
+				<span class="rek-ppf__meta"><small dir="ltr">SELECTED</small><span class="rek-ppf__name" data-ppf-name>اللون الأصلي</span><span class="rek-ppf__finish" data-ppf-finish>لامع · Gloss</span></span>
+			</div>
+			<div class="rek-ppf__group">
+				<p class="rek-ppf__group-label">ألوان الاختبار</p>
+				<ul class="rek-ppf__swatches" aria-label="ألوان الاختبار">
+					<li><button type="button" class="rek-ppf__sw rek-ppf__sw--original" style="--sw:#c80b2c" data-ppf-color="original" data-ppf-finish-key="original" data-ppf-label="اللون الأصلي" data-ppf-finish-label="لامع · Gloss" aria-label="اللون الأصلي" aria-pressed="true" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#0b0c0f" data-ppf-color="#0b0c0f" data-ppf-finish-key="gloss" data-ppf-label="أسود لامع · Gloss Black" data-ppf-finish-label="لامع · Gloss" aria-label="Gloss Black" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#ecebe6" data-ppf-color="#ecebe6" data-ppf-finish-key="gloss" data-ppf-label="أبيض لؤلؤي · Pearl White" data-ppf-finish-label="لامع · Gloss" aria-label="Pearl White" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#b3121f" data-ppf-color="#b3121f" data-ppf-finish-key="gloss" data-ppf-label="أحمر سباق · Racing Red" data-ppf-finish-label="لامع · Gloss" aria-label="Racing Red" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#14316e" data-ppf-color="#14316e" data-ppf-finish-key="metallic" data-ppf-label="أزرق داكن · Deep Blue" data-ppf-finish-label="معدني · Metallic" aria-label="Deep Blue" aria-pressed="false" disabled></button></li>
+					<li><button type="button" class="rek-ppf__sw" style="--sw:#6e7378" data-ppf-color="#6e7378" data-ppf-finish-key="satin" data-ppf-label="رمادي ساتان · Satin Grey" data-ppf-finish-label="ساتان · Satin" aria-label="Satin Grey" aria-pressed="false" disabled></button></li>
+				</ul>
+			</div>
+			<div class="rek-ppf__group">
+				<p class="rek-ppf__group-label">نوع الفلم · Finish</p>
+				<ul class="rek-ppf__finishes">
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="gloss" data-ppf-finish-label="لامع · Gloss" aria-pressed="false" disabled>Gloss</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="matte" data-ppf-finish-label="مطفي · Matte" aria-pressed="false" disabled>Matte</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="satin" data-ppf-finish-label="ساتان · Satin" aria-pressed="false" disabled>Satin</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="metallic" data-ppf-finish-label="معدني · Metallic" aria-pressed="false" disabled>Metallic</button></li>
+					<li><button type="button" class="rek-ppf__chip" data-ppf-setfinish="special" data-ppf-finish-label="خاص · Special" aria-pressed="false" disabled>Special</button></li>
+				</ul>
+			</div>
+			<div class="rek-ppf__actions"><button type="button" class="rek-ppf__btn" data-ppf-reset>الأصلي / إعادة الضبط</button></div>
+		</div>
+	</div>
+	<div class="r8-diag" dir="ltr" data-diag>
+		<span>tier <b data-d="tier">…</b></span><span>DPR <b data-d="dpr">…</b></span><span>triangles <b data-d="tris">…</b></span>
+		<span>draw calls <b data-d="calls">…</b></span><span>FPS <b data-d="fps">…</b></span><span>model load <b data-d="load">…</b></span>
+		<button type="button" data-turntable>Rotation test 0°→360° (45° steps)</button><span data-d="angle"></span>
+	</div>
+</section>
+<script>/*JS*/</script>
+<script>
+/* Test-only diagnostics: live render stats and a 45-degree rotation tour. */
+(function () {
+	var root = document.querySelector('[data-rek-ppf]'), d = function (k) { return root.querySelector('[data-d="' + k + '"]'); };
+	var wait = setInterval(function () {
+		var s = root.__ppf; if (!s || !root.classList.contains('is-ready')) { return; } clearInterval(wait);
+		d('tier').textContent = s.tier; d('dpr').textContent = s.renderer.getPixelRatio().toFixed(2);
+		d('load').textContent = Math.round(s.loadMs) + ' ms';
+		var frames = 0, t0 = performance.now();
+		(function tick(now) { frames++; if (now - t0 > 1000) { d('fps').textContent = Math.round(frames * 1000 / (now - t0)); frames = 0; t0 = now;
+			d('tris').textContent = s.renderer.info.render.triangles.toLocaleString(); d('calls').textContent = s.renderer.info.render.calls; } requestAnimationFrame(tick); })(t0);
+		root.querySelector('[data-turntable]').addEventListener('click', function () {
+			var step = 0, c = s.controls, cam = s.camera, r = Math.hypot(cam.position.x - c.target.x, cam.position.z - c.target.z), y = cam.position.y;
+			s.userActive();
+			(function next() { if (step > 8) { s.userIdle(); return; } var a = step * Math.PI / 4;
+				cam.position.set(c.target.x + Math.sin(a) * r, y, c.target.z + Math.cos(a) * r); c.update(); s.dirty = true;
+				d('angle').textContent = (step * 45) + '°'; step++; setTimeout(next, 900); })();
+		});
+	}, 200);
+})();
+</script>
+</body></html>
