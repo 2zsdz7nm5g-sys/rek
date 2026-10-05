@@ -2,12 +2,12 @@
 /**
  * Homepage hero video.
  *
- * Two ready-made H.264 files are served as they are (no re-encoding):
- * assets/video/hero-desktop-1920x1080.mp4 for landscape screens and
- * assets/video/hero-mobile-1080x1920.mp4 for phones and portrait screens.
+ * One ready-made H.264 file is served as it is (no re-encoding) on every
+ * screen: assets/video/hero-2160x2700.mp4 (2160 x 2700). It fills the hero
+ * with the rk-cover class (object-fit: cover), so it keeps its proportions.
  *
  * The <video> is layered over the hero image with the same rk-cover class
- * and carries no src in the markup; rek.js gives it the right file as soon
+ * and carries no src in the markup; rek.js gives it the file as soon
  * as it runs and fades it in once it is playing. The hero image is hidden
  * while the video is present (the hero shows its plain dark background until
  * the video starts), and comes back only where rek.js removes the video
@@ -41,8 +41,8 @@ add_filter( 'elementor/frontend/the_content', function ( $content ) {
 	$base  = REK_URI . '/assets/video/';
 	$video = sprintf(
 		'<video class="rk-cover rek-hero-video" muted autoplay loop playsinline webkit-playsinline preload="none" disablepictureinpicture disableremoteplayback aria-hidden="true" tabindex="-1" data-rek-hero-video data-src-desktop="%1$s" data-src-mobile="%2$s" data-portrait="%3$s"></video>',
-		esc_url( $base . 'hero-desktop-1920x1080.mp4?ver=' . REK_VERSION ),
-		esc_url( $base . 'hero-mobile-1080x1920.mp4?ver=' . REK_VERSION ),
+		esc_url( $base . 'hero-2160x2700.mp4?ver=' . REK_VERSION ),
+		esc_url( $base . 'hero-2160x2700.mp4?ver=' . REK_VERSION ),
 		esc_attr( REK_HERO_VIDEO_PORTRAIT_QUERY )
 	);
 	/* The photo stays in the markup (it is the fallback when the video is switched off) but is hidden while the video is present. */
