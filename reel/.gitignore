@@ -2,3 +2,4 @@ node_modules/
 .hyperframes/
 renders_log.txt
 renders/work-*/
+renders/.*hf-transaction*/
