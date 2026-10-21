@@ -1,0 +1,97 @@
+{
+  "fps": 30,
+  "transitionFrames": 20,
+  "durationInFrames": 3602,
+  "scenes": [
+    {
+      "id": "opening",
+      "vo": "vo/01_opening.mp3",
+      "voSeconds": 9.560816,
+      "voEstimated": false,
+      "voFrom": 66,
+      "voFrames": 287,
+      "durationInFrames": 377,
+      "start": 0
+    },
+    {
+      "id": "brand",
+      "vo": "vo/02_brand.mp3",
+      "voSeconds": 10.919184,
+      "voEstimated": false,
+      "voFrom": 24,
+      "voFrames": 328,
+      "durationInFrames": 382,
+      "start": 357
+    },
+    {
+      "id": "ppf",
+      "vo": "vo/03_ppf.mp3",
+      "voSeconds": 14.759184,
+      "voEstimated": false,
+      "voFrom": 24,
+      "voFrames": 443,
+      "durationInFrames": 497,
+      "start": 719
+    },
+    {
+      "id": "ceramic",
+      "vo": null,
+      "voSeconds": 12.52,
+      "voEstimated": true,
+      "voFrom": 24,
+      "voFrames": 376,
+      "durationInFrames": 430,
+      "start": 1196
+    },
+    {
+      "id": "polishing",
+      "vo": null,
+      "voSeconds": 12.34,
+      "voEstimated": true,
+      "voFrom": 24,
+      "voFrames": 371,
+      "durationInFrames": 425,
+      "start": 1606
+    },
+    {
+      "id": "interior",
+      "vo": null,
+      "voSeconds": 10.65,
+      "voEstimated": true,
+      "voFrom": 24,
+      "voFrames": 320,
+      "durationInFrames": 374,
+      "start": 2011
+    },
+    {
+      "id": "pdr",
+      "vo": null,
+      "voSeconds": 13.08,
+      "voEstimated": true,
+      "voFrom": 24,
+      "voFrames": 393,
+      "durationInFrames": 447,
+      "start": 2365
+    },
+    {
+      "id": "windshield",
+      "vo": null,
+      "voSeconds": 9.35,
+      "voEstimated": true,
+      "voFrom": 24,
+      "voFrames": 281,
+      "durationInFrames": 335,
+      "start": 2792
+    },
+    {
+      "id": "finale",
+      "vo": null,
+      "voSeconds": 13.08,
+      "voEstimated": true,
+      "voFrom": 24,
+      "voFrames": 393,
+      "durationInFrames": 495,
+      "start": 3107
+    }
+  ]
+}
