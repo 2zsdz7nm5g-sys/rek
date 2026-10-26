@@ -1,5 +1,5 @@
 // REK PROFFSET design tokens (from the site's active design system), plus the
-// amber "damage" accent used only in Section 1.
+// restrained white + red "danger" accents used only in Section 1.
 export const C = {
   bg: "#050B12",
   surface: "#081522",
@@ -9,9 +9,9 @@ export const C = {
   accentLight: "#5BB8F2",
   ink: "#F5F7FA",
   muted: "#8B98A8",
-  amber: "#F2A33A",
-  amberDeep: "#7A3B0C",
-  ember: "#2A1206",
+  danger: "#E0313B",
+  dangerDeep: "#3A0A0E",
+  bone: "#E9ECEF",
 };
 
 export const FPS = 60;

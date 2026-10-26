@@ -1,11 +1,13 @@
 import { useMemo } from "react";
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import * as THREE from "three";
 import { easeInOut, prog, rand } from "../lib/anim";
 import { C, H, W } from "../lib/brand";
 import { MACRO_CAM, MACRO_LOOK, PaintPanel, Scratch, surfY } from "../three/Panel";
 import { project } from "../three/project";
-import { Stage } from "../three/Stage";
+import { Car } from "../three/Car";
+import { Floor, Stage } from "../three/Stage";
+import { Stone } from "../three/Stone";
 import { Backdrop, Finish, TopScrim } from "../ui/Backdrop";
 import { Body, DashedTag, FocusIn, H1, Label, Voice } from "../ui/Type";
 
@@ -221,6 +223,107 @@ export const S3Heal: React.FC = () => {
         <Body size={30} color={C.muted} style={{ textAlign: "center", maxWidth: 820, opacity: prog(f, 30, 50) }}>
           *للخدوش السطحية الخفيفة في الطبقة العليا من الفيلم، في الظروف المناسبة وحسب مواصفات الفيلم.
         </Body>
+      </AbsoluteFill>
+      <Finish vignette={0.6} />
+    </AbsoluteFill>
+  );
+};
+
+// 3.3 IMPACT: slow-motion gravel meets the film. The film flexes locally
+// (ripple ring), the stone deflects, the paint underneath stays intact.
+const ICAM: [number, number, number] = [0.9, 0.55, 2.2];
+const ILOOK: [number, number, number] = [0, 0.05, 0.3];
+export const S3Impact: React.FC = () => {
+  const f = useCurrentFrame();
+  const HIT = 46;
+  const fly = prog(f, 0, HIT, (t) => t);
+  const after = Math.max(0, f - HIT);
+  const sx = f < HIT ? interpolate(fly, [0, 1], [-1.4, 0]) : after * 0.012;
+  const sy = f < HIT ? interpolate(fly, [0, 1], [0.9, 0.025]) : 0.025 + after * 0.01 - after * after * 0.00006;
+  const sz = f < HIT ? interpolate(fly, [0, 1], [-0.6, 0.3]) : 0.3 + after * 0.01;
+  const ripple = after > 0 ? after : 0;
+  return (
+    <AbsoluteFill style={{ background: C.bg }}>
+      <Stage mood="cool" cam={ICAM} look={ILOOK} fov={30}>
+        <PaintPanel color="#06080b" />
+        <FilmSheet edge={-4} lift={0.004} />
+        <Stone seed={5} position={[sx, sy, sz]} scale={0.035} rotation={[f * 0.04, f * 0.03, 0.2]} />
+        {ripple > 0 &&
+          [0, 7, 14].map((d) => {
+            const r = Math.max(0, ripple - d);
+            return r > 0 ? (
+              <mesh key={d} position={[0, surfY(0, 0.3) + 0.006, 0.3]} rotation={[-Math.PI / 2, 0, 0]}>
+                <ringGeometry args={[0.02 + r * 0.008, 0.026 + r * 0.0082, 96]} />
+                <meshBasicMaterial color={C.accentLight} transparent depthWrite={false} opacity={Math.max(0, 0.75 - r * 0.02)} />
+              </mesh>
+            ) : null;
+          })}
+      </Stage>
+      <TopScrim to={42} />
+      <AbsoluteFill style={{ alignItems: "center", paddingTop: 300 }}>
+        <H1 size={88} weight={800} style={{ whiteSpace: "nowrap" }}>
+          <FocusIn at={4}>يساعد على امتصاص</FocusIn>
+        </H1>
+        <Voice size={84} color={C.accentLight} style={{ whiteSpace: "nowrap" }}>
+          <FocusIn at={14}>ضربات الحصى الصغيرة</FocusIn>
+        </Voice>
+        <Body size={38} color={C.ink} style={{ marginTop: 16, opacity: prog(f, 60, 78) }}>
+          ويحمي من الخدوش اليومية
+        </Body>
+      </AbsoluteFill>
+      <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 380, opacity: prog(f, HIT, HIT + 14) }}>
+        <Label size={24}>tpu film · paint intact</Label>
+      </AbsoluteFill>
+      <Finish vignette={0.6} />
+    </AbsoluteFill>
+  );
+};
+
+// 3.5 FEATURE RING: pull back to the whole car; verified benefits orbit it
+// (reference A's ring of avatars around "Built For").
+const features = [
+  { ar: "شفافية عالية", en: "high clarity" },
+  { ar: "مقاوم للاصفرار", en: "anti-yellowing" },
+  { ar: "حماية من الأشعة فوق البنفسجية", en: "uv protection" },
+  { ar: "طبقة عليا ذاتية الالتئام", en: "self-healing top coat" },
+];
+export const S3Ring: React.FC = () => {
+  const f = useCurrentFrame();
+  const back = prog(f, 0, 90, easeInOut);
+  const dist = interpolate(back, [0, 1], [11, 19]);
+  const a = 0.75 + f * 0.0015;
+  const cam: [number, number, number] = [Math.sin(a) * dist, 2.4, Math.cos(a) * dist];
+  const look: [number, number, number] = [0, 0.5, 0];
+  return (
+    <AbsoluteFill>
+      <Backdrop mood="deep" />
+      <Stage mood="cool" cam={cam} look={look} fov={28}>
+        <Floor />
+        <Car color="#07090c" />
+      </Stage>
+      <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
+        <ellipse cx={540} cy={1010} rx={470} ry={150} fill="none" stroke={C.accentLight} strokeOpacity={0.35 * prog(f, 10, 40)} strokeWidth={2} strokeDasharray="4 12" />
+      </svg>
+      {features.map((ft, i) => {
+        const ang = (i / features.length) * Math.PI * 2 + f * 0.006 + 0.5;
+        const x = 540 + Math.cos(ang) * 400;
+        const y = 1010 + Math.sin(ang) * 330;
+        const front = Math.sin(ang) > 0;
+        return (
+          <div key={ft.en} style={{ position: "absolute", left: x, top: y, translate: "-50% -50%", zIndex: front ? 2 : 0, scale: front ? 1 : 0.86, opacity: front ? 1 : 0.75 }}>
+            <DashedTag at={20 + i * 10} color={C.accentLight}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2 }}>
+                <Body size={34} color={C.ink} style={{ lineHeight: 1.3, whiteSpace: "nowrap" }}>
+                  {ft.ar}
+                </Body>
+                <Label size={18} style={{ whiteSpace: "nowrap" }}>{ft.en}</Label>
+              </div>
+            </DashedTag>
+          </div>
+        );
+      })}
+      <AbsoluteFill style={{ alignItems: "center", paddingTop: 300 }}>
+        <Img src={staticFile("brand/flexishield-logo.png")} style={{ width: 600, opacity: prog(f, 6, 24), filter: `blur(${(1 - prog(f, 6, 24)) * 12}px)` }} />
       </AbsoluteFill>
       <Finish vignette={0.6} />
     </AbsoluteFill>

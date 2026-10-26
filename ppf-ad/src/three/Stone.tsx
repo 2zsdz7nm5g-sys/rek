@@ -29,7 +29,7 @@ export const Stone: React.FC<{
   tint?: string;
 }> = ({ seed, position, scale, rotation = [0, 0, 0], tint }) => {
   const geo = useMemo(() => stoneGeo(seed), [seed]);
-  const color = tint ?? ["#8a8178", "#6f6a64", "#9b9184", "#5d5853"][Math.floor(rand(seed) * 4)];
+  const color = tint ?? ["#7c7f84", "#62656a", "#8e9095", "#55585d"][Math.floor(rand(seed) * 4)];
   return (
     <mesh geometry={geo} position={position} scale={scale} rotation={rotation}>
       <meshStandardMaterial color={color} roughness={0.92} metalness={0.02} />

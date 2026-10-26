@@ -29,7 +29,7 @@ export const S4BeforeAfter: React.FC = () => {
           <PaintPanel color="#06080b" dull={0.45} />
           <DamageSet />
         </Stage>
-        <AbsoluteFill style={{ background: "rgba(40,30,20,0.25)", mixBlendMode: "multiply" }} />
+        <AbsoluteFill style={{ background: "rgba(30,30,34,0.25)", mixBlendMode: "multiply" }} />
       </AbsoluteFill>
       <div style={{ position: "absolute", left: split - 2, top: 0, width: 4, height: 1920, background: `linear-gradient(180deg, transparent, ${C.accentLight}, #fff 50%, ${C.accentLight}, transparent)`, boxShadow: `0 0 24px ${C.accentLight}99` }} />
       <TopScrim />
@@ -41,8 +41,8 @@ export const S4BeforeAfter: React.FC = () => {
       </div>
       <div style={{ position: "absolute", top: 640, left: 540, width: 540, display: "flex", justifyContent: "center", opacity: prog(f, 30, 46) }}>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-          <H1 size={52} weight={600} color="#cbb9a6">بدون PPF</H1>
-          <Label size={20} color="#a08a74">unprotected</Label>
+          <H1 size={52} weight={600} color={C.bone}>بدون PPF</H1>
+          <Label size={20} color={C.danger}>unprotected</Label>
         </div>
       </div>
       <AbsoluteFill style={{ alignItems: "center", paddingTop: 300 }}>
@@ -82,7 +82,7 @@ export const S4Hero: React.FC = () => {
       </AbsoluteFill>
       <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 420 }}>
         <Body size={40} color={C.muted} style={{ opacity: prog(f, 40, 60) }}>
-          الطلاء · اللمعان · القيمة
+          الطلاء · اللمعان · الحالة
         </Body>
       </AbsoluteFill>
       <Finish vignette={0.65} />

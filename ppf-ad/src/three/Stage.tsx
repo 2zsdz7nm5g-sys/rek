@@ -6,7 +6,7 @@ import { CameraRig } from "./CameraRig";
 import { StudioEnv } from "./StudioEnv";
 
 export const Stage: React.FC<{
-  mood?: "warm" | "cool";
+  mood?: "danger" | "cool";
   cam: [number, number, number];
   look: [number, number, number];
   fov?: number;
@@ -20,7 +20,7 @@ export const Stage: React.FC<{
     <ThreeCanvas width={width} height={height} style={{ position: "absolute", inset: 0, ...style }}>
       <StudioEnv mood={mood} strength={envStrength} />
       <CameraRig position={cam} lookAt={look} fov={fov} roll={roll} />
-      <directionalLight position={[2, 6, 4]} intensity={mood === "warm" ? 0.5 : 0.7} color={mood === "warm" ? "#ffcf9e" : "#ffffff"} />
+      <directionalLight position={[2, 6, 4]} intensity={mood === "danger" ? 0.45 : 0.7} color="#ffffff" />
       <ambientLight intensity={0.08} />
       {children}
     </ThreeCanvas>
@@ -40,13 +40,13 @@ const radial = (stops: [number, string][]) => {
   return new THREE.CanvasTexture(c);
 };
 
-export const Floor: React.FC<{ warm?: boolean }> = ({ warm = false }) => {
+export const Floor: React.FC<{ danger?: boolean }> = ({ danger = false }) => {
   const pool = useMemo(
     () =>
-      warm
-        ? radial([[0, "rgba(220,140,70,0.20)"], [0.5, "rgba(120,60,20,0.10)"], [1, "rgba(0,0,0,0)"]])
+      danger
+        ? radial([[0, "rgba(200,40,50,0.10)"], [0.5, "rgba(90,10,16,0.05)"], [1, "rgba(0,0,0,0)"]])
         : radial([[0, "rgba(120,170,220,0.22)"], [0.5, "rgba(40,90,150,0.10)"], [1, "rgba(0,0,0,0)"]]),
-    [warm],
+    [danger],
   );
   const shadow = useMemo(() => radial([[0, "rgba(0,0,0,0.95)"], [0.55, "rgba(0,0,0,0.75)"], [1, "rgba(0,0,0,0)"]]), []);
   return (

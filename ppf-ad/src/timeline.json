@@ -1,0 +1,171 @@
+{
+ "fps": 60,
+ "scenes": [
+  {
+   "id": "S1Hook",
+   "dur": 156,
+   "enter": "cut",
+   "overlap": 0
+  },
+  {
+   "id": "S1Chaos",
+   "dur": 186,
+   "enter": "whip",
+   "overlap": 14,
+   "placeholderCar": true
+  },
+  {
+   "id": "S1Damage",
+   "dur": 126,
+   "enter": "zoom",
+   "overlap": 14
+  },
+  {
+   "id": "S1Stakes",
+   "dur": 246,
+   "enter": "slideUp",
+   "overlap": 14
+  },
+  {
+   "id": "S2Turn",
+   "dur": 144,
+   "enter": "zoom",
+   "overlap": 16
+  },
+  {
+   "id": "S2Intro",
+   "dur": 252,
+   "enter": "fade",
+   "overlap": 12
+  },
+  {
+   "id": "S3Apply",
+   "dur": 174,
+   "enter": "zoom",
+   "overlap": 16
+  },
+  {
+   "id": "S3Layers",
+   "dur": 198,
+   "enter": "zoom",
+   "overlap": 14
+  },
+  {
+   "id": "S3Impact",
+   "dur": 186,
+   "enter": "whip",
+   "overlap": 12
+  },
+  {
+   "id": "S3Heal",
+   "dur": 234,
+   "enter": "whip",
+   "overlap": 12
+  },
+  {
+   "id": "S3Ring",
+   "dur": 180,
+   "enter": "fade",
+   "overlap": 16,
+   "placeholderCar": true
+  },
+  {
+   "id": "S4BeforeAfter",
+   "dur": 198,
+   "enter": "fade",
+   "overlap": 10
+  },
+  {
+   "id": "S4Hero",
+   "dur": 204,
+   "enter": "whip",
+   "overlap": 12,
+   "placeholderCar": true
+  },
+  {
+   "id": "S4End",
+   "dur": 360,
+   "enter": "fade",
+   "overlap": 18,
+   "placeholderCar": true
+  }
+ ],
+ "vo": [
+  {
+   "line": 1,
+   "scene": "S1Hook",
+   "at": 40
+  },
+  {
+   "line": 2,
+   "scene": "S1Chaos",
+   "at": 10
+  },
+  {
+   "line": 3,
+   "scene": "S1Stakes",
+   "at": 6
+  },
+  {
+   "line": 4,
+   "scene": "S1Stakes",
+   "at": 110
+  },
+  {
+   "line": 5,
+   "scene": "S2Turn",
+   "at": 30
+  },
+  {
+   "line": 6,
+   "scene": "S2Intro",
+   "at": 30
+  },
+  {
+   "line": 7,
+   "scene": "S2Intro",
+   "at": 140
+  },
+  {
+   "line": 8,
+   "scene": "S3Apply",
+   "at": 10
+  },
+  {
+   "line": 9,
+   "scene": "S3Layers",
+   "at": 10
+  },
+  {
+   "line": 10,
+   "scene": "S3Impact",
+   "at": 6
+  },
+  {
+   "line": 11,
+   "scene": "S3Heal",
+   "at": 6
+  },
+  {
+   "line": 12,
+   "scene": "S3Ring",
+   "at": 10
+  },
+  {
+   "line": 13,
+   "scene": "S4BeforeAfter",
+   "at": 40
+  },
+  {
+   "line": 14,
+   "scene": "S4Hero",
+   "at": 20
+  },
+  {
+   "line": 15,
+   "scene": "S4End",
+   "at": 20
+  }
+ ],
+ "voAvailable": []
+}

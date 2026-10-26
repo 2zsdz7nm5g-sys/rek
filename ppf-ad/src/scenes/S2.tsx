@@ -12,14 +12,14 @@ const CAM = MACRO_CAM;
 const LOOK = MACRO_LOOK;
 
 // 2.1 THE TURN: the film sweeps across (right to left, the Arabic reading
-// direction). Behind its edge the grade flips from amber danger to REK blue.
+// direction). Behind its edge the grade flips from the black/red danger look to REK blue.
 export const S2Turn: React.FC = () => {
   const f = useCurrentFrame();
   const sweep = interpolate(prog(f, 10, 70, easeInOut), [0, 1], [1180, -100]);
   const bounce = Math.max(0, f - 40);
   return (
     <AbsoluteFill style={{ background: "#030202" }}>
-      <Stage mood="warm" cam={CAM} look={LOOK} fov={30} envStrength={1.3}>
+      <Stage mood="danger" cam={CAM} look={LOOK} fov={30} envStrength={1.3}>
         <PaintPanel color="#050505" dull={0.25} />
         <DamageSet />
       </Stage>
@@ -47,7 +47,7 @@ export const S2Turn: React.FC = () => {
       />
       <TopScrim />
       <AbsoluteFill style={{ alignItems: "center", paddingTop: 330 }}>
-        <Voice size={96} color="#efe3d6">
+        <Voice size={96} color={C.bone}>
           <FocusIn at={0}>لكن يمكنك…</FocusIn>
         </Voice>
         <H1 size={128} weight={800}>

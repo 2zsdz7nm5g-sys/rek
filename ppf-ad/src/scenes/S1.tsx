@@ -7,7 +7,7 @@ import { Car } from "../three/Car";
 import { Chip, MACRO_CAM, MACRO_LOOK, PaintPanel, Scratch, Swirls, surfY } from "../three/Panel";
 import { Stone } from "../three/Stone";
 import { project } from "../three/project";
-import { Backdrop, Finish } from "../ui/Backdrop";
+import { Backdrop, Finish, TopScrim } from "../ui/Backdrop";
 import { LightLine } from "../ui/Line";
 import { DashedTag, FocusIn, H1, Label, SwapBox, Voice } from "../ui/Type";
 
@@ -25,13 +25,13 @@ export const S1Hook: React.FC = () => {
   const push = prog(f, 0, 160, easeInOut);
   return (
     <AbsoluteFill style={{ background: "#030202" }}>
-      <Stage mood="warm" cam={[0.05 - push * 0.08, 0.42 - push * 0.06, 1.55 - push * 0.2]} look={[0.1, -0.02, 0.45]} fov={28} roll={-0.06}>
+      <Stage mood="danger" cam={[0.05 - push * 0.08, 0.42 - push * 0.06, 1.55 - push * 0.2]} look={[0.1, -0.02, 0.45]} fov={28} roll={-0.06}>
         <PaintPanel color="#050505" />
         {chip > 0 && <Chip x={0.12} z={0.55} r={0.03 * chip} seed={7} />}
         {chip > 0 && (
           <mesh position={[0.12, 0.004, 0.55]} rotation={[-Math.PI / 2, 0, 0]}>
             <ringGeometry args={[0.05 + after * 0.007, 0.0525 + after * 0.0071, 96]} />
-            <meshBasicMaterial color="#ffc27a" transparent opacity={Math.max(0, 0.7 - after * 0.022)} />
+            <meshBasicMaterial color="#ffffff" transparent opacity={Math.max(0, 0.7 - after * 0.022)} />
           </mesh>
         )}
         <Stone seed={11} position={[sx, sy, sz]} scale={0.018} rotation={[f * 0.05, f * 0.03, 0.4]} />
@@ -57,9 +57,10 @@ export const S1Hook: React.FC = () => {
         length={520}
         angle={124}
         thickness={5}
-        color={C.amber}
+        color={C.bone}
         opacity={f < IMPACT ? interpolate(fly, [0, 0.15, 1], [0, 1, 1]) : interpolate(after, [0, 10], [1, 0], clamp)}
       />
+      <TopScrim to={44} />
       <AbsoluteFill style={{ alignItems: "center", paddingTop: 420 }}>
         <H1 size={150} weight={900}>
           <FocusIn at={IMPACT + 8}>حجرٌ</FocusIn> <FocusIn at={IMPACT + 18}>واحد.</FocusIn>
@@ -87,22 +88,22 @@ export const S1Chaos: React.FC = () => {
   });
   return (
     <AbsoluteFill style={{ background: "#030202" }}>
-      <Stage mood="warm" cam={[2.6 + t * 0.12, 0.5, 6.8 - t * 0.2]} look={[0, 0.75, 0.2]} fov={34} envStrength={1.6}>
-        <Floor warm />
-        <spotLight position={[-3, 4, 4]} intensity={30} angle={0.6} penumbra={1} color="#ffb877" />
+      <Stage mood="danger" cam={[2.6 + t * 0.12, 0.5, 6.8 - t * 0.2]} look={[0, 0.75, 0.2]} fov={34} envStrength={1.6}>
+        <Floor danger />
+        <spotLight position={[-3, 4, 4]} intensity={30} angle={0.6} penumbra={1} color="#ffffff" />
         <Car color="#050505" />
         {stones.filter((s) => !s.fg).map((s) => (
           <Stone key={s.i} seed={s.i} position={[s.x, s.y, s.z]} scale={s.s} rotation={[f * 0.08 + s.i, f * 0.05, s.i]} />
         ))}
       </Stage>
       {/* Foreground debris on its own layer, blurred for depth of field. */}
-      <Stage mood="warm" cam={[2.6 + t * 0.12, 0.5, 6.8 - t * 0.2]} look={[0, 0.75, 0.2]} fov={34} style={{ filter: "blur(10px)" }}>
+      <Stage mood="danger" cam={[2.6 + t * 0.12, 0.5, 6.8 - t * 0.2]} look={[0, 0.75, 0.2]} fov={34} style={{ filter: "blur(10px)" }}>
         {stones.filter((s) => s.fg).map((s) => (
           <Stone key={s.i} seed={s.i} position={[s.x * 0.4 + 2.2, s.y * 0.7 + 0.1, 4.6 + (s.z % 1.4)]} scale={s.s * 1.6} rotation={[f * 0.1, s.i, 0]} />
         ))}
       </Stage>
       <AbsoluteFill style={{ alignItems: "center", paddingTop: 300, gap: 26 }}>
-        <Voice size={70} color="#e9d9c8">
+        <Voice size={70} color={C.bone}>
           <FocusIn at={4}>كلّ يومٍ على الطريق</FocusIn>
         </Voice>
         <SwapBox words={["تطاير الحصى", "الخدوش", "رمال الطريق", "خدوش الغسيل"]} at={14} every={40} />
@@ -136,15 +137,15 @@ export const S1Stakes: React.FC = () => {
   const ring = prog(f, 6, 40);
   return (
     <AbsoluteFill>
-      <Backdrop mood="warm" />
+      <Backdrop mood="danger" />
       <AbsoluteFill style={{ alignItems: "center", paddingTop: 330 }}>
-        <Voice size={78} color="#f0e2d2">
+        <Voice size={78} color={C.bone}>
           <FocusIn at={0}>لسيارتك</FocusIn>
         </Voice>
         {/* Reference B's dotted ring + glowing counter, carrying an honest "1". */}
         <div style={{ position: "relative", width: 470, height: 470, marginTop: 24, display: "flex", alignItems: "center", justifyContent: "center" }}>
           <svg width={470} height={470} style={{ position: "absolute", rotate: `${f * 0.15}deg` }}>
-            <circle cx={235} cy={235} r={225} fill="none" stroke={C.amber} strokeOpacity={0.6} strokeWidth={2.5} strokeDasharray="3 11" pathLength={1000} strokeDashoffset={0} style={{ opacity: ring }} />
+            <circle cx={235} cy={235} r={225} fill="none" stroke={C.danger} strokeOpacity={0.7} strokeWidth={2.5} strokeDasharray="3 11" pathLength={1000} strokeDashoffset={0} style={{ opacity: ring }} />
           </svg>
           <div
             style={{
@@ -152,8 +153,8 @@ export const S1Stakes: React.FC = () => {
               fontWeight: 900,
               fontSize: 380,
               lineHeight: 1,
-              color: C.amber,
-              textShadow: `0 0 60px ${C.amber}88, 0 0 140px ${C.amber}44`,
+              color: C.ink,
+              textShadow: `0 0 50px ${C.danger}66, 0 0 120px ${C.danger}33`,
               opacity: prog(f, 10, 26),
               scale: interpolate(prog(f, 10, 30), [0, 1], [1.25, 1]),
               filter: `blur(${(1 - prog(f, 10, 26)) * 20}px)`,
@@ -165,17 +166,17 @@ export const S1Stakes: React.FC = () => {
         <H1 size={104} weight={800} style={{ marginTop: 18 }}>
           <FocusIn at={24}>طلاءٌ أصليّ</FocusIn>
         </H1>
-        <Voice size={92} color={C.amber} style={{ marginTop: -6 }}>
+        <Voice size={92} color={C.danger} style={{ marginTop: -6 }}>
           <FocusIn at={34}>واحد فقط.</FocusIn>
         </Voice>
         <div style={{ height: 70 }} />
-        <DashedTag at={56} color="#d9c2a8">
-          <H1 size={46} weight={500} color="#efe3d6">
+        <DashedTag at={56} color="#9aa0a8">
+          <H1 size={46} weight={500} color={C.bone}>
             الإصلاح مكلف، والطلاء الأصلي لا يُعوَّض.
           </H1>
         </DashedTag>
         <div style={{ marginTop: 26 }}>
-          <Label color="#b89a7a" size={24} style={{ opacity: prog(f, 66, 80) }}>
+          <Label color="#8a9099" size={24} style={{ opacity: prog(f, 66, 80) }}>
             factory paint · one chance
           </Label>
         </div>
@@ -195,12 +196,12 @@ const Callout: React.FC<{ p: [number, number, number]; at: number; text: string;
   return (
     <>
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
-        <circle cx={s.x} cy={s.y} r={10 * k} fill="none" stroke={C.amber} strokeWidth={3} />
-        <line x1={s.x} y1={s.y} x2={s.x + dx * k} y2={s.y + dy * k} stroke={C.amber} strokeWidth={2} strokeDasharray="6 6" />
+        <circle cx={s.x} cy={s.y} r={10 * k} fill="none" stroke={C.danger} strokeWidth={3} />
+        <line x1={s.x} y1={s.y} x2={s.x + dx * k} y2={s.y + dy * k} stroke={C.danger} strokeWidth={2} strokeDasharray="6 6" />
       </svg>
       <div style={{ position: "absolute", left: s.x + dx, top: s.y + dy, translate: dx < 0 ? "-100% -50%" : "0 -50%" }}>
-        <DashedTag at={at + 6} color={C.amber}>
-          <Label color={C.amber}>{text}</Label>
+        <DashedTag at={at + 6} color={C.danger}>
+          <Label color={C.bone}>{text}</Label>
         </DashedTag>
       </div>
     </>
@@ -209,7 +210,7 @@ const Callout: React.FC<{ p: [number, number, number]; at: number; text: string;
 
 export const S1Damage: React.FC = () => (
   <AbsoluteFill style={{ background: "#030202" }}>
-    <Stage mood="warm" cam={DCAM} look={DLOOK} fov={30} envStrength={1.3}>
+    <Stage mood="danger" cam={DCAM} look={DLOOK} fov={30} envStrength={1.3}>
       <PaintPanel color="#050505" dull={0.25} />
       <DamageSet />
     </Stage>

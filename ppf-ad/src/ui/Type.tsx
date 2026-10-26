@@ -129,7 +129,8 @@ export const SwapBox: React.FC<{
   every: number;
   color?: string;
   size?: number;
-}> = ({ words, at, every, color = C.amber, size = 104 }) => {
+  textColor?: string;
+}> = ({ words, at, every, color = C.danger, textColor = C.ink, size = 104 }) => {
   const f = useCurrentFrame();
   const i = Math.max(0, Math.min(words.length - 1, Math.floor((f - at) / every)));
   const local = f - at - i * every;
@@ -152,7 +153,7 @@ export const SwapBox: React.FC<{
           fontFamily: display,
           fontWeight: 800,
           fontSize: size,
-          color,
+          color: textColor,
           lineHeight: 1.15,
           opacity: p,
           filter: `blur(${(1 - p) * 14}px)`,

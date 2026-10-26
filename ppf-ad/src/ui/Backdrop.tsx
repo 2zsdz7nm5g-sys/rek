@@ -2,10 +2,10 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { C } from "../lib/brand";
 
 // Reference A's drifting, heavily blurred colour field, in REK colours.
-type Mood = "warm" | "cool" | "deep";
+type Mood = "danger" | "cool" | "deep";
 
 const palettes: Record<Mood, { base: string; blobs: string[] }> = {
-  warm: { base: "#070403", blobs: [C.amberDeep, "#3b1a07", "#1a0c04", "#5a2a0a"] },
+  danger: { base: "#040405", blobs: [C.dangerDeep, "#16181c", "#0c0d10", "#2a0a0d"] },
   cool: { base: C.bg, blobs: [C.premium, C.navy, "#0e3a63", "#0a2a4a"] },
   deep: { base: "#03070c", blobs: ["#0b2440", C.navy, "#08182a", "#123F69"] },
 };

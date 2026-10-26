@@ -4,7 +4,7 @@ import * as THREE from "three";
 
 // A dark studio with long softbox strips, baked into a PMREM environment map.
 // The strips are what draw the long highlight bands across glossy paint.
-type Mood = "warm" | "cool";
+type Mood = "danger" | "cool";
 
 const strip = (
   scene: THREE.Scene,
@@ -36,14 +36,14 @@ export const StudioEnv: React.FC<{ mood?: Mood; strength?: number }> = ({
   // already has reflections.
   const tex = useMemo(() => {
     const env = new THREE.Scene();
-    env.background = new THREE.Color(mood === "warm" ? "#060302" : "#02060b");
+    env.background = new THREE.Color(mood === "danger" ? "#030304" : "#02060b");
     const k = strength;
-    if (mood === "warm") {
-      // Low, single hard key with an amber spill: tension.
-      strip(env, 10, 0.8, [0, 10, 0], "#ffd9b0", 2.2 * k);
-      strip(env, 18, 0.45, [0, 3.2, -10], "#ffb36b", 3.0 * k);
-      strip(env, 0.7, 9, [-10, 2, 2], "#ff8a3a", 1.4 * k);
-      strip(env, 18, 0.25, [0, 1.6, 10], "#ffe2c2", 1.0 * k);
+    if (mood === "danger") {
+      // Low, single hard white key and a thin red rim: tension.
+      strip(env, 10, 0.8, [0, 10, 0], "#f2f4f7", 2.0 * k);
+      strip(env, 18, 0.45, [0, 3.2, -10], "#ffffff", 2.6 * k);
+      strip(env, 0.7, 9, [-10, 2, 2], "#e0313b", 1.6 * k);
+      strip(env, 18, 0.25, [0, 1.6, 10], "#d9dde3", 0.9 * k);
     } else {
       // Car-commercial studio: big overhead softbox, horizon bands, side strips.
       strip(env, 9, 5, [0, 11, 0], "#ffffff", 2.4 * k);
