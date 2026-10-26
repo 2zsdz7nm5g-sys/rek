@@ -22,5 +22,10 @@ for ((a=0; a<TOTAL; a+=CHUNK)); do
   echo "file '$(basename $f)'" >> out/chunks/list.txt
 done
 ffmpeg -loglevel error -y -f concat -safe 0 -i out/chunks/list.txt -c copy out/video_silent.mp4
-ffmpeg -loglevel error -y -i out/video_silent.mp4 -i public/audio/score.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest out/REK_FlexiShield_PPF_Reel.mp4
+# Two-pass loudness normalisation to -14 LUFS. The 16 kHz low-pass and the
+# limiter keep true peak below -2 dBTP after AAC encoding (Reels-safe).
+M=$(ffmpeg -hide_banner -i public/audio/score.wav -af loudnorm=I=-14:TP=-1.5:LRA=9:print_format=json -f null - 2>&1 | sed -n '/{/,/}/p')
+LN=$(echo "$M" | python3 -c "import json,sys;d=json.load(sys.stdin);print(f\"measured_I={d['input_i']}:measured_TP={d['input_tp']}:measured_LRA={d['input_lra']}:measured_thresh={d['input_thresh']}:offset={d['target_offset']}\")")
+ffmpeg -loglevel error -y -i out/video_silent.mp4 -i public/audio/score.wav -map 0:v -map 1:a -c:v copy \
+  -af "lowpass=f=16000:poles=2,loudnorm=I=-14:TP=-2:LRA=9:$LN:linear=true,aresample=48000,alimiter=limit=0.7:attack=2:release=80:level=false" -c:a aac -b:a 256k -shortest out/REK_FlexiShield_PPF_Reel.mp4
 echo DONE
