@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { AbsoluteFill, Img, interpolate, staticFile } from "remotion";
 import * as THREE from "three";
 import { easeInOut, prog, rand } from "../lib/anim";
-import { C, H, W } from "../lib/brand";
+import { C, H, REELS_SAFE_BOTTOM, W } from "../lib/brand";
 import {
   MACRO_CAM,
   MACRO_LOOK,
@@ -367,15 +367,17 @@ export const S3Heal: React.FC = () => {
         style={{
           justifyContent: "flex-end",
           alignItems: "center",
-          paddingBottom: 340,
+          paddingBottom: REELS_SAFE_BOTTOM,
         }}
       >
         <Body
-          size={30}
-          color={C.muted}
+          size={36}
+          color="#C9D2DC"
           style={{
             textAlign: "center",
-            maxWidth: 820,
+            maxWidth: 780,
+            textWrap: "balance",
+            textShadow: "0 2px 14px rgba(0,0,0,0.85)",
             opacity: prog(f, 30, 50),
           }}
         >

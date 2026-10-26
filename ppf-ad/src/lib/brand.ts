@@ -17,3 +17,7 @@ export const C = {
 export const FPS = 60;
 export const W = 1080;
 export const H = 1920;
+
+// Instagram Reels overlays caption, username and audio on roughly the
+// bottom 420 px of a 1080×1920 frame; keep legal and label text above it.
+export const REELS_SAFE_BOTTOM = 480;

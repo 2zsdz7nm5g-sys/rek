@@ -1,6 +1,6 @@
 import { AbsoluteFill, Img, interpolate, staticFile } from "remotion";
 import { easeInOut, prog } from "../lib/anim";
-import { C } from "../lib/brand";
+import { C, REELS_SAFE_BOTTOM } from "../lib/brand";
 import { display } from "../lib/fonts";
 import { Car } from "../three/Car";
 import { MACRO_CAM, MACRO_LOOK, PaintPanel } from "../three/Panel";
@@ -111,10 +111,14 @@ export const S4BeforeAfter: React.FC = () => {
         style={{
           justifyContent: "flex-end",
           alignItems: "center",
-          paddingBottom: 360,
+          paddingBottom: REELS_SAFE_BOTTOM,
         }}
       >
-        <Body size={26} color={C.muted}>
+        <Body
+          size={26}
+          color={C.muted}
+          style={{ textShadow: "0 2px 10px rgba(0,0,0,0.9)" }}
+        >
           تمثيل توضيحي
         </Body>
       </AbsoluteFill>
