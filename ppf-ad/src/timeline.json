@@ -94,77 +94,92 @@
   {
    "line": 1,
    "scene": "S1Hook",
-   "at": 40
+   "at": 72
   },
   {
    "line": 2,
    "scene": "S1Chaos",
-   "at": 10
+   "at": 8
   },
   {
    "line": 3,
-   "scene": "S1Stakes",
-   "at": 6
+   "scene": "S1Chaos",
+   "at": 92
   },
   {
    "line": 4,
    "scene": "S1Stakes",
-   "at": 110
+   "at": 12
   },
   {
    "line": 5,
-   "scene": "S2Turn",
-   "at": 30
+   "scene": "S1Stakes",
+   "at": 138
   },
   {
    "line": 6,
-   "scene": "S2Intro",
-   "at": 30
+   "scene": "S2Turn",
+   "at": 16
   },
   {
    "line": 7,
    "scene": "S2Intro",
-   "at": 140
+   "at": 46
   },
   {
    "line": 8,
-   "scene": "S3Apply",
-   "at": 10
+   "scene": "S2Intro",
+   "at": 112
   },
   {
    "line": 9,
-   "scene": "S3Layers",
-   "at": 10
+   "scene": "S2Intro",
+   "at": 196
   },
   {
    "line": 10,
-   "scene": "S3Impact",
-   "at": 6
+   "scene": "S3Apply",
+   "at": 62
   },
   {
    "line": 11,
-   "scene": "S3Heal",
-   "at": 6
+   "scene": "S3Layers",
+   "at": 16
   },
   {
    "line": 12,
-   "scene": "S3Ring",
+   "scene": "S3Impact",
    "at": 10
   },
   {
    "line": 13,
-   "scene": "S4BeforeAfter",
-   "at": 40
+   "scene": "S3Heal",
+   "at": 76
   },
   {
    "line": 14,
-   "scene": "S4Hero",
-   "at": 20
+   "scene": "S4BeforeAfter",
+   "at": 60
   },
   {
    "line": 15,
+   "scene": "S4Hero",
+   "at": 18
+  },
+  {
+   "line": 16,
+   "scene": "S4Hero",
+   "at": 108
+  },
+  {
+   "line": 17,
    "scene": "S4End",
-   "at": 20
+   "at": 18
+  },
+  {
+   "line": 18,
+   "scene": "S4End",
+   "at": 120
   }
  ],
  "voAvailable": []
