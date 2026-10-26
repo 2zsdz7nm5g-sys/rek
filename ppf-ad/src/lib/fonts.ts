@@ -14,7 +14,12 @@ const faces: [string, string, string][] = [
 ];
 
 faces.forEach(([family, file, weight]) =>
-  loadFont({ family, url: staticFile(`fonts/${file}`), weight, display: "block" }),
+  loadFont({
+    family,
+    url: staticFile(`fonts/${file}`),
+    weight,
+    display: "block",
+  }),
 );
 
 // Display: heavy geometric sans (Arabic + Latin).

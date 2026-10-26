@@ -3,8 +3,12 @@
 # score. Re-running skips chunks that already exist.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-TOTAL=$(node -e "const t=require('./src/timeline.json');let s=0;t.scenes.forEach((c,i)=>{if(i)s-=c.overlap;s+=c.dur});console.log(s)")
-CHUNK=${CHUNK:-450}
+# COMP=Master renders 60fps; the default 30fps master is half the frames
+# with identical timing (animation is authored in 60fps units).
+COMP=${COMP:-Master30}
+DIV=$([ "$COMP" = "Master" ] && echo 1 || echo 2)
+TOTAL=$(node -e "const t=require('./src/timeline.json');let s=0;t.scenes.forEach((c,i)=>{if(i)s-=c.overlap;s+=c.dur});console.log(Math.round(s/$DIV))")
+CHUNK=${CHUNK:-240}
 mkdir -p out/chunks
 : > out/chunks/list.txt
 for ((a=0; a<TOTAL; a+=CHUNK)); do
@@ -12,7 +16,7 @@ for ((a=0; a<TOTAL; a+=CHUNK)); do
   f=$(printf "out/chunks/c_%05d.mp4" $a)
   if [ ! -s "$f" ]; then
     echo "rendering $a-$b"
-    npx remotion render Master "$f.tmp.mp4" --frames=$a-$b --muted --concurrency=1 --timeout=180000 --crf=16 --log=error
+    npx remotion render "$COMP" "$f.tmp.mp4" --frames=$a-$b --muted --concurrency=1 --timeout=180000 --crf=16 --log=error
     mv "$f.tmp.mp4" "$f"
   fi
   echo "file '$(basename $f)'" >> out/chunks/list.txt

@@ -12,15 +12,37 @@ export const Stage: React.FC<{
   fov?: number;
   roll?: number;
   envStrength?: number;
+  dpr?: number;
   style?: React.CSSProperties;
   children: React.ReactNode;
-}> = ({ mood = "cool", cam, look, fov = 30, roll = 0, envStrength = 1, style, children }) => {
+}> = ({
+  mood = "cool",
+  cam,
+  look,
+  fov = 30,
+  roll = 0,
+  envStrength = 1,
+  dpr = 0.75,
+  style,
+  children,
+}) => {
   const { width, height } = useVideoConfig();
   return (
-    <ThreeCanvas width={width} height={height} style={{ position: "absolute", inset: 0, ...style }}>
+    // Rendered below full resolution (dpr) and scaled up: software WebGL is
+    // fill-rate bound, and the 3D layers are soft and dark enough to hide it.
+    <ThreeCanvas
+      width={width}
+      height={height}
+      dpr={dpr}
+      style={{ position: "absolute", inset: 0, ...style }}
+    >
       <StudioEnv mood={mood} strength={envStrength} />
       <CameraRig position={cam} lookAt={look} fov={fov} roll={roll} />
-      <directionalLight position={[2, 6, 4]} intensity={mood === "danger" ? 0.45 : 0.7} color="#ffffff" />
+      <directionalLight
+        position={[2, 6, 4]}
+        intensity={mood === "danger" ? 0.45 : 0.7}
+        color="#ffffff"
+      />
       <ambientLight intensity={0.08} />
       {children}
     </ThreeCanvas>
@@ -44,11 +66,27 @@ export const Floor: React.FC<{ danger?: boolean }> = ({ danger = false }) => {
   const pool = useMemo(
     () =>
       danger
-        ? radial([[0, "rgba(200,40,50,0.10)"], [0.5, "rgba(90,10,16,0.05)"], [1, "rgba(0,0,0,0)"]])
-        : radial([[0, "rgba(120,170,220,0.22)"], [0.5, "rgba(40,90,150,0.10)"], [1, "rgba(0,0,0,0)"]]),
+        ? radial([
+            [0, "rgba(200,40,50,0.10)"],
+            [0.5, "rgba(90,10,16,0.05)"],
+            [1, "rgba(0,0,0,0)"],
+          ])
+        : radial([
+            [0, "rgba(120,170,220,0.22)"],
+            [0.5, "rgba(40,90,150,0.10)"],
+            [1, "rgba(0,0,0,0)"],
+          ]),
     [danger],
   );
-  const shadow = useMemo(() => radial([[0, "rgba(0,0,0,0.95)"], [0.55, "rgba(0,0,0,0.75)"], [1, "rgba(0,0,0,0)"]]), []);
+  const shadow = useMemo(
+    () =>
+      radial([
+        [0, "rgba(0,0,0,0.95)"],
+        [0.55, "rgba(0,0,0,0.75)"],
+        [1, "rgba(0,0,0,0)"],
+      ]),
+    [],
+  );
   return (
     <>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.001, 0]}>

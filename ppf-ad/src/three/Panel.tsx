@@ -11,7 +11,8 @@ export const MACRO_LOOK: [number, number, number] = [0, 0.1, 0.2];
 // A gently domed body panel (think: a bonnet) lying in the XZ plane.
 export const CURVE_X = 0.05;
 export const CURVE_Z = 0.025;
-export const surfY = (x: number, z: number) => -CURVE_X * x * x - CURVE_Z * z * z;
+export const surfY = (x: number, z: number) =>
+  -CURVE_X * x * x - CURVE_Z * z * z;
 
 const panelGeo = (w: number, d: number) => {
   const g = new THREE.PlaneGeometry(w, d, 160, 160);
@@ -29,7 +30,10 @@ export const PaintPanel: React.FC<{
   dull?: number;
 }> = ({ w = 8, d = 12, color, dull = 0 }) => {
   const geo = useMemo(() => panelGeo(w, d), [w, d]);
-  const mat = useMemo(() => makePaint({ color, dull, repeat: 60 }), [color, dull]);
+  const mat = useMemo(
+    () => makePaint({ color, dull, repeat: 60 }),
+    [color, dull],
+  );
   return <mesh geometry={geo} material={mat} />;
 };
 
@@ -52,13 +56,13 @@ const jagged = (seed: number, r: number, spikes = 22) => {
 
 // A stone chip: bright fractured clear-coat rim, grey primer crater, a speck
 // of bare metal, and a few micro-chips around it.
-export const Chip: React.FC<{ x: number; z: number; r: number; seed: number; opacity?: number }> = ({
-  x,
-  z,
-  r,
-  seed,
-  opacity = 1,
-}) => {
+export const Chip: React.FC<{
+  x: number;
+  z: number;
+  r: number;
+  seed: number;
+  opacity?: number;
+}> = ({ x, z, r, seed, opacity = 1 }) => {
   const rim = useMemo(() => jagged(seed, r, 26), [seed, r]);
   const crater = useMemo(() => jagged(seed + 50, r * 0.78, 20), [seed, r]);
   const core = useMemo(() => jagged(seed + 90, r * 0.28, 10), [seed, r]);
@@ -67,7 +71,11 @@ export const Chip: React.FC<{ x: number; z: number; r: number; seed: number; opa
       new Array(7).fill(0).map((_, i) => {
         const a = rand(seed + i * 4.1) * Math.PI * 2;
         const d = r * (1.4 + rand(seed + i * 2.7) * 1.2);
-        return { g: jagged(seed + 200 + i, r * (0.08 + rand(seed + i) * 0.1), 7), x: Math.cos(a) * d, z: Math.sin(a) * d };
+        return {
+          g: jagged(seed + 200 + i, r * (0.08 + rand(seed + i) * 0.1), 7),
+          x: Math.cos(a) * d,
+          z: Math.sin(a) * d,
+        };
       }),
     [seed, r],
   );
@@ -75,17 +83,40 @@ export const Chip: React.FC<{ x: number; z: number; r: number; seed: number; opa
   return (
     <group position={[x, y, z]}>
       <mesh geometry={rim} position={[0, 0.0012, 0]}>
-        <meshStandardMaterial color="#e4e6ea" emissive="#ffffff" emissiveIntensity={0.08} roughness={0.35} transparent opacity={opacity} />
+        <meshStandardMaterial
+          color="#e4e6ea"
+          emissive="#ffffff"
+          emissiveIntensity={0.08}
+          roughness={0.35}
+          transparent
+          opacity={opacity}
+        />
       </mesh>
       <mesh geometry={crater} position={[0, 0.0016, 0]}>
-        <meshStandardMaterial color="#5f6368" roughness={0.95} transparent opacity={opacity} />
+        <meshStandardMaterial
+          color="#5f6368"
+          roughness={0.95}
+          transparent
+          opacity={opacity}
+        />
       </mesh>
       <mesh geometry={core} position={[0, 0.002, 0]}>
-        <meshStandardMaterial color="#2a2d31" roughness={0.3} metalness={0.9} transparent opacity={opacity} />
+        <meshStandardMaterial
+          color="#2a2d31"
+          roughness={0.3}
+          metalness={0.9}
+          transparent
+          opacity={opacity}
+        />
       </mesh>
       {specks.map((sp, i) => (
         <mesh key={i} geometry={sp.g} position={[sp.x, 0.0012, sp.z]}>
-          <meshStandardMaterial color="#d4d7db" roughness={0.4} transparent opacity={opacity * 0.85} />
+          <meshStandardMaterial
+            color="#d4d7db"
+            roughness={0.4}
+            transparent
+            opacity={opacity * 0.85}
+          />
         </mesh>
       ))}
     </group>
@@ -102,7 +133,16 @@ export const Scratch: React.FC<{
   width?: number;
   opacity?: number;
   color?: string;
-}> = ({ x, z, len, angle, bend = 0.08, width = 0.006, opacity = 1, color = "#d9dde2" }) => {
+}> = ({
+  x,
+  z,
+  len,
+  angle,
+  bend = 0.08,
+  width = 0.006,
+  opacity = 1,
+  color = "#d9dde2",
+}) => {
   const geo = useMemo(() => {
     const n = 48;
     const pos: number[] = [];
@@ -148,13 +188,13 @@ export const Scratch: React.FC<{
 };
 
 // Swirl marks: concentric arcs, as left by careless washing.
-export const Swirls: React.FC<{ x: number; z: number; r: number; seed: number; opacity?: number }> = ({
-  x,
-  z,
-  r,
-  seed,
-  opacity = 1,
-}) => (
+export const Swirls: React.FC<{
+  x: number;
+  z: number;
+  r: number;
+  seed: number;
+  opacity?: number;
+}> = ({ x, z, r, seed, opacity = 1 }) => (
   <group>
     {new Array(14).fill(0).map((_, i) => {
       const rr = r * (0.3 + rand(seed + i) * 0.7);

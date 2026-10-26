@@ -1,8 +1,9 @@
 import React from "react";
-import { interpolate, useCurrentFrame } from "remotion";
+import { interpolate } from "remotion";
 import { prog } from "../lib/anim";
 import { C } from "../lib/brand";
 import { body, display, mono, serif } from "../lib/fonts";
+import { useFrame } from "../lib/frame";
 
 // Reference B: a word that starts soft, offset and blurred, then snaps sharp.
 export const FocusIn: React.FC<{
@@ -13,7 +14,7 @@ export const FocusIn: React.FC<{
   children: React.ReactNode;
   style?: React.CSSProperties;
 }> = ({ at, dur = 18, dy = 26, dx = 0, children, style }) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const p = prog(f, at, at + dur);
   return (
     <span
@@ -30,47 +31,77 @@ export const FocusIn: React.FC<{
   );
 };
 
-export const H1: React.FC<{ children: React.ReactNode; size?: number; color?: string; weight?: number; style?: React.CSSProperties }> = ({
-  children,
-  size = 120,
-  color = C.ink,
-  weight = 800,
-  style,
-}) => (
-  <div dir="rtl" style={{ fontFamily: display, fontWeight: weight, fontSize: size, lineHeight: 1.12, color, ...style }}>
+export const H1: React.FC<{
+  children: React.ReactNode;
+  size?: number;
+  color?: string;
+  weight?: number;
+  style?: React.CSSProperties;
+}> = ({ children, size = 120, color = C.ink, weight = 800, style }) => (
+  <div
+    dir="rtl"
+    style={{
+      fontFamily: display,
+      fontWeight: weight,
+      fontSize: size,
+      lineHeight: 1.12,
+      color,
+      ...style,
+    }}
+  >
     {children}
   </div>
 );
 
 // The contrasting voice (reference B's italic serif), here Amiri naskh.
-export const Voice: React.FC<{ children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties }> = ({
-  children,
-  size = 84,
-  color = C.ink,
-  style,
-}) => (
-  <div dir="rtl" style={{ fontFamily: serif, fontWeight: 400, fontSize: size, lineHeight: 1.25, color, ...style }}>
+export const Voice: React.FC<{
+  children: React.ReactNode;
+  size?: number;
+  color?: string;
+  style?: React.CSSProperties;
+}> = ({ children, size = 84, color = C.ink, style }) => (
+  <div
+    dir="rtl"
+    style={{
+      fontFamily: serif,
+      fontWeight: 400,
+      fontSize: size,
+      lineHeight: 1.25,
+      color,
+      ...style,
+    }}
+  >
     {children}
   </div>
 );
 
-export const Body: React.FC<{ children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties }> = ({
-  children,
-  size = 40,
-  color = C.muted,
-  style,
-}) => (
-  <div dir="rtl" style={{ fontFamily: body, fontWeight: 400, fontSize: size, lineHeight: 1.6, color, ...style }}>
+export const Body: React.FC<{
+  children: React.ReactNode;
+  size?: number;
+  color?: string;
+  style?: React.CSSProperties;
+}> = ({ children, size = 40, color = C.muted, style }) => (
+  <div
+    dir="rtl"
+    style={{
+      fontFamily: body,
+      fontWeight: 400,
+      fontSize: size,
+      lineHeight: 1.6,
+      color,
+      ...style,
+    }}
+  >
     {children}
   </div>
 );
 
-export const Label: React.FC<{ children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties }> = ({
-  children,
-  size = 26,
-  color = C.accentLight,
-  style,
-}) => (
+export const Label: React.FC<{
+  children: React.ReactNode;
+  size?: number;
+  color?: string;
+  style?: React.CSSProperties;
+}> = ({ children, size = 26, color = C.accentLight, style }) => (
   <span
     dir="ltr"
     style={{
@@ -94,10 +125,18 @@ export const DashedTag: React.FC<{
   children: React.ReactNode;
   style?: React.CSSProperties;
 }> = ({ at, color = C.accentLight, children, style }) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const p = prog(f, at, at + 16);
   const handle = (pos: React.CSSProperties) => (
-    <span style={{ position: "absolute", width: 9, height: 9, background: color, ...pos }} />
+    <span
+      style={{
+        position: "absolute",
+        width: 9,
+        height: 9,
+        background: color,
+        ...pos,
+      }}
+    />
   );
   return (
     <div
@@ -130,9 +169,19 @@ export const SwapBox: React.FC<{
   color?: string;
   size?: number;
   textColor?: string;
-}> = ({ words, at, every, color = C.danger, textColor = C.ink, size = 104 }) => {
-  const f = useCurrentFrame();
-  const i = Math.max(0, Math.min(words.length - 1, Math.floor((f - at) / every)));
+}> = ({
+  words,
+  at,
+  every,
+  color = C.danger,
+  textColor = C.ink,
+  size = 104,
+}) => {
+  const f = useFrame();
+  const i = Math.max(
+    0,
+    Math.min(words.length - 1, Math.floor((f - at) / every)),
+  );
   const local = f - at - i * every;
   const p = prog(local, 0, 14);
   return (

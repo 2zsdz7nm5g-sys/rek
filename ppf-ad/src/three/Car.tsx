@@ -17,10 +17,20 @@ export const Car: React.FC<{
   scale?: number;
 }> = ({ color = "#06080b", dull = 0, position, rotation, scale = 1 }) => {
   // useLoader suspends, which <ThreeCanvas> turns into a delayRender().
-  const src = useLoader(GLTFLoader, staticFile("models/car.glb")).scene as THREE.Group;
+  const src = useLoader(GLTFLoader, staticFile("models/car.glb"))
+    .scene as THREE.Group;
 
   const obj = useMemo(() => {
     const paint = makePaint({ color, dull, repeat: 120 });
+    const glass = new THREE.MeshPhysicalMaterial({
+      color: "#0b1016",
+      metalness: 0,
+      roughness: 0.05,
+      transparent: true,
+      opacity: 0.82,
+      clearcoat: 1,
+      envMapIntensity: 1.4,
+    });
     const root = src.clone(true);
     root.traverse((o: THREE.Object3D) => {
       if (HIDE.includes(o.name)) o.visible = false;
@@ -28,7 +38,7 @@ export const Car: React.FC<{
       if (!m.isMesh) return;
       const mats = Array.isArray(m.material) ? m.material : [m.material];
       const swapped = mats.map((mt: THREE.Material) =>
-        mt.name?.startsWith("Paint") ? paint : mt,
+        mt.name?.startsWith("Paint") ? paint : mt.name === "Glass" ? glass : mt,
       );
       m.material = Array.isArray(m.material) ? swapped : swapped[0];
     });

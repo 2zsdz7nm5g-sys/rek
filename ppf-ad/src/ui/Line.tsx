@@ -10,7 +10,15 @@ export const LightLine: React.FC<{
   thickness?: number;
   color?: string;
   opacity?: number;
-}> = ({ x, y, length, angle, thickness = 6, color = C.accentLight, opacity = 1 }) => (
+}> = ({
+  x,
+  y,
+  length,
+  angle,
+  thickness = 6,
+  color = C.accentLight,
+  opacity = 1,
+}) => (
   <div
     style={{
       position: "absolute",

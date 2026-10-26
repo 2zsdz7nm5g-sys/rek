@@ -3,7 +3,13 @@
 import data from "./timeline.json";
 
 export type Trans = "cut" | "whip" | "slideUp" | "zoom" | "fade";
-export type Scene = { id: string; dur: number; enter: Trans; overlap: number; placeholderCar?: boolean };
+export type Scene = {
+  id: string;
+  dur: number;
+  enter: Trans;
+  overlap: number;
+  placeholderCar?: boolean;
+};
 
 export const SCENES = data.scenes as Scene[];
 // Voice-over line slots; a line plays only once its file is listed in
@@ -23,4 +29,5 @@ export const starts = (() => {
 })();
 
 export const TOTAL = starts[starts.length - 1] + SCENES[SCENES.length - 1].dur;
-export const startOf = (id: string) => starts[SCENES.findIndex((s) => s.id === id)];
+export const startOf = (id: string) =>
+  starts[SCENES.findIndex((s) => s.id === id)];
