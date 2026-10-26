@@ -1,7 +1,6 @@
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { easeInOut, prog } from "../lib/anim";
 import { C } from "../lib/brand";
-import { display } from "../lib/fonts";
 import { MACRO_CAM, MACRO_LOOK, PaintPanel } from "../three/Panel";
 import { Stage } from "../three/Stage";
 import { Stone } from "../three/Stone";
@@ -90,24 +89,20 @@ export const S2Intro: React.FC = () => {
             }}
           >
             <div style={{ opacity: prog(f, 36, 50) }}>
-              <Label size={26}>ppf · flexishield usa</Label>
+              <Label size={26}>flexishield usa</Label>
             </div>
-            <div
-              dir="ltr"
+            {/* Official FlexiShield logo, never recoloured. */}
+            <Img
+              src={staticFile("brand/flexishield-logo.png")}
               style={{
-                fontFamily: display,
-                fontWeight: 700,
-                fontSize: 138,
-                letterSpacing: "-0.02em",
-                color: C.ink,
-                lineHeight: 1.1,
+                width: 720,
+                marginTop: 10,
+                marginBottom: 10,
                 opacity: prog(f, 40, 58),
                 translate: `0 ${(1 - prog(f, 40, 58)) * 50}px`,
                 filter: `blur(${(1 - prog(f, 40, 58)) * 14}px)`,
               }}
-            >
-              FlexiShield
-            </div>
+            />
             <H1 size={64} weight={500} color={C.accentLight} style={{ opacity: prog(f, 52, 68) }}>
               فيلم حماية الطلاء
             </H1>

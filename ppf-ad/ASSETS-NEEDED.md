@@ -1,8 +1,8 @@
 # Assets needed from REK PROFFSET
 
 ## Required
-1. **REK PROFFSET logo**: vector (SVG/AI/PDF) or PNG with a transparent background, at least 2000 px wide. The website logo is a 447 px JPG, which is too small for 1080×1920.
-2. **FlexiShield logo**: vector or transparent PNG, plus confirmation that REK may use it in advertising as the exclusive agent.
+1. ~~REK logo~~ **Received** (`public/brand/rek-logo.png`, cut out from the 2000 px JPG; usable mark is 733 px wide). A vector (SVG/AI/PDF) version is still preferred for the final render.
+2. ~~FlexiShield logo~~ **Received** (`public/brand/flexishield-logo.png`, faint white glow removed for dark backgrounds). Still need confirmation that REK may use it in advertising as the exclusive agent.
 3. **Music**: a licensed track (60–90 s, about 85–100 BPM, cinematic and dark at the start, building to a premium lift), or approval for me to build a minimal synth bed.
 4. **Contact details to show**: confirm WhatsApp 0770 755 5332, @rek.proffset and "Baghdad" (taken from the website).
 

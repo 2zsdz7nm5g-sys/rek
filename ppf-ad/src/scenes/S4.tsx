@@ -1,4 +1,4 @@
-import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { easeInOut, prog } from "../lib/anim";
 import { C } from "../lib/brand";
 import { display } from "../lib/fonts";
@@ -97,38 +97,38 @@ export const S4End: React.FC = () => {
   return (
     <AbsoluteFill>
       <Backdrop mood="deep" />
-      <Stage mood="cool" cam={[4.6, 1.0, 6.2]} look={[0, 0.45, 0]} fov={28} style={{ opacity: 0.9, translate: "0 520px" }}>
+      <Stage mood="cool" cam={[4.6, 1.0, 6.2]} look={[0, 0.45, 0]} fov={28} style={{ opacity: 0.9, translate: "0 640px" }}>
         <Floor />
         <Car color="#07090c" />
       </Stage>
       <AbsoluteFill style={{ background: `linear-gradient(180deg, ${C.bg} 30%, transparent 55%, transparent 80%, ${C.bg} 100%)` }} />
-      <AbsoluteFill style={{ alignItems: "center", paddingTop: 300 }}>
-        {/* Wordmark placeholder until the official logo file arrives. */}
-        <div
-          dir="ltr"
+      <AbsoluteFill style={{ alignItems: "center", paddingTop: 260 }}>
+        {/* Official REK logo. In motion it is revealed by a rising wave,
+            echoing the wave inside the mark and the film covering paint. */}
+        <Img
+          src={staticFile("brand/rek-logo.png")}
           style={{
-            fontFamily: display,
-            fontWeight: 800,
-            fontSize: 112,
-            letterSpacing: "0.04em",
-            color: C.ink,
+            width: 460,
             opacity: prog(f, 0, 18),
             filter: `blur(${(1 - prog(f, 0, 18)) * 14}px)`,
+            clipPath: `inset(${(1 - prog(f, 0, 24)) * 100}% 0 0 0)`,
           }}
-        >
-          REK PROFFSET
+        />
+        <div style={{ marginTop: 14, opacity: prog(f, 10, 26) }}>
+          <Label size={30} color={C.ink} style={{ letterSpacing: "0.5em" }}>proffset</Label>
         </div>
-        <div style={{ position: "relative", width: 760, height: 8, marginTop: 10 }}>
-          <LightLine x={interpolate(line, [0, 1], [0, 760])} y={4} length={interpolate(line, [0, 1], [0, 760])} angle={0} thickness={4} />
+        <div style={{ position: "relative", width: 620, height: 8, marginTop: 22 }}>
+          <LightLine x={interpolate(line, [0, 1], [0, 620])} y={4} length={interpolate(line, [0, 1], [0, 620])} angle={0} thickness={4} />
         </div>
-        <Body size={40} color={C.ink} style={{ marginTop: 38, opacity: prog(f, 30, 46) }}>
-          الوكيل الحصري لعلامة <bdi>FlexiShield</bdi> الأمريكية في العراق
+        <Img src={staticFile("brand/flexishield-logo.png")} style={{ width: 430, marginTop: 34, opacity: prog(f, 30, 46) }} />
+        <Body size={36} color={C.muted} style={{ marginTop: 4, opacity: prog(f, 34, 50) }}>
+          الوكيل الحصري في العراق
         </Body>
         <div
           dir="rtl"
           style={{
-            marginTop: 48,
-            padding: "26px 64px",
+            marginTop: 40,
+            padding: "24px 64px",
             background: C.accent,
             color: C.bg,
             borderRadius: 2,
@@ -141,7 +141,7 @@ export const S4End: React.FC = () => {
         >
           احجز استشارة PPF
         </div>
-        <div style={{ marginTop: 40, display: "flex", flexDirection: "column", alignItems: "center", gap: 10, opacity: prog(f, 52, 70) }}>
+        <div style={{ marginTop: 32, display: "flex", flexDirection: "column", alignItems: "center", gap: 8, opacity: prog(f, 52, 70) }}>
           <Body size={42} color={C.ink}>
             واتساب <bdi dir="ltr">0770 755 5332</bdi>
           </Body>
