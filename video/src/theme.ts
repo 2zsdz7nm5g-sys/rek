@@ -55,13 +55,13 @@ export const FPS = 30;
 export const W = 1080;
 export const H = 1920;
 
-// Master timeline (frames @30fps). Scenes overlap slightly for transitions.
+// Master timeline (frames @30fps). Scenes overlap 6 frames for transitions.
 export const T = {
-	s1: {from: 0, dur: 156},
-	s2: {from: 150, dur: 216},
-	s3: {from: 360, dur: 246},
-	s4: {from: 600, dur: 306},
-	s5: {from: 900, dur: 300},
+	s1: {from: 0, dur: 186}, // 00:00–00:06  the problem
+	s2: {from: 180, dur: 216}, // 00:06–00:13  understanding the product
+	s3: {from: 390, dur: 216}, // 00:13–00:20  before protection
+	s4: {from: 600, dur: 276}, // 00:20–00:29  after protection
+	s5: {from: 870, dur: 330}, // 00:29–00:40  benefits + final reveal
 	total: 1200,
 };
 

@@ -2,10 +2,10 @@ import React from 'react';
 import {AbsoluteFill, Audio, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {tw} from './lib/anim';
 import {C, T} from './theme';
-import {S1Hook} from './scenes/S1Hook';
+import {S1Problem} from './scenes/S1Problem';
 import {S2Reveal} from './scenes/S2Reveal';
-import {S3Science} from './scenes/S3Science';
-import {S4Install} from './scenes/S4Install';
+import {S3Before} from './scenes/S3Before';
+import {S4After} from './scenes/S4After';
 import {S5Final} from './scenes/S5Final';
 
 /** Cross-fades a scene in/out over its overlap with neighbours. */
@@ -19,24 +19,24 @@ export type MainProps = {withAudio: boolean};
 
 export const Main: React.FC<MainProps> = ({withAudio}) => (
 	<AbsoluteFill style={{background: C.black}}>
-		<Sequence name="01 Hook" from={T.s1.from} durationInFrames={T.s1.dur}>
+		<Sequence name="01 The problem" from={T.s1.from} durationInFrames={T.s1.dur}>
 			<Fade dur={T.s1.dur} fadeIn={0} fadeOut={0}>
-				<S1Hook />
+				<S1Problem />
 			</Fade>
 		</Sequence>
-		<Sequence name="02 Product reveal" from={T.s2.from} durationInFrames={T.s2.dur}>
+		<Sequence name="02 Understanding the product" from={T.s2.from} durationInFrames={T.s2.dur}>
 			<Fade dur={T.s2.dur} fadeIn={6} fadeOut={6}>
 				<S2Reveal />
 			</Fade>
 		</Sequence>
-		<Sequence name="03 How it works" from={T.s3.from} durationInFrames={T.s3.dur}>
+		<Sequence name="03 Before protection" from={T.s3.from} durationInFrames={T.s3.dur}>
 			<Fade dur={T.s3.dur} fadeIn={6} fadeOut={6}>
-				<S3Science />
+				<S3Before />
 			</Fade>
 		</Sequence>
-		<Sequence name="04 Installation" from={T.s4.from} durationInFrames={T.s4.dur}>
+		<Sequence name="04 After protection" from={T.s4.from} durationInFrames={T.s4.dur}>
 			<Fade dur={T.s4.dur} fadeIn={6} fadeOut={6}>
-				<S4Install />
+				<S4After />
 			</Fade>
 		</Sequence>
 		<Sequence name="05 Final reveal" from={T.s5.from} durationInFrames={T.s5.dur}>

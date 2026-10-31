@@ -1,22 +1,6 @@
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame} from 'remotion';
+import {AbsoluteFill} from 'remotion';
 import {C} from '../theme';
-
-/** Animated film grain (deterministic per frame) */
-export const Grain: React.FC<{opacity?: number}> = ({opacity = 0.07}) => {
-	const f = useCurrentFrame();
-	return (
-		<AbsoluteFill style={{opacity, mixBlendMode: 'overlay', pointerEvents: 'none'}}>
-			<svg width="100%" height="100%">
-				<filter id={`grain${f % 8}`}>
-					<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed={f % 97} stitchTiles="stitch" />
-					<feColorMatrix type="saturate" values="0" />
-				</filter>
-				<rect width="100%" height="100%" filter={`url(#grain${f % 8})`} />
-			</svg>
-		</AbsoluteFill>
-	);
-};
 
 export const Vignette: React.FC<{strength?: number}> = ({strength = 0.75}) => (
 	<AbsoluteFill
@@ -46,4 +30,19 @@ export const Streak: React.FC<{y: number; opacity: number; width?: number}> = ({
 
 export const Flash: React.FC<{opacity: number; color?: string}> = ({opacity, color = '#d9efff'}) => (
 	<AbsoluteFill style={{background: color, opacity, mixBlendMode: 'screen', pointerEvents: 'none'}} />
+);
+
+/** soft dark gradient behind top-of-frame titles (legibility without boxes) */
+export const TopScrim: React.FC<{height?: number; opacity?: number}> = ({height = 620, opacity = 0.75}) => (
+	<div
+		style={{
+			position: 'absolute',
+			top: 0,
+			left: 0,
+			right: 0,
+			height,
+			pointerEvents: 'none',
+			background: `linear-gradient(to bottom, rgba(1,3,8,${opacity}), rgba(1,3,8,0))`,
+		}}
+	/>
 );

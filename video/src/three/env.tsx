@@ -2,7 +2,8 @@ import {useThree} from '@react-three/fiber';
 import React, {useLayoutEffect, useMemo} from 'react';
 import * as THREE from 'three';
 
-export type EnvPreset = 'studio' | 'night' | 'workshop';
+export type EnvPreset = 'studio' | 'night' | 'workshop' | 'void';
+export type EnvStrip = {dir: [number, number, number]; w: number; h: number; intensity: number; color?: string};
 
 const strip = (
 	scene: THREE.Scene,
@@ -26,7 +27,7 @@ const strip = (
 };
 
 /** Builds a deterministic light-form environment (softboxes / strip lights) for reflections. */
-const buildEnvScene = (preset: EnvPreset) => {
+const buildEnvScene = (preset: EnvPreset, extra: EnvStrip[] = []) => {
 	const s = new THREE.Scene();
 	const dome = new THREE.Mesh(
 		new THREE.SphereGeometry(50, 32, 16),
@@ -47,12 +48,14 @@ const buildEnvScene = (preset: EnvPreset) => {
 	g.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
 	s.add(dome);
 
-	if (preset === 'studio') {
+	if (preset === 'void') {
+		// only the explicitly designed strips (see `extra`)
+	} else if (preset === 'studio') {
 		strip(s, '#ffffff', 6, 22, 1.1, [0, 18, 0]); // overhead long softbox
 		strip(s, '#dbe9ff', 4, 2.0, 16, [-14, 6, 4]); // left strip
 		strip(s, '#dbe9ff', 4, 2.0, 16, [14, 6, 4]); // right strip
 		strip(s, '#3da9ff', 3, 26, 0.6, [0, 2.5, -16]); // electric-blue rim line
-		strip(s, '#ffffff', 2.5, 8, 1.2, [0, 6, 15]); // front fill
+		strip(s, '#ffffff', 1.0, 8, 1.2, [0, 6, 15]); // front fill
 	} else if (preset === 'night') {
 		// periodic streetlights (warm) and cool city glow
 		for (let i = 0; i < 12; i++) {
@@ -69,6 +72,10 @@ const buildEnvScene = (preset: EnvPreset) => {
 		strip(s, '#cfe3ff', 0.8, 18, 3, [0, 5, -16]);
 		strip(s, '#3da9ff', 2.4, 18, 0.5, [0, 2, 16]);
 	}
+	for (const e of extra) {
+		const d = new THREE.Vector3(...e.dir).normalize().multiplyScalar(15);
+		strip(s, e.color ?? '#ffffff', e.intensity, e.w, e.h, [d.x, d.y, d.z]);
+	}
 	return s;
 };
 
@@ -78,14 +85,16 @@ export const Env: React.FC<{
 	rotation?: [number, number, number];
 	intensity?: number;
 	background?: string;
-}> = ({preset, rotation = [0, 0, 0], intensity = 1, background}) => {
+	extra?: EnvStrip[];
+}> = ({preset, rotation = [0, 0, 0], intensity = 1, background, extra}) => {
 	const {gl, scene} = useThree();
 	const tex = useMemo(() => {
 		const pm = new THREE.PMREMGenerator(gl);
-		const rt = pm.fromScene(buildEnvScene(preset), 0.004, 0.1, 100, {size: 512});
+		const rt = pm.fromScene(buildEnvScene(preset, extra), 0.004, 0.1, 100, {size: 512});
 		pm.dispose();
 		return rt.texture;
-	}, [gl, preset]);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [gl, preset, JSON.stringify(extra ?? [])]);
 
 	useLayoutEffect(() => {
 		scene.environment = tex;

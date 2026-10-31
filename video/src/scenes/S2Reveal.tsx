@@ -8,8 +8,8 @@ import {Canvas3D} from '../three/Canvas3D';
 import {Env} from '../three/env';
 import {GelSlab} from '../three/Gel';
 import {Backdrop, GridFloor} from '../three/Stage';
-import {Flash, Grain, Streak, Vignette} from '../ui/Overlays';
-import {TechLabel} from '../ui/Type';
+import {Flash, Streak, TopScrim, Vignette} from '../ui/Overlays';
+import {ArabicTitle} from '../ui/Type';
 
 export const S2_DUR = 216;
 
@@ -143,22 +143,21 @@ export const S2Reveal: React.FC = () => {
 				}}
 			>
 				<span style={{fontSize: 200, fontWeight: 700, letterSpacing: '-0.02em', textShadow: '0 0 40px rgba(61,169,255,0.55)'}}>
-					{count.toFixed(1)}
+					{count >= 5.97 ? '6' : count.toFixed(1)}
 				</span>
 				<span style={{fontSize: 80, fontWeight: 500, color: C.blueHi, marginLeft: 16}}>mm</span>
 			</div>
-			<div style={{position: 'absolute', top: 1400, left: 0, right: 0, opacity: mIn}}>
-				<TechLabel text="6mm Thickness" start={98} end={136} size={48} color={C.silver} />
-			</div>
 
-			<div style={{position: 'absolute', top: SAFE.top + 40, left: SAFE.side, right: SAFE.side}}>
-				<TechLabel text="Transparent" start={168} end={210} size={64} color={C.silverHi} weight={700} />
-				<TechLabel text="Gelatinous Shield" start={174} end={210} size={64} color={C.blueHi} weight={700} />
+			<TopScrim opacity={0.55} />
+			<div style={{position: 'absolute', top: SAFE.top + 20, left: SAFE.side, right: SAFE.side}}>
+				<ArabicTitle text={"درع حماية\nالزجاج الأمامي"} start={14} end={60} size={92} weight={600} />
+			</div>
+			<div style={{position: 'absolute', top: SAFE.top + 20, left: SAFE.side, right: SAFE.side}}>
+				<ArabicTitle text={"مرن • شفاف • جيلاتيني"} start={166} end={212} size={64} weight={500} color={C.silver} glow={false} />
 			</div>
 
 			<Streak y={height * 0.5} opacity={tw(f, [134, 146, 160], [0, 0.8, 0])} />
 			<Vignette strength={0.7} />
-			<Grain />
 			<Flash opacity={flashIn} />
 		</AbsoluteFill>
 	);
