@@ -88,6 +88,12 @@ mix *= 0.9
 raw = os.path.join(PUB, 'mix_raw.wav')
 wavfile.write(raw, SR, (mix * (2 ** 31 - 1)).astype(np.int32))
 out = os.path.join(PUB, 'mix.wav')
-subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', raw, '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-ar', str(SR), '-c:a', 'pcm_s24le', out], check=True)
+# two-pass EBU R128 loudness normalisation (Instagram: about -14 LUFS, -1.5 dBTP)
+probe = subprocess.run(['ffmpeg', '-hide_banner', '-i', raw, '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11:print_format=json', '-f', 'null', '-'],
+                       capture_output=True, text=True).stderr
+m = json.loads(probe[probe.rindex('{'):probe.rindex('}') + 1])
+af = ('loudnorm=I=-14:TP=-1.5:LRA=11:linear=true:'
+      f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}:offset={m['target_offset']}")
+subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', raw, '-af', af, '-ar', str(SR), '-c:a', 'pcm_s24le', out], check=True)
 os.remove(raw)
 print('VO lines placed:', placed if placed else 'none (music + SFX only)')
