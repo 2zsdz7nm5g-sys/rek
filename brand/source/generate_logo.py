@@ -40,9 +40,9 @@ PAL["transparent"] = dict(PAL["light"], bg=None)
 
 def rek_mark(x, y, p, uid, sc=1.0):
     x0, x1 = REK.x0-20, REK.x1+20; L = x1-x0
-    yb = REK.y0 + RH*0.50; A = RH*0.06; th = RH*0.042
-    def wy(t): return yb + A*math.cos(2*math.pi*1.15*t) - A*0.35*t
-    N = 160
+    yb = REK.y0 + RH*0.50; A = RH*0.075; th = RH*0.048
+    def wy(t): return yb + A*math.sin(2*math.pi*(2.5*t - 0.125))
+    N = 400
     up = [(x0+L*i/N, wy(i/N)-th/2) for i in range(N+1)]
     dn = [(x0+L*i/N, wy(i/N)+th/2) for i in range(N+1)]
     pts = lambda P: " L".join(f"{a:.1f},{b:.1f}" for a, b in P)
