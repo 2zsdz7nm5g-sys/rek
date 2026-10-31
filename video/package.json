@@ -1,0 +1,44 @@
+{
+  "name": "rek-proffset-windshield-shield",
+  "version": "1.0.0",
+  "description": "REK Proffset \u2013 Windshield Protection Shield, 40s vertical cinematic ad (Remotion + three.js)",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "4.0.539",
+    "@remotion/google-fonts": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "@remotion/transitions": "4.0.539",
+    "@types/three": "^0.187.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.539",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.539",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "sound": "python3 audio/sound_design.py",
+    "mix": "python3 audio/mix.py",
+    "render": "remotion render REK-Windshield-Shield out/video-silent.mp4 --concurrency=1 --muted --codec=h264 --crf=16 --pixel-format=yuv420p",
+    "finalize": "./finalize.sh"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}
