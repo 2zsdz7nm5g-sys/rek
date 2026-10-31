@@ -31,28 +31,58 @@ med = Face(f"{F}/archivo-exp-500.ttf"); arM = Face(f"{F}/plexar-500.ttf"); arS =
 
 REK = T(black, "REK", 300, track=14)
 RW, RH = REK.w, REK.h
+import re
+def outer_only(d):
+    subs = [m for m in re.findall(r'M[^M]*', d)]
+    boxes = []
+    for sp in subs:
+        n = list(map(float, re.findall(r'-?\d+\.?\d*', sp)))
+        xs, ys = n[0::2], n[1::2]; boxes.append((min(xs), min(ys), max(xs), max(ys)))
+    keep = [sp for i, sp in enumerate(subs) if not any(j != i and boxes[j][0] < boxes[i][0] and boxes[j][1] < boxes[i][1]
+            and boxes[j][2] > boxes[i][2] and boxes[j][3] > boxes[i][3] for j in range(len(subs)))]
+    return "".join(keep)
+REK_OUTER = outer_only(REK.d)
 
 PAL = {
-  "light": dict(bg="#FFFFFF", top="#2E8FDB", bot="#1B2A61", rib="#A01D33", pro="#A01D33", ar="#1B2A61", rule="#A01D33"),
-  "dark":  dict(bg="#061A2E", top="#3FA2EE", bot="#FFFFFF", rib="#C92A42", pro="#D3374E", ar="#FFFFFF", rule="#C92A42"),
+  "light": dict(bg="#FFFFFF", top="#3893D0", bot="#323C77", red="#D3212D", sticker="#FFFFFF", edge="#E4E4EA",
+                pro="#C42130", ar="#323C77", rule="#C42130"),
+  "dark":  dict(bg="#061A2E", top="#3893D0", bot="#323C77", red="#D3212D", sticker="#FFFFFF", edge="#FFFFFF",
+                pro="#E0354A", ar="#FFFFFF", rule="#E0354A"),
 }
 PAL["transparent"] = dict(PAL["light"], bg=None)
 
+# wave traced from the original REK artwork: (position across word, depth from top as fraction of cap height)
+WAVE = [(-0.08,0.43),(0.0,0.44),(0.10,0.48),(0.20,0.59),(0.27,0.56),(0.34,0.47),(0.50,0.41),
+        (0.60,0.49),(0.69,0.535),(0.77,0.44),(0.86,0.31),(0.95,0.27),(1.08,0.26)]
+def wave_frac(t):
+    P = WAVE
+    for i in range(len(P)-1):
+        if P[i][0] <= t <= P[i+1][0]: break
+    p0 = P[max(i-1,0)]; p1 = P[i]; p2 = P[i+1]; p3 = P[min(i+2,len(P)-1)]
+    u = (t-p1[0])/(p2[0]-p1[0])
+    # centripetal-ish Catmull-Rom on y with x-spacing correction
+    m1 = (p2[1]-p0[1])/(p2[0]-p0[0]) * (p2[0]-p1[0])
+    m2 = (p3[1]-p1[1])/(p3[0]-p1[0]) * (p2[0]-p1[0])
+    h00 = 2*u**3-3*u**2+1; h10 = u**3-2*u**2+u; h01 = -2*u**3+3*u**2; h11 = u**3-u**2
+    return h00*p1[1] + h10*m1 + h01*p2[1] + h11*m2
+
 def rek_mark(x, y, p, uid, sc=1.0):
-    x0, x1 = REK.x0-20, REK.x1+20; L = x1-x0
-    yb = REK.y0 + RH*0.50; A = RH*0.075; th = RH*0.048
-    def wy(t): return yb + A*math.sin(2*math.pi*(2.5*t - 0.125))
+    x0, x1 = REK.x0-30, REK.x1+30
     N = 400
-    up = [(x0+L*i/N, wy(i/N)-th/2) for i in range(N+1)]
-    dn = [(x0+L*i/N, wy(i/N)+th/2) for i in range(N+1)]
-    pts = lambda P: " L".join(f"{a:.1f},{b:.1f}" for a, b in P)
-    ribbon = "M" + pts(up) + " L" + pts(dn[::-1]) + " Z"
-    lower = "M" + pts(dn) + f" L{x1:.1f},{REK.y1+20:.1f} L{x0:.1f},{REK.y1+20:.1f} Z"
+    pts = [(x0+(x1-x0)*i/N, REK.y0 + RH*wave_frac((x0+(x1-x0)*i/N - REK.x0)/RW)) for i in range(N+1)]
+    line = "M" + " L".join(f"{a:.1f},{b:.1f}" for a, b in pts)
+    lower = line + f" L{x1:.1f},{REK.y1+30:.1f} L{x0:.1f},{REK.y1+30:.1f} Z"
+    sw, ow, wl = RH*0.085, RH*0.026, RH*0.020
     return (f'<g transform="translate({x:.2f},{y:.2f}) scale({sc:.4f}) translate({-REK.x0:.2f},{-REK.y0:.2f})">'
+            f'<path d="{REK_OUTER}" fill="{p["edge"]}" stroke="{p["edge"]}" stroke-width="{2*sw+RH*0.012:.1f}" stroke-linejoin="round"/>'
+            f'<path d="{REK_OUTER}" fill="{p["sticker"]}" stroke="{p["sticker"]}" stroke-width="{2*sw:.1f}" stroke-linejoin="round"/>'
             f'<clipPath id="c{uid}"><path d="{REK.d}"/></clipPath>'
             f'<g clip-path="url(#c{uid})">'
-            f'<rect x="{x0:.1f}" y="{REK.y0-20:.1f}" width="{L:.1f}" height="{RH+40:.1f}" fill="{p["top"]}"/>'
-            f'<path d="{lower}" fill="{p["bot"]}"/><path d="{ribbon}" fill="{p["rib"]}"/></g></g>')
+            f'<rect x="{x0:.1f}" y="{REK.y0-30:.1f}" width="{x1-x0:.1f}" height="{RH+60:.1f}" fill="{p["top"]}"/>'
+            f'<path d="{lower}" fill="{p["bot"]}"/>'
+            f'<path d="{line}" fill="none" stroke="{p["red"]}" stroke-width="{wl:.1f}"/></g>'
+            f'<path d="{REK.d}" fill="none" stroke="{p["red"]}" stroke-width="{ow:.1f}" stroke-linejoin="round"/>'
+            f'</g>')
 
 # secondary type, sized off the REK cap height
 PRO = T(semi, "PROFFSET", 100, track=100*0.52)
@@ -71,7 +101,7 @@ def stacked(p, uid, ox=0, oy=0):
     """returns body, W, H with origin at REK top-left = (ox,oy)"""
     pw, ph = PRO.w*pro_sc, PRO.h*pro_sc
     aw, ah = AR.w*ar_sc, AR.h*ar_sc
-    g1, g2 = RH*0.22, RH*0.24
+    g1, g2 = RH*0.30, RH*0.24
     b = rek_mark(ox, oy, p, uid)
     py = oy + RH + g1
     b += PRO.at(ox + (RW-pw)/2, py, p["pro"], pro_sc)
@@ -85,7 +115,7 @@ def stacked(p, uid, ox=0, oy=0):
 
 def horizontal(p, uid, ox=0, oy=0):
     b = rek_mark(ox, oy, p, uid)
-    dx = ox + RW + RH*0.26
+    dx = ox + RW + RH*0.34
     b += f'<rect x="{dx:.1f}" y="{oy:.1f}" width="{RH*0.014:.1f}" height="{RH:.1f}" fill="{p["rule"]}"/>'
     bx = dx + RH*0.26
     # block: PROFFSET over Arabic, same width, filling the REK height
@@ -99,7 +129,7 @@ def horizontal(p, uid, ox=0, oy=0):
 def write(name, svg): open(f"{OUT}/{name}.svg", "w").write(svg); print(name)
 
 for th, p in PAL.items():
-    pad = RH*0.55
+    pad = RH*0.60
     b, w, h = stacked(p, "s"+th, pad, pad)
     write(f"rek-proffset-logo-{th}", svgwrap(w+2*pad, h+2*pad, b, p["bg"]))
     pad = RH*0.45
@@ -130,20 +160,20 @@ bb += f'<g transform="translate(1540,710) scale({200/1024:.4f})">{icon}</g>'
 b, w, h = horizontal(L, "bb3"); sc = 540/w
 bb += f'<g transform="translate({1770:.1f},{810-h*sc/2:.1f}) scale({sc:.4f})">{b}</g>'
 # palette
-sw = [("#1B2A61", "ROYAL NAVY"), ("#2E8FDB", "SKY BLUE"), ("#A01D33", "CARMINE RED"), ("#061A2E", "MIDNIGHT"), ("#FFFFFF", "PURE WHITE")]
+sw = [("#323C77", "REK NAVY"), ("#3893D0", "REK SKY"), ("#D3212D", "REK RED"), ("#C42130", "PROFFSET RED"), ("#061A2E", "MIDNIGHT")]
 x = 60
 for hexv, name in sw:
     bb += f'<rect x="{x}" y="1000" width="260" height="260" fill="{hexv}" stroke="#D9DCE3" stroke-width="2"/>'
-    bb += lbl(name, 20).at(x, 1285, "#1B2A61")
+    bb += lbl(name, 20).at(x, 1285, "#323C77")
     bb += lbl(hexv.upper(), 20, face=semi, tr=0.12).at(x, 1322, "#7A8199")
     x += 284
 # typography
 tx = 1500
 bb += lbl("TYPOGRAPHY", 20).at(tx, 1000, "#7A8199")
-bb += T(black, "Archivo Expanded", 54).at(tx, 1045, "#1B2A61")
+bb += T(black, "Archivo Expanded", 54).at(tx, 1045, "#323C77")
 bb += lbl("WORDMARK  ·  HEADLINES  ·  LATIN", 18).at(tx, 1122, "#7A8199")
-bb += T(arS, "IBM Plex Sans Arabic", 46).at(tx, 1170, "#1B2A61")
-bb += T(arM, "العناية والحماية الاحترافية للسيارات", 40).at(tx, 1235, "#A01D33")
-bb += lbl("REK PROFFSET  —  BRAND IDENTITY GUIDELINES", 20).at(60, 1420, "#1B2A61")
+bb += T(arS, "IBM Plex Sans Arabic", 46).at(tx, 1170, "#323C77")
+bb += T(arM, "العناية والحماية الاحترافية للسيارات", 40).at(tx, 1235, "#C42130")
+bb += lbl("REK PROFFSET  —  BRAND IDENTITY GUIDELINES", 20).at(60, 1420, "#323C77")
 bb += lbl("V 2.0  ·  2026", 20).at(BW-60-lbl("V 2.0  ·  2026", 20).w, 1420, "#7A8199")
 write("rek-proffset-brand-board", svgwrap(BW, BH, bb, None))
